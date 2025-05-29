@@ -1,0 +1,55 @@
+.button-filled {
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  &.button-filled-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+}
+
+.button-outlined {
+  --fill-color: var(--white, #fff);
+  --text-color: var(--black, #111);
+
+  border: 1px solid var(--grey-200, #cacacb);
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  &.button-outlined-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+}
+
+.togo-filled-00 {
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  background: var(--fill-color, #111);
+  color: var(--text-color, #fff);
+}
+
+.togo-outlined-00 {
+  --fill-color: var(--white, #fff);
+  --text-color: var(--black, #111);
+
+  border: 1px solid var(--grey-200, #cacacb);
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  background: var(--fill-color, #fff);
+  color: var(--text-color, #111);
+}
