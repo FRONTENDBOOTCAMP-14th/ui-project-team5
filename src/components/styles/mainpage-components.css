@@ -117,8 +117,15 @@
   align-items: flex-start;
   gap: 1rem;
 
+
   .mainpage-card-multicol__image {
+    display: block;
     inline-size: 100%;
+
+    .mainpage-card-multicol__image-file {
+      width: 100%;
+    }
+    
   }
 
   .mainpage-card-multicol__category {
