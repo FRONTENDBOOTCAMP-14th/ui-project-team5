@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
@@ -11,8 +11,53 @@
     <link rel="stylesheet" href="/src/components/styles/mainpage-components.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    
-    
+  <body class="component-page">
+    <!-- 단일컬럼 형태 : 사진을 포함하는 메인페이지 카드 형식 (1)-->
+    <figure class="mainpage-card-single">
+      <picture class="mainpage-card-single__image">
+        <source srcset="" type="image/webp" />
+        <img src="/src/assets/images/mainpage/mainpage-01.png" alt="" />
+      </picture>
+      <figcaption class="sr-only"></figcaption>
+      <div class="mainpage-card-single__text">
+        <p class="mainpage-card-single__category">카테고리</p>
+        <h3 class="mainpage-card-single__title">카드 메인 메시지</h3>
+        <p class="mainpage-card-single__message">부가 설명 작성</p>
+      </div>
+      <a href="/" class="mainpage-card-single__togo togo-filled-00">링크버튼제목</a>
+    </figure>
+
+    <br />
+
+    <!-- 복수컬럼 형태 : 카드 중제목 -->
+    <h2 class="mainpage-card_middle-title">카드 중제목</h2>
+
+    <br />
+
+    <!-- 복수컬럼 형태 : 사진 위에 제목과 버튼이 있는 메인페이지 카드 형식 (2) -->
+    <div class="mainpage-card-overwrite">
+      <div class="mainpage-card-overwrite__content">
+        <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+        <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+      </div>
+    </div>
+
+    <br />
+
+    <figure class="mainpage-card-multicol">
+      <picture class="mainpage-card-multicol__image">
+        <source srcset="" type="image/webp" />
+        <img src="/src/assets/images/mainpage/mainpage-08-01.png" alt="" />
+      </picture>
+      <figcaption class="sr-only"></figcaption>
+
+      <p class="mainpage-card-multicol__category">카테고리</p>
+      <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+      <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+
+      <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
+    </figure>
+
+    <br />
   </body>
 </html>
