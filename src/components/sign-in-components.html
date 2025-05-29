@@ -24,33 +24,25 @@
 
     <!-- signin 페이지 안내 메시지(제목) -->
     <h2 class="sign-in-message">로그인/회원가입 안내 메시지(제목)</h2>
-
+    <br />
     <!-- 에러문을 출력하는 입력 서식 -->
     <form action="/" class="form-input" method="GET">
       <label for="form-input__label-01" class="sr-only">입력서식 제목</label>
       <input class="form-input__input" aria-errormessage="form-input__error-01" type="text" id="form-input__label-01" required placeholder="플레이스홀더 텍스트" name="form-input__name" />
       <p class="form-input__error-message" id="form-input__error-01" aria-live="polite">에러 메시지</p>
     </form>
+    <br />
 
     <!-- 약관 동의 안내 메시지 -->
-    <p class="agreement-message">약관 동의 <a href="/index.html" target="_blank" class="agreement-message__togo">안내</a> 메시지</p>
+    <p class="agreement-message">약관 동의 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">안내</a> 메시지</p>
 
     <br />
 
-    <!-- 검은색 채우기 버튼 -->
-    <button type="submit" class="button-filled button-filled-00">버튼제목</button>
-
-    <!-- 검은색 채우기 togoLink -->
-    <!-- '계속'이나 '다음페이지로 이동' 등의 기능 구현시 버튼보다 링크텍스트가 필요해보여 추가했습니다. -->
-    <a href="/" class="togo-filled-00">링크버튼제목</a>
-
-    <br />
-    <br />
-
-    <!-- 조건문이 있는 입력 서식 -->
+    <!-- 조건문이 있는 비밀번호 입력 서식 -->
+    <!-- 비밀번호 입력서식에만 조건이 달려서 제작상의 편의를 위해 구체적으로 작성했습니다. -->
     <form action="/" class="form-input-rule form-input" method="GET">
-      <label for="form-input__label-01" class="sr-only">입력서식 제목</label>
-      <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="플레이스홀더 텍스트" name="form-input__name" />
+      <label for="form-input__label-01" class="sr-only">비밀번호</label>
+      <input class="form-input__input" type="password" pattern=".{8,}" id="form-input__label-01" required placeholder="비밀번호" name="form-input__name" />
 
       <div class="input-rule">
         <!-- checked -->
@@ -62,23 +54,23 @@
           <path d="M3 3L13 13" stroke="#707072" />
           <path d="M13 3L3 13" stroke="#707072" />
         </svg>
-        <p class="input-rule-00">조건 입력</p>
+        <p class="input-rule-00">최소 8자</p>
       </div>
     </form>
 
-    <br /><br />
+    <br />
     <!-- 약관 동의 안내 체크박스 -->
     <div class="agreement-checkbox">
       <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
       <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
         <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-        <path  class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
+        <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
         <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
       </svg>
 
       <label for="agreement-checkbox-00" class="sr-only">동의 안내 메시지</label>
-      <p class="agreement">약관 동의 <a href="/index.html" target="_blank" class="agreement-message__togo">안내</a> 메시지</p>
+      <p class="agreement">약관 동의 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">안내</a> 메시지</p>
     </div>
   </body>
 </html>
