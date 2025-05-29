@@ -1,0 +1,25 @@
+@import './page_heading.css';
+
+.basket__summary {
+  min-width: 328px;
+  text-align: center;
+  margin: 1.875rem 0;
+
+  p {
+    font-size: var(--text-2);
+    line-height: 28px;
+    display: inline-block;
+  }
+
+  .basket__summary-quantity {
+    color: var(--grey-500);
+  }
+
+  .basket__summary-price {
+    color: var(--black);
+  }
+
+  @media (width >= 960px) {
+    display: none;
+  }
+}
