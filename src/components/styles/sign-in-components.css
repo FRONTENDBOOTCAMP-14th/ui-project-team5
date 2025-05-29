@@ -1,0 +1,150 @@
+.component-page-body {
+  margin: 50px;
+}
+
+.sign-in-message {
+  color: var(--black);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.form-input {
+  /* background: yellow; */
+  --size: 2rem;
+
+  .form-input__input {
+    block-size: var(--size);
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .form-input__input::placeholder {
+    color: var(--grey-500, #707072);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .form-input__input:invalid + p {
+    visibility: visible;
+  }
+
+  .form-input__input:invalid {
+    border-color: var(--red, #b40000);
+  }
+
+  .form-input__error-message {
+    font-size: 12px;
+    color: var(--red, #b40000);
+    margin-block-start: 0.5rem;
+    visibility: hidden;
+  }
+}
+
+.agreement-message {
+  color: var(--grey-400, #757575);
+  line-height: 1.5rem;
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+}
+
+.form-input-rule {
+  /* border: 2px dotted red;
+  padding: 10px; */
+
+  .form-input__input {
+    display: flex;
+  }
+
+  .input-rule {
+    color: var(--grey-500, #707072);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin-block-start: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    gap: 0.25rem;
+
+    .input-rule__checked {
+      display: none;
+    }
+  }
+
+  .form-input__input:valid + .input-rule {
+    color: var(--green);
+
+    .input-rule__checked {
+      display: inline-block;
+    }
+
+    .input-rule__Xchecked {
+      display: none;
+    }
+  }
+}
+
+.agreement-checkbox {
+  --size: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+  line-height: 1.5rem;
+
+  color: var(--black, #111);
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    font-weight: 700;
+  }
+
+  .agreement-checkbox-input {
+    position: absolute;
+    accent-color: var(--red);
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    cursor: pointer;
+
+    &:focus + svg {
+      outline: 2px solid blue;
+      outline-offset: 2px;
+    }
+  }
+
+  .fill-color-border {
+    fill: var(--black, #111);
+  }
+
+  .fill-color-content {
+    fill: var(--white, #fff);
+  }
+
+  .fill-color-check {
+    fill: none;
+  }
+
+  .agreement-checkbox-input:checked + .checkbox-black {
+    .fill-color-content {
+      fill: var(--black, #111);
+    }
+
+    .fill-color-check {
+      fill: var(--white, #fff);
+    }
+  }
+}
