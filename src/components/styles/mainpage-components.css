@@ -104,6 +104,9 @@
     .mainpage-card-overwrite__togo {
       --fill-color: var(--white, #fff);
       --text-color: var(--black, #111);
+
+      display: inline-block;
+      align-self: flex-start;
     }
   }
 }
@@ -114,7 +117,6 @@
   align-items: flex-start;
   gap: 1rem;
 
-
   .mainpage-card-multicol__image {
     display: block;
     inline-size: 100%;
@@ -122,7 +124,6 @@
     .mainpage-card-multicol__image-file {
       width: 100%;
     }
-    
   }
 
   .mainpage-card-multicol__category {
