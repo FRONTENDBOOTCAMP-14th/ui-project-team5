@@ -50,6 +50,8 @@
   .overlay {
     right: 0;
     box-shadow: -2px 0 8px var(--grey-500);
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   #menu-btn:checked ~ .overlay {
@@ -71,8 +73,7 @@
 
   .menu-list {
     position: fixed;
-    display: flex;
-    flex-flow: column nowrap;
+    display: none;
     top: 0;
     right: -310px;
     width: 310px;
