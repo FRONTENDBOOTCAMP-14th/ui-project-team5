@@ -1,0 +1,91 @@
+body {
+  margin-inline-start: 20px;
+  margin-inline: 36px;
+}
+
+.togo-filled-00 {
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  display: inline-block;
+  width: fit-content;
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  background: var(--fill-color, #111);
+  color: var(--text-color, #fff);
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575)
+  }
+}
+
+.signin-email-page_wrapper {
+  max-width: 504px;
+  margin-inline: auto;
+}
+
+.togo-main-logo {
+  margin-block: 1.25rem;
+}
+
+.sign-in-message {
+  color: var(--black);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-block-end: 1.75rem;
+}
+
+.form-input {
+  /* background: yellow; */
+  --size: 2rem;
+  margin-block-end: 2.875rem;
+
+  .form-input__input {
+    block-size: var(--size);
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+
+  }
+
+  .form-input__input::placeholder {
+    color: var(--grey-500, #707072);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .form-input__input:invalid + p {
+    visibility: visible;
+  }
+
+  .form-input__input:invalid {
+    border-color: var(--red, #b40000);
+  }
+
+  .form-input__error-message {
+    font-size: 12px;
+    color: var(--red, #b40000);
+    margin-block-start: 0.5rem;
+    visibility: hidden;
+  }
+}
+
+.agreement-message {
+  color: var(--grey-400, #757575);
+  line-height: 1.5rem;
+  margin-block-end: 2.5rem;
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+}
