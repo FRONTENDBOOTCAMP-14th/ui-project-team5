@@ -15,9 +15,6 @@
   color: var(--text-color, #fff);
 }
 
-/* 메인 페이지 제작 시 전체 페이지에 여백 줄 것. */
-/* margin-inline: 1.5rem; */
-
 .mainpage-card-single {
   .mainpage-card-single__image {
     inline-size: 100%;
