@@ -169,6 +169,10 @@
   z-index: 0;
 }
 
+.mainpage-card-overwrite_2col {
+  aspect-ratio: 2 / 1;
+}
+
 
 .mainpage-card-items_wrapper {
   display: flex;

@@ -146,3 +146,21 @@
   flex-flow: row nowrap;
   gap: .75rem;
 }
+
+.mainpage-card-overwrite_2col {
+  aspect-ratio: 2 / 1;
+}
+.mainpage-card-overwrite-07::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(/src/assets/images/mainpage/mainpage-06-01.png) lightgray center center / cover no-repeat;
+  z-index: 0;
+}
+.mainpage-card-overwrite-08::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(/src/assets/images/mainpage/mainpage-06-02.png) lightgray center center / cover no-repeat;
+  z-index: 0;
+}
