@@ -16,8 +16,7 @@
     <a href="/src/components/mainpage-layout.html" style="font-size: 32px; font-weight: 700; color: blue; text-decoration: underline;">[메인페이지 레이아웃]</a>
 
     <!-- 단일컬럼 형태 : 사진을 포함하는 메인페이지 카드 형식 (1)-->
-    <figure class="mainpage-card-single">
-      <figcaption class="sr-only">카드설명</figcaption>
+    <a class="mainpage-card-single" href="/">
       <picture class="mainpage-card-single__image">
         <source srcset="" type="image/webp" />
         <img src="/src/assets/images/mainpage/mainpage-01.png" alt="" />
@@ -27,8 +26,49 @@
         <h3 class="mainpage-card-single__title">카드 메인 메시지</h3>
         <p class="mainpage-card-single__message">부가 설명 작성</p>
       </div>
-      <a href="/" class="mainpage-card-single__togo togo-filled-00">링크버튼제목</a>
-    </figure>
+      <button type="submit" class="mainpage-card-single__button button-filled button-filled-00">버튼제목</button>
+    </a>
+
+    <!-- 가로스크롤이 되는 복수컬럼 카드 -->
+    <ul class="mainpage-multicol-items_wrapper">
+      <li class="mainpage-multicol-items">
+        <a href="/">
+          <img class="mainpage-multicol-items__image" src="/src/assets/images/mainpage/mainpage-09-01.png" alt="" />
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+          <button type="submit" class="button-filled button-filled-00">버튼제목</button>
+        </a>
+      </li>
+      <li class="mainpage-multicol-items">
+        <a href="/">
+          <img class="mainpage-multicol-items__image" src="/src/assets/images/mainpage/mainpage-09-02.png" alt="" />
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+          <button type="submit" class="button-filled button-filled-00">버튼제목</button>
+        </a>
+      </li>
+      <li class="mainpage-multicol-items">
+        <a href="/">
+          <img class="mainpage-multicol-items__image" src="/src/assets/images/mainpage/mainpage-09-03.png" alt="" />
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+          <button type="submit" class="button-filled button-filled-00">버튼제목</button>
+        </a>
+      </li>
+    </ul>
+    
+
+    <!-- 07. 가로스크롤이 되는 상품 리스트 -->
+    <ul class="mainpage-card-items_wrapper">
+      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-01.png" alt="" /></a></li>
+      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-02.png" alt="" /></a></li>
+      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-03.png" alt="" /></a></li>
+      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-04.png" alt="" /></a></li>
+      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-05.png" alt="" /></a></li>
+    </ul>
 
     <br />
 
