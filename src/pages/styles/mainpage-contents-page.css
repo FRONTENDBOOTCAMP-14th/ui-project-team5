@@ -379,6 +379,10 @@ body {
         position: absolute;
         left: 3rem;
         bottom: 3rem;
+
+        &:hover {
+          --fill-color: var(--grey-400);
+        }
       }
     }
   }
