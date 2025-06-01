@@ -1,11 +1,8 @@
 @import './product_card.css';
-body {
-  background-color: pink;
-}
 
 .product-recommendation {
   width: 100vw;
-  background-color: lightblue;
+  background-color: var(--white);
 
   .product-recommendation__card-wrapper {
     display: flex;
