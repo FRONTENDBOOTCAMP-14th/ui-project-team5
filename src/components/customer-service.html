@@ -13,9 +13,9 @@
   </head>
   <body class="component-page">
     <h1>고객센터</h1>
+    <br />
 
     <h2>문의하기</h2>
-    <hr />
     <br />
 
     <!-- 문의 유형 컴포넌트 -->
@@ -34,8 +34,28 @@
     </div>
 
     <br />
-    <hr />
+
+    <!-- FAQ dropDown 컴포넌트 -->
+
+    <h2>빠른 지원</h2>
     <br />
 
+    <div class="customer-service-FAQ-wrapper">
+      <div class="customer-service-FAQ-00">
+        <input type="checkbox" id="customer-service-FAQ-00__dropdown" aria-controls="customer-service-FAQ-00__list" hidden />
+        <label for="customer-service-FAQ-00__dropdown" class="dropdown__list">
+          <span class="customer-service-FAQ-00__title">자주 묻는 질문 유형</span>
+          <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+          </svg>
+        </label>
+        <ul class="customer-service-FAQ-00__dropdown-list" id="customer-service-FAQ-00__list">
+          <li><a href="/">자주 묻는 질문 1</a></li>
+          <li><a href="/">자주 묻는 질문 2</a></li>
+          <li><a href="/">자주 묻는 질문 3</a></li>
+          <li><a href="/">자주 묻는 질문 4</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
