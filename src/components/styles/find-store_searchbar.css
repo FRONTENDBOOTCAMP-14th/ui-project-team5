@@ -1,0 +1,27 @@
+/* body margin 값 */
+body {
+  margin: 50px;
+}
+
+.fs__form-input {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+
+  .fs__form-input__input {
+    width: 100%;
+    block-size: 3.5rem;
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding: 1rem 0.75rem 1rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .fs__form-input__input:focus {
+    outline: 0;
+  }
+}
