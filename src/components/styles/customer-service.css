@@ -1,0 +1,26 @@
+.component-page {
+  margin: 24px;
+}
+
+.customer-service-help-00 {
+  display: flex;
+  flex-direction: row nowrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+
+  .customer-service-help-00__text {
+    color: var(--black, #111);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  @media (width >= 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .customer-service-help-00__text {
+      text-align: center;
+    }
+  }
+}
