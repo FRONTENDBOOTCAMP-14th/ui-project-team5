@@ -1,0 +1,51 @@
+@import '../../components/styles/header.css';
+@import '../../components/styles/page_heading.css';
+@import '../../components/styles/product_card.css';
+@import '../../components/styles/buttons-components.css';
+@import '../../components/styles/footer.css';
+
+.page__heading {
+  padding-top: 5.25rem;
+  margin: 0 0 0 1.5rem;
+
+  @media (width >= 960px) {
+    margin-left: 3rem;
+  }
+}
+
+.wishlist__card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.125rem;
+  margin: 1.5rem 0;
+  column-count: 2;
+
+  .product-card {
+    min-width: calc((100% - 1.125rem) / 2);
+    margin-bottom: 0;
+    flex: 1;
+
+    .product-card__image {
+      width: 100%;
+    }
+
+    .button-outlined {
+      margin: 14px 0;
+      width: 150px;
+    }
+
+    .product-card__delete-button {
+      display: flex;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+
+    .product-card__delete-button:hover {
+      box-shadow: 0 0 0 2px var(--grey-200);
+    }
+  }
+
+  @media (width >= 960px) {
+    padding: 0 3rem;
+  }
+}
