@@ -48,6 +48,10 @@
     background: var(--fill-color, #111);
     color: var(--text-color, #fff);
   }
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
 }
 
 .button-outlined {
@@ -62,5 +66,9 @@
   &.button-outlined-00 {
     background: var(--fill-color, #111);
     color: var(--text-color, #fff);
+  }
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
   }
 }
