@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="icon" href="/src/assets/logo/logo.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/pages/styles/product_list_page.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="product-list-page">
+      <div class="product-list-header">
+        <h1 class="product-list-header__title">신제품 (749)</h1>
+        <div class="product-list-header__right">
+          <button class="product-list-header__filter-toggle" aria-label="필터 숨기기">필터 숨기기 <img src="/src/assets/icon/filter.svg" alt="필터 아이콘" /></button>
+          <button class="product-filter-drop-down" aria-expanded="false" aria-haspopup="true"><span>정렬 기준 :&nbsp;</span><img src="/src/assets/icon/down.svg" alt="정렬 기준 선택" /></button>
+        </div>
+      </div>
+      <div class="product-list-cartegory-mobile">
+        <ul>
+          <li><a href="">신발</a></li>
+          <li><a href="">탑 & 티셔츠</a></li>
+          <li><a href="">후디 & 크루</a></li>
+          <li><a href="">재킷 & 베스트</a></li>
+          <li><a href="">팬츠 & 타이즈</a></li>
+          <li><a href="">쇼츠</a></li>
+          <li><a href="">스포츠 브라</a></li>
+          <li><a href="">트랙수트</a></li>
+          <li><a href="">점프수트 & 롬퍼스</a></li>
+          <li><a href="">스커트 & 드레스</a></li>
+          <li><a href="">양말</a></li>
+          <li><a href="">용품</a></li>
+        </ul>
+      </div>
+      <div class="product-list-main">
+        <div class="product-list-main__header__mobile">
+          <div class="product-list-main__header__mobile__result">741개의 결과</div>
+          <button class="product-list-main__header__mobile__filter" aria-label="필터 메뉴 열기">필터<img src="/src/assets/icon/filter.svg" alt="필터 아이콘" /></button>
+        </div>
+        <div class="product-list-main-content">
+          <div class="product-list-main-content__filter_desktop">
+            <ul>
+              <li><a href="">신발</a></li>
+              <li><a href="">탑 & 티셔츠</a></li>
+              <li><a href="">후디 & 크루</a></li>
+              <li><a href="">재킷 & 베스트</a></li>
+              <li><a href="">팬츠 & 타이즈</a></li>
+              <li><a href="">쇼츠</a></li>
+              <li><a href="">스포츠 브라</a></li>
+              <li><a href="">트랙수트</a></li>
+              <li><a href="">점프수트 & 롬퍼스</a></li>
+              <li><a href="">스커트 & 드레스</a></li>
+              <li><a href="">양말</a></li>
+              <li><a href="">용품</a></li>
+            </ul>
+            <div class="product-filter-accordion-wrapper">
+              <div class="product-filter-accordion">
+                <details class="product-filter-accordion__item">
+                  <summary class="product-filter-accordion__item-summary">
+                    <div class="product-filter-accordion__header">
+                      <span class="product-filter-accordion__title">성별</span>
+                      <span class="product-filter-accordion__icon"></span>
+                    </div>
+                  </summary>
+                  <div class="product-filter-accordion__content-wrapper">
+                    <div class="product-filter-accordion__content">
+                      <div><input type="checkbox" id="gender-male" /><label for="gender-male"> 남성</label></div>
+                      <div><input type="checkbox" id="gender-female" /><label for="gender-female"> 여성</label></div>
+                      <div><input type="checkbox" id="gender-unisex" /><label for="gender-unisex"> 성인공용</label></div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+              <div class="product-filter-accordion">
+                <details class="product-filter-accordion__item">
+                  <summary class="product-filter-accordion__item-summary">
+                    <div class="product-filter-accordion__header">
+                      <span class="product-filter-accordion__title">키즈</span>
+                      <span class="product-filter-accordion__icon"></span>
+                    </div>
+                  </summary>
+                  <div class="product-filter-accordion__content-wrapper">
+                    <div class="product-filter-accordion__content">
+                      <div><input type="checkbox" id="kids-male" /><label for="kids-male"> 남아</label></div>
+                      <div><input type="checkbox" id="kids-female" /><label for="kids-female"> 여아</label></div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+              <div class="product-filter-accordion">
+                <details class="product-filter-accordion__item">
+                  <summary class="product-filter-accordion__item-summary">
+                    <div class="product-filter-accordion__header">
+                      <span class="product-filter-accordion__title">스포츠</span>
+                      <span class="product-filter-accordion__icon"></span>
+                    </div>
+                  </summary>
+                  <div class="product-filter-accordion__content-wrapper">
+                    <div class="product-filter-accordion__content">
+                      <div><input type="checkbox" id="sports-lifestyle" /><label for="sports-lifestyle"> 라이프스타일</label></div>
+                      <div><input type="checkbox" id="sports-running" /><label for="sports-running"> 러닝</label></div>
+                      <div><input type="checkbox" id="sports-training" /><label for="sports-training"> 트레이닝 및 짐</label></div>
+                      <div><input type="checkbox" id="sports-basketball" /><label for="sports-basketball"> 농구</label></div>
+                      <div style="padding-top: 10px; cursor: pointer">+ 더 보기</div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+              <div class="product-filter-accordion">
+                <details class="product-filter-accordion__item">
+                  <summary class="product-filter-accordion__item-summary">
+                    <div class="product-filter-accordion__header">
+                      <span class="product-filter-accordion__title">키즈 연령</span>
+                      <span class="product-filter-accordion__icon"></span>
+                    </div>
+                  </summary>
+                  <div class="product-filter-accordion__content-wrapper">
+                    <div class="product-filter-accordion__content">
+                      <div><input type="checkbox" id="age-baby" /><label for="age-baby"> 베이비(0-3세)</label></div>
+                      <div><input type="checkbox" id="age-little" /><label for="age-little"> 리틀키즈(3-7세)</label></div>
+                      <div><input type="checkbox" id="age-junior" /><label for="age-junior"> 주니어(7-15세)</label></div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+              <div class="product-filter-accordion">
+                <details class="product-filter-accordion__item">
+                  <summary class="product-filter-accordion__item-summary">
+                    <div class="product-filter-accordion__header">
+                      <span class="product-filter-accordion__title">가격대</span>
+                      <span class="product-filter-accordion__icon"></span>
+                    </div>
+                  </summary>
+                  <div class="product-filter-accordion__content-wrapper">
+                    <div class="product-filter-accordion__content">
+                      <div><input type="checkbox" id="price-1" /><label for="price-1"> 0 - 50,000원</label></div>
+                      <div><input type="checkbox" id="price-2" /><label for="price-2"> 50,000 - 100,000원</label></div>
+                      <div><input type="checkbox" id="price-3" /><label for="price-3"> 100,000 - 150,000원</label></div>
+                      <div><input type="checkbox" id="price-4" /><label for="price-4"> 150,000 - 200,000원</label></div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          <div class="product-list-main-content__list">
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item1.png" alt="남성 데님 쇼츠" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">나이키 스포츠웨어</h3>
+                    <p class="product-card__category">남성 데님 쇼츠</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">69,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item6.png" alt="에어 조던 4 레트로 화이트 시멘트" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">SNKRS</p>
+                    <h3 class="product-card__name">에어 조던 4 레트로 '화이트 시멘트'</h3>
+                    <p class="product-card__category">남성 신발</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">279,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item7.png" alt="조던 에센셜 남성 반팔 탑" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">조던 에센셜</h3>
+                    <p class="product-card__category">남성 반팔 탑</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">109,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item3.png" alt="모노그램 슬링 백(3L)" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">조던</h3>
+                    <p class="product-card__category">모노그램 슬링 백(3L)</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">45,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item4.png" alt="모노그램 더플백(25L)" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">조던</h3>
+                    <p class="product-card__category">모노그램 더플백(25L)</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">169,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item5.png" alt="첼시 F.C 2025/26 스타디움 홈" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">첼시 F.C 2025/26 스타디움 홈</h3>
+                    <p class="product-card__category">남성 나이키 드라이 핏 축구 레플리카</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">135,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item8.png" alt="조던 티셔츠" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">SNKRS</p>
+                    <h3 class="product-card__name">조던</h3>
+                    <p class="product-card__category">남성 대한민국 티셔츠</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">65,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item9.png" alt="나이키 에어" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">나이키 에어</h3>
+                    <p class="product-card__category">여성 미드라이즈 브레이크 어웨이 팬츠</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">115,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="product-list-main-contnet__list_item product-card">
+              <article class="product-card">
+                <a href="#">
+                  <div class="product-card__image-wrapper">
+                    <img src="/src/assets/images/preview/product_list_item2.png" alt="나이키 스트릭플라이 2" />
+                  </div>
+                  <div class="product-card__info">
+                    <p class="product-card__tag">신제품</p>
+                    <h3 class="product-card__name">나이키 스트릭플라이 2</h3>
+                    <p class="product-card__category">로드 레이싱화</p>
+                    <p class="product-card__color">1개 색상</p>
+                    <p class="product-card__price">189,000 원</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
