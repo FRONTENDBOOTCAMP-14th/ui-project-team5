@@ -1,0 +1,104 @@
+.component-page {
+  margin: 20px;
+  background: var(--black, #111);
+}
+
+.togo-filled {
+  --fill-color: var(--white, #fff);
+  --text-color: var(--black, #111);
+
+  border: 0;
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  margin-inline-end: 2rem;
+  font-size: 1.25rem;
+
+  background: var(--fill-color, #111);
+  color: var(--text-color, #fff);
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
+}
+
+.landingpage-section-head {
+  font-size: 2.5rem;
+  color: var(--white, #fff);
+  text-transform: uppercase;
+}
+
+.landing-component__dropdown {
+  margin: 2rem 5rem;
+
+  .landingpage-dropdown__title {
+    color: var(--white, #fff);
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+
+  .landingpage__dropdown {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 312px;
+    font-size: var(--text-1);
+
+    .dropdown__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      border-top: 1px solid var(--grey-100);
+      padding: 20px 0;
+      cursor: pointer;
+    }
+
+    .dropdown__list__last {
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .dropdown__list-content {
+      overflow: hidden;
+      max-height: 0px;
+      color: var(--white, #fff);
+      line-height: 1.75;
+    }
+
+    .dropdown__list-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .dropdown__list-content__component-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .dropdown__list-content__used-page {
+        font-size: 1.25rem;
+        display: block;
+      }
+    }
+
+    #landingpage__dropdown-01:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+    }
+
+    #landingpage__dropdown-02:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+    }
+
+    /* 마지막 드롭다운 요소 내용보이기 + 보더 옮기기 */
+    #landingpage__dropdown-03:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+      /* border-bottom: 1px solid var(--grey-100); */
+    }
+    #landingpage__dropdown-03:checked ~ .dropdown__list__last {
+      border-bottom: 0;
+    }
+  }
+}
