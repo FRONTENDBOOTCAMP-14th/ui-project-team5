@@ -427,6 +427,10 @@ body {
       flex: 0 0 auto;
     }
 
+    .mainpage-shop-items__desktop-hidden {
+      display: none;
+    }
+
     .mainpage-shop-items__link {
       flex-flow: column wrap;
       gap: 1rem;
@@ -442,7 +446,7 @@ body {
 
     .mainpage-shop-items__image {
       aspect-ratio: 3 / 2;
-      width: 100%;
+      width: 100px;
       min-width: 600px;
       border-radius: 0;
       order: -1;
