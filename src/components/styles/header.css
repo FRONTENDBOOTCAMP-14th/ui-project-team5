@@ -1,3 +1,11 @@
+.header-container {
+  width: 100%;
+}
+
+.header1-container {
+  background-color: var(--gray-50);
+}
+
 .header1 {
   display: none;
 
@@ -12,11 +20,13 @@
     padding-right: 3.5rem;
     font-size: var(--text-1);
     font-weight: 600;
+    max-width: 1920px;
+    margin-inline: auto;
   }
 }
 
 .header2 {
-  position: fixed;
+  position: static;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -25,13 +35,23 @@
   block-size: 60px;
   z-index: 999;
   background: var(--white);
+  max-width: 1920px;
+  margin-inline: auto;
 
   .logo {
-    margin-left: 14px;
+    margin-left: 24px;
     inline-size: 76px;
     block-size: 100%;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 960px) {
+      margin-left: 40px;
+    }
+  }
+
+  .nav-web1 {
+    padding-left: 130px;
   }
 
   .nav-web1,

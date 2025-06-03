@@ -1,0 +1,173 @@
+.contatiner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-inline: 48px;
+
+  @media (min-width : 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.profile-card {
+  display: flex;
+  max-height: 700px;
+  flex-direction: column;
+  border: 1px solid black;
+
+  .profile-card_header {
+    position: relative;
+
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background: black;
+    }
+
+    button {
+      background: white;
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      font-size: var(--text-1);
+      padding-inline: 12px;
+      padding-block: 8px;
+      border-radius: 20px;
+      border: none;
+      color: var(--black);
+      font-weight: 500;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  .profile-card_content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+
+    .profile-card_content__head {
+      p {
+        padding-top: 20px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: var(--text-4);
+      }
+
+      span {
+        display: block;
+        font-weight: 600;
+        font-size: var(--text-2);
+      }
+
+      .profile-card_content__head__todolist {
+        display: flex;
+        gap: 8px;
+        font-size: 0.8vw;
+        font-size: 2.5vw;
+
+        @media (min-width : 600px) {
+            font-size: 1.7vw;
+          }
+        
+        
+          @media (min-width: 960px) {
+            font-size: 0.8vw;
+          }
+       
+
+        a {
+            &:hover {
+                color: var((--grey-200));
+            }
+        }
+      }
+    }
+
+    .profile-card_content__tail {
+      display: flex;
+      gap: 10px;
+
+      span {
+        display: block;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.nike-logo-line {
+    display: flex;
+    overflow: hidden;
+    gap: 4px;
+    align-items: center;
+    height: 30px;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    background: black;
+
+    span {
+        font-style: italic;
+    }
+}
+
+.nike-logo-line2 {
+    background-color: black;
+    background-image: url(/src/assets/logo/logo-line.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 120px 28px;
+    height: 28px;
+}
+
+.nike-bg {
+    margin-inline: 24px;
+    display: flex;
+    align-items: flex-end;
+  
+
+    .nike-bg-typho {
+        font-weight: 700;
+        font-size: 12vw;
+        line-height: 74%;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
+
+        .nike-bg-typho__third {
+            display: flex;
+
+            div:nth-child(2) {
+                -webkit-text-stroke: 0;
+                color: black;
+            }
+        }
+    }
+
+    .nike-bg-typho__mini {
+        font-size: 2vw;
+        line-height: 20px;
+        padding-bottom: 40px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+        -webkit-text-stroke: 0;
+
+       
+    }
+}
