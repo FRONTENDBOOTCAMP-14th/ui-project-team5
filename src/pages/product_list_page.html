@@ -12,19 +12,19 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div style="width: 100%; ">
-      <div style="background-color:var(--gray-50);">
-      <header class="header1" style="max-width: 1920px; margin-inline:auto; ">
-        <nav>
-          <span>매장찾기 ㅣ</span>
-          <span>고객센터 ㅣ</span>
-          <span>가입하기 ㅣ</span>
-          <span>로그인</span>
-        </nav>
-      </header>
-    </div>
-      <header class="header2" style="position: static; max-width: 1920px; margin-inline:auto;">
-        <a href="/" class="logo" style="margin-left:24px; @media (min-width: 960px) { margin-left:40px; }">
+    <div class="header-container">
+      <div class="header1-container">
+        <header class="header1">
+          <nav>
+            <span>매장찾기 ㅣ</span>
+            <span>고객센터 ㅣ</span>
+            <span>가입하기 ㅣ</span>
+            <span>로그인</span>
+          </nav>
+        </header>
+      </div>
+      <header class="header2">
+        <a href="/" class="logo">
           <svg width="59" height="21" viewBox="0 0 59 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M58.854 0L15.8132 18.2574C12.2297 19.7777 9.21516 20.5363 6.78586 20.5363C4.05249 20.5363 2.06131 19.5717 0.83849 17.6459C-0.747258 15.1611 -0.0541062 11.1656 2.66619 6.94786C4.28136 4.4826 6.33466 2.22005 8.33564 0.0555836C7.86482 0.820666 3.70918 7.73584 8.25391 10.9923C9.15304 11.6463 10.4314 11.9667 12.0041 11.9667C13.2662 11.9667 14.7146 11.7607 16.3069 11.3455L58.854 0Z" fill="#111111" />
           </svg>
@@ -70,7 +70,7 @@
             </svg>
           </label>
 
-          <div class="menu-list" style="min-width:320px;">
+          <div class="menu-list">
             <label tabindex="0" for="menu-btn" class="menu-close-btn">
               <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.18">
@@ -178,7 +178,7 @@
           <div class="overlay"></div>
         </nav>
 
-        <nav class="nav-web1" style="padding-left: 150px;">
+        <nav class="nav-web1">
           <div><a href="/">New & Featured</a></div>
           <div><a href="/">Men</a></div>
           <div><a href="/">Women</a></div>
