@@ -1,7 +1,6 @@
 @import './product_card.css';
 
 .product-recommendation {
-  width: 100vw;
   background-color: var(--white);
 
   .product-recommendation__card-wrapper {
