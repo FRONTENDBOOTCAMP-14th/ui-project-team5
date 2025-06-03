@@ -1,0 +1,110 @@
+.component-page {
+  margin: 24px;
+}
+
+.customer-service-help-00 {
+  display: flex;
+  flex-direction: row nowrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+
+  .customer-service-help-00__text {
+    color: var(--black, #111);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  @media (width >= 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .customer-service-help-00__text {
+      text-align: center;
+    }
+  }
+}
+
+.customer-service-FAQ-00-wrapper {
+  @media (width >= 600px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.25rem;
+    column-gap: 0.75rem;
+  }
+}
+
+.customer-service-FAQ-00 {
+  display: flex;
+  flex-direction: column;
+  min-width: 312px;
+
+  .customer-service-FAQ-00__title {
+    color: var(--black, #111);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  .dropdown__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    border-top: 1px solid var(--grey-100);
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .customer-service-FAQ-00__dropdown-list {
+    overflow: hidden;
+    max-height: 0px;
+    color: var(--grey-500);
+    line-height: 1.75;
+  }
+
+  #customer-service-FAQ-00__dropdown:checked ~ .customer-service-FAQ-00__dropdown-list {
+    max-height: 500px;
+    padding-bottom: 12px;
+  }
+
+  @media (width >= 600px) {
+    #customer-service-FAQ-00__dropdown {
+      display: none;
+    }
+
+    .dropdown__list {
+      cursor: default;
+      border-top: none;
+      padding-block: 0.5rem;
+
+      .dropdown-icon {
+        display: none;
+      }
+    }
+
+    .customer-service-FAQ-00__dropdown-list {
+      max-height: none !important;
+      padding-bottom: 0;
+      overflow: visible;
+    }
+  }
+}
+
+/* 임시로 보기 편하려고 스타일링 해두었으니 
+중제목 소제목 타이포(조립하실 때 새로 만드셔도 됩니다. */
+
+h2 {
+  color: var(--black, #111);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+h3 {
+  color: var(--black, #111);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
