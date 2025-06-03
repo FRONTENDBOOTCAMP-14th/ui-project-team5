@@ -3,7 +3,7 @@ body {
   margin-inline: 36px;
 }
 
-.togo-outlined-00 {
+.button-outlined {
   --fill-color: var(--white, #fff);
   --text-color: var(--black, #111);
 
@@ -13,13 +13,16 @@ body {
   font-weight: 500;
   width: 100%;
 
-  background: var(--fill-color, #fff);
-  color: var(--text-color, #111);
+  &.button-outlined-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
 
   &:hover {
     --fill-color: var(--grey-400, #757575);
   }
 }
+
 .button-filled {
   --fill-color: var(--black, #111);
   --text-color: var(--white, #fff);

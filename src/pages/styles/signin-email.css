@@ -3,7 +3,7 @@ body {
   margin-inline: 36px;
 }
 
-.togo-filled-00 {
+.button-filled {
   --fill-color: var(--black, #111);
   --text-color: var(--white, #fff);
 
@@ -15,11 +15,13 @@ body {
   border-radius: 999px;
   font-weight: 500;
 
-  background: var(--fill-color, #111);
-  color: var(--text-color, #fff);
+  &.button-filled-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
 
   &:hover {
-    --fill-color: var(--grey-400, #757575)
+    --fill-color: var(--grey-400, #757575);
   }
 }
 
@@ -54,7 +56,6 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     width: 100%;
-
   }
 
   .form-input__input::placeholder {
@@ -63,11 +64,11 @@ body {
     line-height: 1.5rem;
   }
 
-  .form-input__input:invalid + p {
+  .form-input__input:user-invalid + p {
     visibility: visible;
   }
 
-  .form-input__input:invalid {
+  .form-input__input:user-invalid {
     border-color: var(--red, #b40000);
   }
 

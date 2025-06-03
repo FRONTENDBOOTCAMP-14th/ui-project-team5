@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="icon" href="/src/assets/logo/logo.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/components/styles/product-list-page-accordion.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="compoenent-title">product-list-page-accordion</div>
+      <div class="product-filter-accordion-wrapper" style="width: 300px;">
+        <div class="product-filter-accordion">
+          <details class="product-filter-accordion__item">
+            <summary class="product-filter-accordion__item-summary">
+              <div class="product-filter-accordion__header">
+                <span class="product-filter-accordion__title">성별</span>
+                <span class="product-filter-accordion__icon"></span>
+              </div>
+            </summary>
+            <div class="product-filter-accordion__content-wrapper">
+              <div class="product-filter-accordion__content">
+                <div><input type="checkbox" id="gender-male" /><label for="gender-male"> 남성</label></div>
+                <div><input type="checkbox" id="gender-female" /><label for="gender-female"> 여성</label></div>
+                <div><input type="checkbox" id="gender-unisex" /><label for="gender-unisex"> 성인공용</label></div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="product-filter-accordion">
+          <details class="product-filter-accordion__item">
+            <summary class="product-filter-accordion__item-summary">
+              <div class="product-filter-accordion__header">
+                <span class="product-filter-accordion__title">키즈</span>
+                <span class="product-filter-accordion__icon"></span>
+              </div>
+            </summary>
+            <div class="product-filter-accordion__content-wrapper">
+              <div class="product-filter-accordion__content">
+                <div><input type="checkbox" id="kids-male" /><label for="kids-male"> 남아</label></div>
+                <div><input type="checkbox" id="kids-female" /><label for="kids-female"> 여아</label></div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="product-filter-accordion">
+          <details class="product-filter-accordion__item">
+            <summary class="product-filter-accordion__item-summary">
+              <div class="product-filter-accordion__header">
+                <span class="product-filter-accordion__title">스포츠</span>
+                <span class="product-filter-accordion__icon"></span>
+              </div>
+            </summary>
+            <div class="product-filter-accordion__content-wrapper">
+              <div class="product-filter-accordion__content">
+                <div><input type="checkbox" id="sports-lifestyle" /><label for="sports-lifestyle"> 라이프스타일</label></div>
+                <div><input type="checkbox" id="sports-running" /><label for="sports-running"> 러닝</label></div>
+                <div><input type="checkbox" id="sports-training" /><label for="sports-training"> 트레이닝 및 짐</label></div>
+                <div><input type="checkbox" id="sports-basketball" /><label for="sports-basketball"> 농구</label></div>
+                <div style="padding-top: 10px; cursor: pointer">+ 더 보기</div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="product-filter-accordion">
+          <details class="product-filter-accordion__item">
+            <summary class="product-filter-accordion__item-summary">
+              <div class="product-filter-accordion__header">
+                <span class="product-filter-accordion__title">키즈 연령</span>
+                <span class="product-filter-accordion__icon"></span>
+              </div>
+            </summary>
+            <div class="product-filter-accordion__content-wrapper">
+              <div class="product-filter-accordion__content">
+                <div><input type="checkbox" id="age-baby" /><label for="age-baby"> 베이비(0-3세)</label></div>
+                <div><input type="checkbox" id="age-little" /><label for="age-little"> 리틀키즈(3-7세)</label></div>
+                <div><input type="checkbox" id="age-junior" /><label for="age-junior"> 주니어(7-15세)</label></div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="product-filter-accordion">
+          <details class="product-filter-accordion__item">
+            <summary class="product-filter-accordion__item-summary">
+              <div class="product-filter-accordion__header">
+                <span class="product-filter-accordion__title">가격대</span>
+                <span class="product-filter-accordion__icon"></span>
+              </div>
+            </summary>
+            <div class="product-filter-accordion__content-wrapper">
+              <div class="product-filter-accordion__content">
+                <div><input type="checkbox" id="price-1" /><label for="price-1"> 0 - 50,000원</label></div>
+                <div><input type="checkbox" id="price-2" /><label for="price-2"> 50,000 - 100,000원</label></div>
+                <div><input type="checkbox" id="price-3" /><label for="price-3"> 100,000 - 150,000원</label></div>
+                <div><input type="checkbox" id="price-4" /><label for="price-4"> 150,000 - 200,000원</label></div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
