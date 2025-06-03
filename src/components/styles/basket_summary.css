@@ -3,7 +3,6 @@
 .basket__summary {
   min-width: 328px;
   text-align: center;
-  margin: 1.875rem 0;
 
   p {
     font-size: var(--text-2);
