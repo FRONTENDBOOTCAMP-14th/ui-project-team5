@@ -21,13 +21,24 @@
     padding-bottom: 0.4375rem;
   }
 
-  .product-card__new,
-  .product-card__title,
-  .product-card__description,
-  .product-card__color,
-  .product-card__current-price,
-  .product-card__original-price {
+  .product-card__info {
     padding-left: 0.75rem;
+  }
+
+  .product-card__clickable-area {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card__click-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
   .product-card__new {
@@ -37,6 +48,8 @@
 
   .product-card__title {
     font-weight: 500;
+    position: relative;
+    z-index: 2;
   }
 
   .product-card__description {

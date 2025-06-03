@@ -13,8 +13,9 @@
   </head>
   <body>
     <article class="product-card">
-      <a class="product-card__link" href="/">
-        <figure>
+      <div class="product-card__clickable-area product-card__clickable-area--row">
+        <div class="product-card__click-overlay"></div>
+        <div>
           <svg class="product-card__image" aria-labelledby="productImage" role="img" width="906" height="906" viewBox="0 0 906 906" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title id="productImage">(상품 이름) 이미지</title>
             <rect width="905.19" height="905.19" transform="translate(0.389648 0.52002)" fill="url(#pattern0_9_77)" />
@@ -31,14 +32,19 @@
               />
             </defs>
           </svg>
-          <p class="product-card__new">신제품</p>
-          <figcaption class="product-card__title">상품 이름을 적으세요.</figcaption>
-        </figure>
-      </a>
-      <p class="product-card__description">상품 설명을 적으세요.</p>
-      <p class="product-card__color">1개 색상</p>
-      <p class="product-card__current-price">7,000 원</p>
-      <p class="product-card__original-price">9,000 원</p>
+        </div>
+      </div>
+
+      <div class="product-card__info">
+        <p class="product-card__new">신제품</p>
+        <h3 class="product-card__title">
+          <a class="product-card__title-link" href="/">상품 이름을 적으세요.</a>
+        </h3>
+        <p class="product-card__description">상품 설명을 적으세요.</p>
+        <p class="product-card__color">1개 색상</p>
+        <p class="product-card__current-price"><span class="sr-only">할인된 가격</span>7,000 원</p>
+        <p class="product-card__original-price"><span class="sr-only">원래 가격</span>9,000 원</p>
+      </div>
       <button class="product-card__delete-button" type="button" aria-label="위시 리스트에서 지우기">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -48,5 +54,20 @@
         </svg>
       </button>
     </article>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // 클릭 오버레이 처리
+        const clickOverlay = document.querySelector('.product-card__click-overlay');
+        const titleLink = document.querySelector('.product-card__title-link');
+
+        if (clickOverlay && titleLink) {
+          clickOverlay.addEventListener('click', function (e) {
+            // 상품명 링크의 URL로 이동
+            window.location.href = titleLink.href;
+          });
+        }
+      });
+    </script>
   </body>
 </html>
