@@ -30,66 +30,70 @@
       <p class="signup-required">* 필수 항목</p>
       <p class="agreement-message">나이키에 오신 것을 환영합니다! 법률 약관이 업데이트되었습니다. 진행하시기 전에 내용을 검토하고 동의해 주세요.</p>
 
-      <!-- 약관 동의 안내 체크박스 -->
-      <div class="agreement-checkbox agreement-checkbox-all">
-        <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
-        <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-          <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-          <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
-          <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
-        </svg>
 
-        <label for="agreement-checkbox-00" class="sr-only">모든 약관 동의</label>
-        <p class="agreement">모든 약관에 동의합니다</p>
-      </div>
-      <div class="agreement-checkbox_wrapper">
-        <div class="agreement-checkbox">
-          <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
+      
+      <form method="POST" action="/src/pages/signup-create.html">
+        <!-- 약관 동의 안내 체크박스 -->
+        <div class="agreement-checkbox agreement-checkbox-all">
+          <input class="agreement-checkbox-input" type="checkbox" name="agree-all" id="agreement-checkbox-all" />
           <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
             <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
             <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
             <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
           </svg>
-
-          <label for="agreement-checkbox-00" class="sr-only">이용약관 동의</label>
-          <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">이용약관</a>에 동의합니다 *</p>
+  
+          <label for="agreement-checkbox-all" class="sr-only">모든 약관 동의</label>
+          <p class="agreement">모든 약관에 동의합니다</p>
         </div>
-        <div class="agreement-checkbox">
-          <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
-          <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-            <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-            <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
-            <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
-          </svg>
-
-          <label for="agreement-checkbox-00" class="sr-only">개인정보 수집 및 이용 동의</label>
-          <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인정보 수집 및 이용</a>에 동의합니다 *</p>
+        <div class="agreement-checkbox_wrapper">
+          <div class="agreement-checkbox">
+            <input class="agreement-checkbox-input" type="checkbox" name="terms-of-use" id="agreement-checkbox-01" />
+            <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
+              <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
+            </svg>
+  
+            <label for="agreement-checkbox-01" class="sr-only">이용약관 동의</label>
+            <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">이용약관</a>에 동의합니다 *</p>
+          </div>
+          <div class="agreement-checkbox">
+            <input class="agreement-checkbox-input" type="checkbox" name="privacy-policy" id="agreement-checkbox-02" />
+            <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
+              <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
+            </svg>
+  
+            <label for="agreement-checkbox-02" class="sr-only">개인정보 수집 및 이용 동의</label>
+            <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인정보 수집 및 이용</a>에 동의합니다 *</p>
+          </div>
+          <div class="agreement-checkbox">
+            <input class="agreement-checkbox-input" type="checkbox" name="third-party-sharing" id="agreement-checkbox-03" />
+            <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+              <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
+              <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
+            </svg>
+  
+            <label for="agreement-checkbox-03" class="sr-only">개인정보 제3자 제공 및 국외 이전 동의</label>
+            <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인 정보의 제3자 제공 및 국외 이전</a>에 동의합니다 *</p>
+          </div>
         </div>
-        <div class="agreement-checkbox">
-          <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
-          <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-            <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
-            <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
-            <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
-          </svg>
-
-          <label for="agreement-checkbox-00" class="sr-only">개인정보 제3자 제공 및 국외 이전 동의</label>
-          <p class="agreement"><a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인 정보의 제3자 제공 및 국외 이전</a>에 동의합니다 *</p>
+  
+        <!-- 약관 동의 안내 메시지 -->
+        <p class="agreement-message">이 약관에 동의하지 않을 수 있지만, 그럴 경우 나이키 계정에 로그인할 수 없으며 새로운 계정을 생성할 수도 없습니다.</p>
+  
+        <!-- 계속, 취소 버튼 -->
+        <div class="sign-in-button_wrapper">
+          <button type="submit" class="button-filled button-filled-00">계속</button>
+          <button type="button" class="button-outlined button-outlined-00" onclick="window.history.back()">취소</button>
         </div>
-      </div>
-
-      <!-- 약관 동의 안내 메시지 -->
-      <p class="agreement-message">이 약관에 동의하지 않을 수 있지만, 그럴 경우 나이키 계정에 로그인할 수 없으며 새로운 계정을 생성할 수도 없습니다.</p>
-
-      <!-- 계속, 취소 버튼 -->
-      <div class="sign-in-button_wrapper">
-        <button type="submit" class="button-filled button-filled-00">계속</button>
-        <button type="submit" class="button-outlined button-outlined-00">취소</button>
-      </div>
+      </form>
     </div>
   </body>
 </html>
