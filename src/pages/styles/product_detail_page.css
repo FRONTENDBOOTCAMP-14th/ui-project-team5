@@ -1,6 +1,11 @@
+@import url('/src/components/styles/header.css');
+@import url('/src/components/styles/footer.css');
+
 /* 상품 상세 페이지 컴포넌트 */
 .product-detail-page {
   width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
   padding-bottom: 48px;
 }
 
@@ -236,6 +241,7 @@
     grid-column: 7 / span 6;
     display: flex;
     flex-direction: column;
+    padding-inline: 0px;
     padding-left: 24px;
   }
 
@@ -376,7 +382,7 @@
   justify-content: center;
   align-items: center;
   height: 104px;
-  background: var(--grey-50);
+  background: var(--gray-50);
   margin-block: 36px;
   margin-top: 32px;
   text-align: center;
@@ -526,6 +532,11 @@
 /* 관련 상품 컴포넌트 */
 .related-products {
   grid-column: 1 / -1;
+  padding-left: 24px;
+
+  @media (min-width: 960px) {
+    padding-left: 0px;
+  }
 }
 
 .related-products__header {
