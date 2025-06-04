@@ -1,6 +1,4 @@
-.component-page {
-  margin: 24px;
-}
+@import './component_wrapper.css';
 
 .customer-service-help-00 {
   display: flex;

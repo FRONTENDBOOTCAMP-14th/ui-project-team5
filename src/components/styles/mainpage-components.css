@@ -1,3 +1,5 @@
+@import './component_wrapper.css';
+
 .component-page {
   margin: 1.5rem;
 }
@@ -29,9 +31,8 @@
     color: var(--text-color, #fff);
   }
 
-
   &:hover {
-   --fill-color: var(--grey-400);   
+    --fill-color: var(--grey-400);
   }
 }
 
@@ -77,7 +78,6 @@
     margin-inline: auto;
     margin-block: 1.5rem;
     text-align: center;
-
   }
 }
 
@@ -106,7 +106,6 @@
     aspect-ratio: 4 / 5;
     width: 300px;
     object-fit: cover;
-
   }
 
   .mainpage-card-multicol__category {

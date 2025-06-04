@@ -1,0 +1,20 @@
+.container {
+  padding: 50px;
+
+  .component-title {
+    font-size: var(--text-4);
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid var(--black);
+    }
+  }
+}

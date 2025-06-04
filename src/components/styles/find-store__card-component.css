@@ -1,7 +1,4 @@
-/* body margin 값 */
-body {
-  margin: 50px;
-}
+@import './component_wrapper.css';
 
 .fs__card__list {
   min-width: 360px;

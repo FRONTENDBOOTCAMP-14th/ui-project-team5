@@ -1,3 +1,5 @@
+@import './component_wrapper.css';
+
 .togo-filled-00 {
   --fill-color: var(--black, #111);
   --text-color: var(--white, #fff);
