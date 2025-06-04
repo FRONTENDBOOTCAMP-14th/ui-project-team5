@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/pages/styles/landing_page.css" />
+    <link rel="stylesheet" href="/src/components/styles/landing-page-modal-window.css" />
     <script type="module" src="/src/main.js"></script>
+    <script src="/src/scripts/slider.js"></script>
   </head>
   <body>
     <div class="nike-bg">
@@ -22,13 +24,19 @@
         </div>
         <div class="nike-bg-typho__mini">Just Do It, you are a challenger.</div>
       </div>
-      <img src="https://img.notionusercontent.com/s3/prod-files-secure%2F94e4a305-f804-42b2-b151-9faf892ffa79%2F05fa338b-5409-4701-b8d0-c75c222b433c%2Fking.png/size/w=690?exp=1749035272&sig=ij9CYNOyprEqlGrFChaRqtUfpRpOPSukvtZqzS4iemw&id=1ff73873-401a-80e2-8a3e-d570ae97f045&table=block&userId=bc4d7727-6bb7-4a31-8911-fa072beea02d" alt="" />
+      <div>
+        <img src="/src/assets/logo/kings.png" alt="" />
+      </div>
     </div>
     <div class="nike-logo-line2"><div></div></div>
-
-    <div class="contatiner">
+    <div class="profile-card-title">
+      <span>TEAM MEMBER</span>
+    </div>
+    <div class="profile-card-contatiner">
       <div class="profile-card">
-        <div class="profile-card_header"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_408,c_limit/ee5eed43-bc9f-401b-8ecb-d3f8ea76a389/nike-just-do-it.jpg" alt="" /><button>살펴보기</button></div>
+        <div class="profile-card_header">
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_408,c_limit/ee5eed43-bc9f-401b-8ecb-d3f8ea76a389/nike-just-do-it.jpg" alt="" /><button><a href="https://github.com/chajiiiii" target="_blank">살펴보기</a></button>
+        </div>
         <div class="profile-card_content">
           <div class="profile-card_content__head">
             <h2>차지현</h2>
@@ -40,7 +48,9 @@
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-card_header"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_408,c_limit/a7187e96-8bcf-48ce-8b1a-d5c05b4b7e59/nike-just-do-it.jpg" alt="" /><button>살펴보기</button></div>
+        <div class="profile-card_header">
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_408,c_limit/a7187e96-8bcf-48ce-8b1a-d5c05b4b7e59/nike-just-do-it.jpg" alt="" /><button><a href="https://github.com/ooooseob" target="_blank">살펴보기</a></button>
+        </div>
         <div class="profile-card_content">
           <div class="profile-card_content__head">
             <h2>심우섭</h2>
@@ -52,7 +62,9 @@
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-card_header"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_362,c_limit/9b123b65-cdb9-4767-a48e-338d57fcd94b/nike-just-do-it.jpg" alt="" /><button>살펴보기</button></div>
+        <div class="profile-card_header">
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_362,c_limit/9b123b65-cdb9-4767-a48e-338d57fcd94b/nike-just-do-it.jpg" alt="" /><button><a href="https://github.com/chan331" target="_blank">살펴보기</a></button>
+        </div>
         <div class="profile-card_content">
           <div class="profile-card_content__head">
             <h2>한우창</h2>
@@ -64,7 +76,9 @@
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-card_header"><img style="object-fit: cover" src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_425,c_limit/c35a443f-1c3d-499d-8c76-fa4ddc4fab73/nike-just-do-it.jpg" alt="" /><button>살펴보기</button></div>
+        <div class="profile-card_header">
+          <img style="object-fit: cover" src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_425,c_limit/c35a443f-1c3d-499d-8c76-fa4ddc4fab73/nike-just-do-it.jpg" alt="" /><button><a href="https://github.com/yoonseo23" target="_blank">살펴보기</a></button>
+        </div>
         <div class="profile-card_content">
           <div class="profile-card_content__head">
             <h2>정윤서</h2>
@@ -76,5 +90,415 @@
         </div>
       </div>
     </div>
+
+    <!-- 새로운 나이키 감성 디자인 시작 -->
+
+    <!-- 컴포넌트 분류 섹션 -->
+    <section class="components-showcase">
+      <div class="section-header">
+        <h2>COMPONENT SYSTEM</h2>
+        <div class="section-subtitle">우리가 구축한 디자인 시스템</div>
+      </div>
+
+      <div class="components-grid">
+        <!-- 공통 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>Common Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+          <div class="component-items">
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- 레이아웃 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>Layout Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+          <div class="component-items">
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- 페이지별 UI 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>UI Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+          <div class="component-items">
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Header</span>
+            </div>
+            <div class="component-item">
+              <div class="component-preview">
+                <button class="demo-button primary"><a href="">Header</a></button>
+              </div>
+              <span>Footer</span>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+    <!-- 페이지 프리뷰 섹션 -->
+    <section class="pages-preview">
+      <div class="section-header">
+        <h2>PAGE SHOWCASE</h2>
+        <div class="section-subtitle">우리가 만든 페이지들을 둘러보세요</div>
+      </div>
+
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-main.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>메인 페이지</h3>
+                <p>브랜드의 정체성을 담은 메인 랜딩 페이지</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-product-list.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>상품 리스트 페이지</h3>
+                <p>다양한 상품들을 카테고리별로 쉽게 탐색</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-product-detail.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>상품 상세 페이지</h3>
+                <p>상품의 모든 정보와 구매 옵션을 제공</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-search-store.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>매장 찾기 페이지</h3>
+                <p>가까운 매장 위치와 정보를 한눈에</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-wishlist.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>위시 리스트 페이지</h3>
+                <p>마음에 든 상품들을 저장하고 관리</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-product-detail.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>로그인 페이지</h3>
+                <p>안전하고 간편한 계정 접속</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-signin.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>회원 가입 페이지</h3>
+                <p>새로운 멤버십으로 더 많은 혜택을</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-customer.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>고객센터 페이지</h3>
+                <p>새로운 멤버십으로 더 많은 혜택을</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prev-btn">‹</button>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+            <span class="dot" data-slide="6"></span>
+            <span class="dot" data-slide="7"></span>
+          </div>
+          <button class="next-btn">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 팀 회고 섹션 -->
+    <section class="team-retrospective">
+      <div class="section-header">
+        <h2>TEAM RETROSPECTIVE</h2>
+        <div class="section-subtitle">함께한 여정을 돌아보며</div>
+      </div>
+
+      <div class="retrospective-grid">
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">차</div>
+            <div class="retro-name">차지현</div>
+            <div class="retro-role">팀장 / 스크럼 마스터</div>
+          </div>
+          <div class="retro-content">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">심</div>
+            <div class="retro-name">심우섭</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">한</div>
+            <div class="retro-name">한우창</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p>안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요!</p>
+            <p>안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요!</p>
+            <p>안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요!</p>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">정</div>
+            <div class="retro-name">정윤서</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-entrance">
+      <!-- 왼쪽: 이미지 + 텍스트 오버레이 -->
+      <div class="entrance-left">
+        <img src="/src/assets/images/landing/football.png" alt="" />
+        <div class="entrance-text-overlay">
+          <h1 class="entrance-slogan">JUST DO IT</h1>
+          <p class="entrance-subtitle">우리의 여정을 시작하세요</p>
+        </div>
+      </div>
+
+      <!-- 오른쪽: 동적인 콘텐츠 -->
+      <div class="entrance-right">
+        <div class="entrance-content">
+          <div class="entrance-stats">
+            <svg width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M67.854 20L24.8132 38.2574C21.2297 39.7777 18.2152 40.5363 15.7859 40.5363C13.0525 40.5363 11.0613 39.5717 9.83849 37.6459C8.25274 35.1611 8.94589 31.1656 11.6662 26.9479C13.2814 24.4826 15.3347 22.22 17.3356 20.0556C16.8648 20.8207 12.7092 27.7358 17.2539 30.9923C18.153 31.6463 19.4314 31.9667 21.0041 31.9667C22.2662 31.9667 23.7146 31.7607 25.3069 31.3455L67.854 20Z" fill="#111111" />
+            </svg>
+          </div>
+
+          <div class="entrance-cta">
+            <h2>EXPLORE OUR WORK</h2>
+            <p>팀5의 작업물을 지금 만나보세요.</p>
+            <button class="cta-button">
+              <span><a href="/src/pages/mainpage-contents-page.html">바로가기</a></span>
+              <svg class="arrow-icon" viewBox="0 0 24 24">
+                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="pre-announcement-dialog" open aria-labelledby="pre-announcement-title" aria-describedby="pre-announcement-body">
+      <h2 id="pre-announcement-title" class="pre-announcement-title">[멋쟁이사자처럼 프론트엔드 부트캠프] UI 프로젝트</h2>
+
+      <div id="pre-announcement-body" class="pre-announcement-body">
+        <p class="pre-announcement-greeting">WELCOME.</p>
+        <br />
+        <p class="pre-announcement-intro">
+          본 웹사이트는 ‘멋쟁이사자처럼’ 프론트엔드 교육과정의 일환으로 제작된<br />
+          비상업적 학습 프로젝트입니다.
+        </p>
+        <br />
+        <p class="pre-announcement-section-title">【알려드립니다】</p>
+        <ul class="pre-announcement-list">
+          <li>현재 페이지는 학습 목적의 모의 사이트이며, <span class="pre-announcement__em">실제 나이키의 공식 웹사이트가 아닙니다</span>.</li>
+          <li>표시된 제품, 서비스, 가격 등은 실제 제공되지 않으며, 상업적 의도가 없습니다.</li>
+          <li>일부 콘텐츠는 외부 출처로부터 차용되었으며, 해당 저작권은 원저작자에게 있습니다.</li>
+          <li>정보의 정확성이나 최신성은 보장되지 않습니다.</li>
+        </ul>
+        <br />
+        <p class="pre-announcement-confirmation"><span class="shaped-button">확인</span> 을 클릭하시면 위 내용을 이해하고 동의한 것으로 간주됩니다.</p>
+        <br />
+        <p class="pre-announcement-end">JUST EXPLORE.</p>
+      </div>
+
+      <div class="pre-announcement-footer">
+        <button type="button" class="button-filled button-filled-00" onclick="document.querySelector('.pre-announcement-dialog').close();">확인</button>
+      </div>
+    </dialog>
   </body>
 </html>

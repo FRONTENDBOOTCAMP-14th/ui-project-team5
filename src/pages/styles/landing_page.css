@@ -1,16 +1,16 @@
-.contatiner {
+.profile-card-contatiner {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   padding-inline: 48px;
+  padding-bottom: 50px;
 
-  @media (min-width : 600px) {
+  @media (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
 
   @media (min-width: 960px) {
     grid-template-columns: repeat(4, 1fr);
@@ -80,20 +80,18 @@
         font-size: 0.8vw;
         font-size: 2.5vw;
 
-        @media (min-width : 600px) {
-            font-size: 1.7vw;
-          }
-        
-        
-          @media (min-width: 960px) {
-            font-size: 0.8vw;
-          }
-       
+        @media (min-width: 600px) {
+          font-size: 1.7vw;
+        }
+
+        @media (min-width: 960px) {
+          font-size: 0.8vw;
+        }
 
         a {
-            &:hover {
-                color: var((--grey-200));
-            }
+          &:hover {
+            color: var((--grey-200));
+          }
         }
       }
     }
@@ -111,63 +109,735 @@
 }
 
 .nike-logo-line {
-    display: flex;
-    overflow: hidden;
-    gap: 4px;
-    align-items: center;
-    height: 30px;
-    font-size: 21px;
-    font-weight: 600;
-    color: white;
-    background: black;
+  display: flex;
+  overflow: hidden;
+  gap: 4px;
+  align-items: center;
+  height: 30px;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  background: black;
 
-    span {
-        font-style: italic;
-    }
+  span {
+    font-style: italic;
+  }
 }
 
 .nike-logo-line2 {
-    background-color: black;
-    background-image: url(/src/assets/logo/logo-line.png);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: 120px 28px;
-    height: 28px;
+  background-color: black;
+  background-image: url(/src/assets/logo/logo-line.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 120px 28px;
+  height: 28px;
 }
 
 .nike-bg {
-    margin-inline: 24px;
-    display: flex;
-    align-items: flex-end;
-  
+  margin-inline: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
-    .nike-bg-typho {
-        font-weight: 700;
-        font-size: 12vw;
-        line-height: 74%;
-        font-style: italic;
-        color: transparent;
-        -webkit-text-stroke: 2px black;
+  .nike-bg-typho {
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 12vw;
+    line-height: 74%;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
 
-        .nike-bg-typho__third {
-            display: flex;
+    .nike-bg-typho__third {
+      display: flex;
 
-            div:nth-child(2) {
-                -webkit-text-stroke: 0;
-                color: black;
-            }
-        }
-    }
-
-    .nike-bg-typho__mini {
-        font-size: 2vw;
-        line-height: 20px;
-        padding-bottom: 40px;
-        font-weight: 500;
-        font-style: normal;
-        color: black;
+      div:nth-child(2) {
         -webkit-text-stroke: 0;
-
-       
+        color: black;
+      }
     }
+  }
+
+  .nike-bg-typho__mini {
+    font-size: 2vw;
+    line-height: 20px;
+    padding-bottom: 40px;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    -webkit-text-stroke: 0;
+  }
 }
+
+.profile-card-title {
+  padding-inline: 50px;
+  padding-top: 50px;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+/* 윤서님 추가 파트 */
+/* 새로운 나이키 감성 디자인 CSS */
+
+/* 공통 섹션 스타일 */
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-header h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 400;
+}
+
+/* 컴포넌트 쇼케이스 섹션 */
+.components-showcase {
+  padding: 120px 5% 100px;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffeb 100%);
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.component-category {
+  background: white;
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.category-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #000 0%, #666 100%);
+  border-radius: 2px;
+}
+
+.component-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.component-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.component-item:hover {
+  background: #f0f0f0;
+}
+
+.component-preview {
+  flex: 1;
+}
+
+.component-item span {
+  font-weight: 600;
+  color: #333;
+  min-width: 80px;
+}
+
+/* 데모 컴포넌트 스타일 */
+.demo-button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.demo-button:hover {
+  background: #333;
+}
+
+.demo-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.demo-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.demo-header,
+.demo-footer,
+.demo-card,
+.demo-dropdown,
+.demo-textbox {
+  padding: 16px;
+  background: #000;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.demo-dropdown {
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.demo-dropdown:hover {
+  background: #333;
+}
+
+/* 페이지 프리뷰 섹션 */
+.pages-preview {
+  padding: 120px 5% 100px;
+  background: linear-gradient(180deg, #ffffeb 0%, #ffffdd 100%);
+  color: #000;
+}
+
+.pages-preview .section-header h2 {
+  color: #000;
+}
+
+.pages-preview .section-subtitle {
+  color: #666;
+}
+
+.slider-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-wrapper {
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 350px;
+  padding: 30px;
+  padding-top: 65px;
+  padding-right: 60px;
+  color: #000;
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  border: none;
+
+  /* 은은한 반투명 배경 */
+  background: rgba(255, 255, 255, 0.1);
+
+  /* 가장자리로 갈수록 은은하게 풀리는 마스크 */
+  mask: radial-gradient(ellipse 140% 120% at center, black 40%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1) 90%, transparent 100%);
+  -webkit-mask: radial-gradient(ellipse 140% 120% at center, black 40%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1) 90%, transparent 100%);
+
+  /* 미묘한 그림자로 블러 느낌 확장 */
+  box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.2);
+}
+
+.slide-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.slide-info p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background: #000;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: #333;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slider-dots {
+  display: flex;
+  gap: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #000;
+  transform: scale(1.3);
+}
+
+/* 팀 회고 섹션 */
+.team-retrospective {
+  padding: 120px 5% 100px;
+  background: linear-gradient(180deg, #ffffdd 0%, #ffffd2 100%);
+}
+
+.retrospective-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.retro-card {
+  background: white;
+  border: 1px solid black;
+  padding: 40px;
+  min-height: 450px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.retro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #000 0%, #666 100%);
+}
+
+.retro-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.retro-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.retro-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.retro-role {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.retro-content p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .components-showcase,
+  .pages-preview,
+  .team-retrospective {
+    padding: 80px 5% 60px;
+  }
+
+  .components-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .component-category {
+    padding: 30px;
+  }
+
+  .slider-wrapper {
+    height: 300px;
+  }
+
+  .slide-info {
+    bottom: 20px;
+    left: 20px;
+    width: 280px;
+    padding: 20px;
+  }
+
+  .slide-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .retrospective-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .retro-card {
+    padding: 30px;
+  }
+}
+
+.page-entrance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+  overflow: hidden;
+}
+
+/* 왼쪽 이미지 섹션 */
+.entrance-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entrance-left img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.entrance-text-overlay {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 10;
+}
+
+.entrance-slogan {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.entrance-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  font-weight: 400;
+  animation: slideInLeft 1s ease-out 0.3s both;
+}
+
+/* 오른쪽 콘텐츠 섹션 */
+.entrance-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  background: linear-gradient(45deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.entrance-content {
+  max-width: 400px;
+}
+
+/* 통계 섹션 */
+.entrance-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+  border-radius: 12px;
+  transform: translateY(20px);
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.stat-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* CTA 섹션 */
+.entrance-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 20px;
+  animation: slideInRight 1s ease-out 0.6s both;
+}
+
+.entrance-cta p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  animation: slideInRight 1s ease-out 0.8s both;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: slideInRight 1s ease-out 1s both;
+}
+
+.cta-button:hover {
+  background: #333;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* 애니메이션 */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .page-entrance {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .entrance-slogan {
+    font-size: 2.5rem;
+  }
+
+  .entrance-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+details.component-category {
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  padding: 0 40px;
+}
+
+
+summary.category-header {
+  display: block;
+  list-style: none;
+  padding: 30px 0px 20px 0px;
+  cursor: pointer;
+  position: relative; 
+  user-select: none;
+ 
+}
+summary.category-header::-webkit-details-marker {
+  display: none;
+}
+
+
+.dropdown-arrow {
+  position: absolute;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg); 
+  transition: transform 0.3s ease-in-out;
+}
+
+details[open] > summary.category-header .dropdown-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.component-items {
+
+  padding: 20px 0px 30px 0px; 
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-15px);
+  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-out 0.1s, /* opacity는 max-height보다 약간 늦게 시작 */ transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s, padding-top 0.4s ease, /* padding-top도 애니메이션에 포함 */ padding-bottom 0.4s ease;
+}
+
+details[open] .component-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  max-height: 800px;
+  opacity: 1;
+  transform: translateY(0);
+  overflow-y: auto;
+  /* padding-top, padding-bottom은 기본값 사용 (이미 위에서 설정) */
+}
+
+
