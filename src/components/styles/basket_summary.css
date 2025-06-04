@@ -16,7 +16,9 @@
   .basket__summary-price {
     color: var(--black);
   }
+}
 
+.basket__summary > p {
   @media (width >= 960px) {
     display: none;
   }
