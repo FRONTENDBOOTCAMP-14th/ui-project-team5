@@ -1,0 +1,46 @@
+@import './page_heading.css';
+
+.container {
+  padding: 50px;
+
+  .compoenent-title {
+      font-size: var(--text-4);
+      font-weight: 500;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      
+      &::after {
+          content: "";
+          position: absolute;
+          width: 500px;
+          bottom: 0;
+          left: 0;
+          border-bottom: 2px solid var(--black);
+      }
+  }
+}
+
+.basket__summary {
+  text-align: center;
+
+  p {
+    font-size: var(--text-2);
+    line-height: 28px;
+    display: inline-block;
+  }
+
+  .basket__summary-quantity {
+    color: var(--grey-500);
+  }
+
+  .basket__summary-price {
+    color: var(--black);
+  }
+}
+
+.basket__summary > p {
+  @media (width >= 960px) {
+    display: none;
+  }
+}
