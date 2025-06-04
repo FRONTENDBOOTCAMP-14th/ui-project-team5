@@ -1,13 +1,9 @@
 @import '/src/components/styles/page_heading.css';
 
-body {
-  margin: 50px;
-}
 .order-info {
   background: var(--white);
   padding: 2.5rem 0;
 
-  min-width: 328px;
 
   border-top: 1px solid var(--grey-100);
   border-bottom: 1px solid var(--grey-100);
