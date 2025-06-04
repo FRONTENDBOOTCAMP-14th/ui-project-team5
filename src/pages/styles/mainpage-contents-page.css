@@ -6,7 +6,7 @@ body {
   margin-block: 84px;
 }
 
-.button-filled {
+.togo-filled {
   --fill-color: var(--black, #111);
   --text-color: var(--white, #fff);
 
@@ -16,7 +16,7 @@ body {
   font-weight: 500;
   width: fit-content;
 
-  &.button-filled-00 {
+  &.togo-filled-00 {
     background: var(--fill-color, #111);
     color: var(--text-color, #fff);
   }
@@ -26,7 +26,7 @@ body {
   }
 }
 
-.button-filled-white {
+.togo-filled-white {
   --fill-color: var(--white, #fff);
   --text-color: var(--black, #111);
 
@@ -76,7 +76,7 @@ body {
     }
   }
 
-  .mainpage-card-single__button {
+  .mainpage-card-single__togo {
     display: block;
     width: fit-content;
     margin-block: 1.5rem;
@@ -100,7 +100,7 @@ body {
       }
     }
 
-    .mainpage-card-single__button {
+    .mainpage-card-single__togo {
       margin-inline: auto;
     }
   }
@@ -210,7 +210,7 @@ body {
     }
   }
 
-  .button-filled-white {
+  .togo-filled-white {
     display: none;
 
     @media (width >= 600px) {
@@ -221,7 +221,7 @@ body {
     }
   }
 
-  .button-filled-buyment {
+  .togo-filled-buyment {
     @media (width >= 600px) {
       display: none;
     }
@@ -286,7 +286,7 @@ body {
     text-transform: uppercase;
   }
 
-  .button-filled {
+  .togo-filled {
     display: none;
   }
 }
@@ -308,7 +308,7 @@ body {
 /* 02. */
 
 .mainpage-contents-section_wrapper-02 {
-  .button-filled {
+  .togo-filled {
     display: none;
 
     @media (width >= 600px) {
@@ -338,7 +338,7 @@ body {
         bottom: 7rem;
       }
 
-      .button-filled {
+      .togo-filled {
         position: absolute;
         left: 3rem;
         bottom: 3rem;
@@ -372,7 +372,7 @@ body {
         bottom: 7rem;
       }
 
-      .button-filled {
+      .togo-filled {
         --fill-color: var(--white, #fff);
         --text-color: var(--black, #111);
 
@@ -466,7 +466,7 @@ body {
       line-height: 1.75rem;
     }
 
-    .button-filled {
+    .togo-filled {
       display: block;
     }
   }
