@@ -112,6 +112,15 @@
   }
 }
 
+/* 01. */
+.mainpage-contents-section_wrapper-01 {
+  @media (prefers-reduced-motion: reduce) {
+    video {
+      display: none;
+    }
+  }
+}
+
 /* 중제목 */
 /* 02. 05. 06. 07. 08. 09. */
 .mainpage-card_middle-title {
