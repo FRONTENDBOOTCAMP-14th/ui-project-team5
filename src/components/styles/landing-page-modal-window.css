@@ -26,6 +26,23 @@
   word-break: keep-all;
   z-index: 999;
 
+  @media (width < 600px) {
+    width: 320px;
+    padding: .75rem;
+    top: 6rem;
+    line-height: 1.2;
+    font-size: .875rem;
+
+    .pre-announcement-title {
+      font-weight: 400;
+    }
+
+    .pre-announcement-confirmation {
+      line-height: 2;
+    }
+
+  }
+
   .pre-announcement-title {
     margin-block-end: 1rem;
     font-size: 1.25rem;
