@@ -1,0 +1,226 @@
+@import '/src/components/styles/header.css';
+@import '/src/components/styles/footer.css';
+
+/* 나이키 매장 찾기 */
+.page__heading {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+  color: var(--black);
+  font-size: var(--text-6);
+  font-weight: 600;
+  line-height: 36px;
+
+  @media (width >= 1920px) {
+    line-height: 48px;
+  }
+}
+
+/* 검색 바 */
+.gh__form-input {
+  position: relative;
+  margin: 0 22px 48px 22px;
+
+  svg {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+  }
+
+  .gh__form-input__input {
+    width: 100%;
+    block-size: 3.5rem;
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding-left: 12px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .gh__form-input__input:focus {
+    outline: 0;
+  }
+
+  @media (width >= 600px) {
+    max-width: 38.75rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* 빠른 지원 */
+.gethelp-FAQ {
+  padding: 0 20px;
+  p {
+    padding-bottom: 17px;
+    line-height: 1.5rem;
+  }
+
+  h3 {
+    color: var(--black, #111);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+  }
+
+  @media (width >= 600px) {
+    padding: 4.5rem 7.5rem;
+  }
+}
+
+.customer-service-FAQ-wrapper {
+  @media (width >= 600px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.25rem;
+    column-gap: 0.75rem;
+    border-top: 1px solid var(--grey-100);
+    padding-top: 2.25rem;
+  }
+}
+
+.customer-service-FAQ-01,
+.customer-service-FAQ-02,
+.customer-service-FAQ-03,
+.customer-service-FAQ-04,
+.customer-service-FAQ-05,
+.customer-service-FAQ-06 {
+  display: flex;
+  flex-direction: column;
+  min-width: 312px;
+
+  .customer-service-FAQ-01__title,
+  .customer-service-FAQ-02__title,
+  .customer-service-FAQ-03__title,
+  .customer-service-FAQ-04__title,
+  .customer-service-FAQ-05__title,
+  .customer-service-FAQ-06__title {
+    color: var(--black, #111);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+  }
+
+  .dropdown__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    border-top: 1px solid var(--grey-100);
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .customer-service-FAQ-01__dropdown-list,
+  .customer-service-FAQ-02__dropdown-list,
+  .customer-service-FAQ-03__dropdown-list,
+  .customer-service-FAQ-04__dropdown-list,
+  .customer-service-FAQ-05__dropdown-list,
+  .customer-service-FAQ-06__dropdown-list {
+    overflow: hidden;
+    max-height: 0px;
+    color: var(--grey-500);
+    line-height: 1.75;
+  }
+
+  #customer-service-FAQ-01__dropdown:checked ~ .customer-service-FAQ-01__dropdown-list,
+  #customer-service-FAQ-02__dropdown:checked ~ .customer-service-FAQ-02__dropdown-list,
+  #customer-service-FAQ-03__dropdown:checked ~ .customer-service-FAQ-03__dropdown-list,
+  #customer-service-FAQ-04__dropdown:checked ~ .customer-service-FAQ-04__dropdown-list,
+  #customer-service-FAQ-05__dropdown:checked ~ .customer-service-FAQ-05__dropdown-list,
+  #customer-service-FAQ-06__dropdown:checked ~ .customer-service-FAQ-06__dropdown-list {
+    max-height: 500px;
+    padding-bottom: 12px;
+  }
+
+  @media (width >= 600px) {
+    #customer-service-FAQ-01__drop,
+    down #customer-service-FAQ-02__drop,
+    down #customer-service-FAQ-03__drop,
+    down #customer-service-FAQ-04__dropdown {
+      display: none;
+    }
+
+    .dropdown__list {
+      cursor: default;
+      border-top: none;
+      padding-block: 0.5rem;
+
+      .dropdown-icon {
+        display: none;
+      }
+    }
+
+    .customer-service-FAQ-01__dropdown-list,
+    .customer-service-FAQ-02__dropdown-list,
+    .customer-service-FAQ-03__dropdown-list,
+    .customer-service-FAQ-04__dropdown-list,
+    .customer-service-FAQ-05__dropdown-list,
+    .customer-service-FAQ-06__dropdown-list {
+      max-height: none !important;
+      padding-bottom: 0;
+      overflow: visible;
+    }
+  }
+}
+
+/* 문의하기 */
+.h3 {
+  font-size: var(--text-4);
+  font-weight: 600;
+  padding: 20px 0;
+  margin: 0 20px;
+  border-top: 1px solid var(--grey-100);
+  border-bottom: 1px solid var(--grey-100);
+
+  @media (width >= 600px) {
+    padding: 20px 0;
+    margin: 0 7.5rem;
+    border-top: 0;
+  }
+}
+
+.gethelp-help {
+  padding: 0 20px;
+
+  @media (width >= 600px) {
+    padding: 2.25rem 7.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10rem;
+  }
+}
+
+.customer-service-help-01,
+.customer-service-help-02,
+.customer-service-help-03,
+.customer-service-help-04 {
+  display: flex;
+  flex-direction: row nowrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-bottom: 36px;
+
+  .customer-service-help-01__text,
+  .customer-service-help-02__text,
+  .customer-service-help-03__text,
+  .customer-service-help-04__text {
+    color: var(--black, #111);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  @media (width >= 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .customer-service-help-01__text,
+    .customer-service-help-02__text,
+    .customer-service-help-03__text,
+    .customer-service-help-04__text {
+      text-align: center;
+    }
+  }
+}
