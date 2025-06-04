@@ -1,0 +1,448 @@
+.container {
+    padding: 50px;
+
+    .compoenent-title {
+        font-size: var(--text-4);
+        font-weight: 500;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            bottom: 0;
+            left: 0;
+            border-bottom: 2px solid var(--black);
+        }
+    }
+}
+
+/* From: /src/components/styles/find-store_searchbar.css */
+/* body margin 값은 전역 스타일과 충돌할 수 있으므로 여기서는 제외합니다. */
+/*
+body {
+  margin: 50px;
+}
+*/
+
+.fs__form-input {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+
+  .fs__form-input__input {
+    width: 100%;
+    block-size: 3.5rem;
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding: 1rem 0.75rem 1rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .fs__form-input__input:focus {
+    outline: 0;
+  }
+}
+
+/* From: /src/pages/styles/signup-agreement.css */
+/* body 스타일 제외 */
+
+/* .button-outlined, .button-filled 스타일은 buttons 컴포넌트와 중복될 수 있으나,
+   페이지별 특화 스타일일 수 있어 일단 포함. 필요시 landing-buttons.css의 스타일을 참조하거나 공통 스타일로 분리 고려. */
+.agreement-button-outlined { /* 이름 변경하여 충돌 방지 */
+  --fill-color: var(--white, #fff);
+  --text-color: var(--black, #111);
+
+  border: 1px solid var(--grey-200, #cacacb);
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+  width: 100%;
+
+  &.button-outlined-00 { /* 이 부분은 기존 버튼 스타일과 동일하게 작동할 수 있음 */
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
+}
+
+.agreement-button-filled { /* 이름 변경하여 충돌 방지 */
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+  width: 100%;
+
+  &.button-filled-00 { /* 이 부분은 기존 버튼 스타일과 동일하게 작동할 수 있음 */
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
+}
+
+.signup-page .signin-page_wrapper { /* 페이지 특화 선택자 추가 */
+  max-width: 504px;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.signup-page .togo-main-logo { /* 페이지 특화 선택자 추가 */
+  margin-block: 1.25rem;
+  align-self: flex-start;
+}
+
+.signup-page .sign-in-message { /* 페이지 특화 선택자 추가 */
+  color: var(--black);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  align-self: flex-start;
+  margin-block-end: 1.625rem;
+}
+
+.signup-page .signup-required { /* 페이지 특화 선택자 추가 */
+  align-self: flex-start;
+  margin-block-end: 1.5rem;
+}
+
+.agreement-checkbox_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 12px;
+  margin-block-end: 36px;
+  padding-block-start: 24px;
+  border-top: 1px solid #ccc;
+}
+
+.agreement-checkbox-all {
+  margin-block-end: 1.5rem;
+
+  &:has(.agreement-checkbox-input:checked) + .agreement-checkbox_wrapper {
+    .fill-color-content {
+      fill: var(--black, #111);
+    }
+
+    .fill-color-check {
+      fill: var(--white, #fff);
+    }
+  }
+}
+
+.agreement-checkbox {
+  --size: 20px;
+
+  display: inline-flex;
+  align-items: flex-start; /* baseline 정렬이 더 나을 수 있음 */
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+  line-height: 1.5rem;
+  align-self: flex-start;
+  font-weight: 700;
+
+  color: var(--black, #111);
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+
+  .agreement-checkbox-input {
+    position: absolute;
+    accent-color: var(--red);
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    cursor: pointer;
+
+    &:focus + svg {
+      outline: 2px solid blue;
+      outline-offset: 2px;
+    }
+  }
+
+  .fill-color-border {
+    fill: var(--black, #111);
+  }
+
+  .fill-color-content {
+    fill: var(--white, #fff);
+  }
+
+  .fill-color-check {
+    fill: none;
+  }
+
+  .agreement-checkbox-input:checked + .checkbox-black {
+    .fill-color-content {
+      fill: var(--black, #111);
+    }
+
+    .fill-color-check {
+      fill: var(--white, #fff);
+    }
+  }
+
+  .checkbox-black {
+    flex-shrink: 0;
+    margin-top: 2px; /* p태그와 baseline 맞추기 위함 */
+  }
+}
+
+.signup-page .agreement-message { /* 페이지 특화 선택자 추가 */
+  color: var(--grey-400, #757575);
+  line-height: 1.5rem;
+  margin-block-end: 2.5rem;
+}
+
+.signup-page .sign-in-button_wrapper { /* 페이지 특화 선택자 추가 */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block-start: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* From: /src/components/styles/sign-in-components.css */
+/* .component-page-body 스타일 제외 */
+
+.comp-sign-in-message { /* sign-in-message 중복 방지 */
+  color: var(--black);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.form-input {
+  /* background: yellow; */
+  --input-height: 2rem; /* 변수명 변경 (--size -> --input-height) */
+
+  .form-input__input {
+    display: block; /* input은 inline 요소이므로 block으로 변경하여 width 100% 적용 */
+    width: 100%; 
+    min-height: var(--input-height); /* block-size 대신 min-height 사용 */
+    border: 1px solid var(--grey-500, #707072);
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .form-input__input::placeholder {
+    color: var(--grey-500, #707072);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .form-input__input:invalid + .form-input__error-message, /* 에러 메시지 표시 조건 개선 */
+  .form-input__input:user-invalid + .form-input__error-message {
+    visibility: visible;
+  }
+
+  .form-input__input:invalid,
+  .form-input__input:user-invalid {
+    border-color: var(--red, #b40000);
+  }
+
+  .form-input__error-message {
+    font-size: 12px;
+    color: var(--red, #b40000);
+    margin-block-start: 0.5rem;
+    visibility: hidden;
+  }
+}
+
+.comp-agreement-message { /* agreement-message 중복 방지 */
+  color: var(--grey-400, #757575);
+  line-height: 1.5rem;
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+}
+
+.form-input-rule {
+  .input-rule {
+    color: var(--grey-500, #707072);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin-block-start: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; /* 아이콘과 텍스트 정렬 */
+    gap: 0.25rem;
+
+    .input-rule__checked {
+      display: none;
+    }
+     .input-rule__Xchecked { /* 기본 X 아이콘 보이도록 */
+      display: inline-block;
+    }
+  }
+
+  .form-input__input:valid + .input-rule {
+    color: var(--green);
+
+    .input-rule__checked {
+      display: inline-block;
+    }
+
+    .input-rule__Xchecked {
+      display: none;
+    }
+  }
+}
+/* .agreement-checkbox 스타일은 signup-agreement.css 에서 가져온 것을 공통으로 사용 */
+
+
+/* From: /src/pages/styles/signin-email.css */
+/* body, button-filled, signin-page_wrapper, togo-main-logo, sign-in-message, form-input, agreement-message 스타일은 이미 있거나 유사하므로 중복 선언 피함 */
+/* 이 파일의 form-input은 margin-block-end: 2.875rem; 가 있었음. 필요시 landing-input.html에서 form 요소에 직접 클래스 추가하여 적용 */
+
+
+/* From: /src/pages/styles/signin-password.css */
+/* body, button-outlined, button-filled, signin-page_wrapper, togo-main-logo, sign-in-message, form-input 스타일은 이미 있거나 유사. */
+.signin-pw-page .sign-in-test-email { /* 페이지 특화 선택자 */
+  color: var(--black, #111);
+  margin-block-end: 1.625rem;
+}
+
+.signin-pw-page .sign-in-find-password { /* 페이지 특화 선택자 */
+  color: var(--grey-400, #757575);
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  display: block; /* 링크를 블록 요소로 만들어 여백 확보 */
+  margin-top: 1rem;
+}
+
+.signin-pw-page .sign-in-button_wrapper { /* 페이지 특화 선택자 */
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 5.625rem;
+  gap: 10px; /* 버튼 사이 간격 추가 */
+
+  & > button { /* 버튼들이 동일한 너비를 갖도록 */
+    flex-grow: 1;
+  }
+}
+
+
+/* Styles for section separation and internal spacing in landing-input.html */
+.container > section {
+    margin-bottom: 40px; /* Separation between sections */
+    padding: 20px; /* Add some padding inside each section */
+    border: 1px solid var(--grey-100, #f0f0f0); /* Visually separate sections */
+    border-radius: 8px; /* Soften edges */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Vertical margin between elements within a section */
+}
+
+.container > section:last-child {
+    margin-bottom: 0; /* No margin for the last section */
+}
+
+.container > section > h2 {
+    margin-bottom: 15px; /* Space below the section title */
+    font-size: var(--text-3); /* Adjust title size */
+    font-weight: 600;
+    width: 100%; /* Make h2 take full width */
+    border-bottom: 1px solid var(--grey-200, #e0e0e0);
+    padding-bottom: 10px;
+}
+
+/* 추가 스타일: 각 섹션 내 form 요소들이나 input 그룹들이 너무 붙어있지 않도록 */
+.container > section > form,
+.container > section > div > input, /* email, password input 예시 */
+.container > section > div.agreement-checkbox { /* sign-in-components의 단일 체크박스 */
+    width: 100%; /* form 등이 section 너비에 맞게 확장되도록 */
+    margin-bottom: 15px; /* 각 입력 그룹 간의 하단 여백 */
+}
+.container > section > form:last-child,
+.container > section > div:last-child > input,
+.container > section > div.agreement-checkbox:last-child {
+    margin-bottom: 0;
+}
+
+/* fs__form-input 내부 input 너비 조정 */
+.fs__form-input .fs__form-input__input {
+  box-sizing: border-box; /* padding을 포함하여 width 100%가 되도록 */
+}
+
+/* agreement-checkbox 내부 p 태그 정렬 */
+.agreement-checkbox p.agreement {
+  margin: 0; /* 기본 마진 제거 */
+  line-height: var(--size, 20px); /* SVG와 높이 맞추기 */
+}
+
+/* sign-in-components.html 에서 가져온 form-input 하위 p.form-input__error-message의 너비 */
+.form-input > .form-input__error-message {
+  width: 100%;
+}
+
+/* From: /src/pages/styles/signup-create.css */
+
+.signup-name-input_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.75rem; /* Space between first name and last name input containers */
+  width: 100%;
+}
+
+/* Inside signup-name-input_wrapper, the .form-input.form-input__name effectively becomes a direct container for the two input fields */
+.signup-name-input_wrapper .form-input__name {
+  display: contents; /* Allows the two inner .form-input__input to be direct flex items of .signup-name-input_wrapper if it were a flex container, but here it means its box is ignored. The inputs inside will take width from their parent .form-input normally or .signup-name-input_wrapper if structure changes */
+  /* Corrected: The .form-input.form-input__name itself contains the two inputs. So this rule might not be needed if inputs are styled directly. Let's assume .form-input inside .signup-name-input_wrapper handles the inputs. */
+}
+
+/* Styles for the form originating from signup-create.html (class="form-01") */
+.container > section form.form-01 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Consistent spacing for direct children of this form (e.g., .signup-name-input_wrapper, .form-input for password, .form-input for date, .agreement-checkbox, button) */
+    width: 100%;
+}
+
+/* Specific styling for the '계정 만들기' button within form.form-01 */
+.container > section form.form-01 > .button-filled.button-filled-00 {
+  width: 100%; /* As specified in signup-create.css for its general .button-filled */
+  /* text-align: center; /* Button text is typically centered by default */
+  margin-block-start: calc(4.375rem - 1.25rem); /* Original 4.375rem top margin, adjusted for the parent form's 1.25rem gap that already provides some space */
+}
+
+/* General .form-input styling from signup-create.css such as 'width: 100%' and 'margin-block-end: 1.25rem'
+   is now handled by 'form.form-01' width and its 'gap' property for direct children.
+   Individual .form-input containers within .form-01 will naturally take up the width due to flex context or default block behavior. */
+
+/* Other styles like .form-input-rule, .agreement-checkbox from signup-create.css are assumed
+   to be sufficiently covered by existing generic styles in landing-input.css unless specific visual
+   discrepancies are noted and require further targeted overrides for the .form-01 context. */

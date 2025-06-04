@@ -1,0 +1,41 @@
+.container {
+    padding: 50px;
+
+    .compoenent-title {
+        font-size: var(--text-4);
+        font-weight: 500;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            bottom: 0;
+            left: 0;
+            border-bottom: 2px solid var(--black);
+        }
+    }
+}
+
+@import './product_card.css';
+
+.product-recommendation {
+  background-color: var(--white);
+
+  .product-recommendation__card-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .product-recommendation__card {
+    min-width: 177px;
+    max-width: 600px;
+    flex: 0 0 calc(75% - 20px);
+  }
+}
