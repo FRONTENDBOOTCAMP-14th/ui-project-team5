@@ -219,11 +219,38 @@
       </header>
     </div>
     <div class="product-list-page">
+      <input type="checkbox" id="filter-toggle-checkbox" class="filter-toggle-input" checked />
+
       <div class="product-list-header">
         <h1 class="product-list-header__title">신제품 (749)</h1>
         <div class="product-list-header__right">
-          <button class="product-list-header__filter-toggle" aria-label="필터 숨기기">필터 숨기기 <img src="/src/assets/icon/filter.svg" alt="필터 아이콘" /></button>
-          <button class="product-filter-drop-down" aria-expanded="false" aria-haspopup="true"><span>정렬 기준 :&nbsp;</span><img src="/src/assets/icon/down.svg" alt="정렬 기준 선택" /></button>
+          <button>
+            <label for="filter-toggle-checkbox" class="product-list-header__filter-toggle" aria-label="필터 토글">
+              필터 숨기기
+              <img src="/src/assets/icon/filter.svg" alt="필터 아이콘" />
+            </label>
+          </button>
+          <button class="product-filter-drop-down">
+            <input type="checkbox" id="sort-dropdown" class="sort-dropdown-input" />
+            <label for="sort-dropdown" class="sort-dropdown-label">
+              <span>정렬 기준 :&nbsp;</span>
+              <img src="/src/assets/icon/down.svg" alt="정렬 기준 선택" />
+            </label>
+            <ul class="sort-dropdown-list">
+              <li>
+                <label for="sort-recommend"><input type="radio" name="sort" id="sort-recommend" value="recommend" />추천순</label>
+              </li>
+              <li>
+                <label for="sort-newest"><input type="radio" name="sort" id="sort-newest" value="newest" />최신순</label>
+              </li>
+              <li>
+                <label for="sort-price-high"><input type="radio" name="sort" id="sort-price-high" value="price-high" />높은 가격순</label>
+              </li>
+              <li>
+                <label for="sort-price-low"><input type="radio" name="sort" id="sort-price-low" value="price-low" />낮은 가격순</label>
+              </li>
+            </ul>
+          </button>
         </div>
       </div>
       <div class="product-list-cartegory-mobile">
@@ -243,10 +270,91 @@
         </ul>
       </div>
       <div class="product-list-main">
+        <input type="checkbox" id="mobile-filter-toggle" class="mobile-filter-toggle" />
         <div class="product-list-main__header__mobile">
           <div class="product-list-main__header__mobile__result">741개의 결과</div>
-          <button class="product-list-main__header__mobile__filter" aria-label="필터 메뉴 열기">필터<img src="/src/assets/icon/filter.svg" alt="필터 아이콘" /></button>
+          <label for="mobile-filter-toggle" class="product-list-main__header__mobile__filter" aria-label="필터 메뉴 열기"> 필터<img src="/src/assets/icon/filter.svg" alt="필터 아이콘" /> </label>
         </div>
+
+        <div class="mobile-filter-modal">
+          <div class="mobile-filter-modal__content">
+            <div class="mobile-filter-modal__header">
+              <h2>필터</h2>
+              <label for="mobile-filter-toggle" class="mobile-filter-modal__close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 0C13.084 0 10.4 0.710667 7.94667 2.13333C5.52763 3.52127 3.52127 5.52763 2.13333 7.94667C0.710667 10.4 0 13.084 0 16C0 18.916 0.710667 21.6 2.13333 24.0533C3.52127 26.4724 5.52763 28.4787 7.94667 29.8667C10.4 31.2893 13.084 32 16 32C18.916 32 21.6 31.2893 24.0533 29.8667C26.4724 28.4787 28.4787 26.4724 29.8667 24.0533C31.2893 21.6 32 18.916 32 16C32 13.084 31.2893 10.4 29.8667 7.94667C28.4787 5.52763 26.4724 3.52127 24.0533 2.13333C21.6 0.710667 18.916 0 16 0ZM22.9333 20.3733L20.3733 22.9333L16 18.4533L11.6267 22.9333L9.06667 20.3733L13.5467 16L9.06667 11.6267L11.6267 9.06667L16 13.44L20.3733 9.06667L22.9333 11.6267L18.56 16L22.9333 20.3733Z"
+                    fill="#111111"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div class="mobile-filter-modal__body">
+              <div class="mobile-filter-section">
+                <h3>정렬 기준:</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="radio" name="mobile-sort" id="mobile-sort-recommend" value="recommend" checked /><label for="mobile-sort-recommend"> 추천순</label></div>
+                  <div><input type="radio" name="mobile-sort" id="mobile-sort-newest" value="newest" /><label for="mobile-sort-newest"> 최신순</label></div>
+                  <div><input type="radio" name="mobile-sort" id="mobile-sort-price-high" value="price-high" /><label for="mobile-sort-price-high"> 높은 가격순</label></div>
+                  <div><input type="radio" name="mobile-sort" id="mobile-sort-price-low" value="price-low" /><label for="mobile-sort-price-low"> 낮은 가격순</label></div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-section">
+                <h3>성별</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="checkbox" id="mobile-gender-male" /><label for="mobile-gender-male"> 남성</label></div>
+                  <div><input type="checkbox" id="mobile-gender-female" /><label for="mobile-gender-female"> 여성</label></div>
+                  <div><input type="checkbox" id="mobile-gender-unisex" /><label for="mobile-gender-unisex"> 성인공용</label></div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-section">
+                <h3>키즈</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="checkbox" id="mobile-kids-male" /><label for="mobile-kids-male"> 남아</label></div>
+                  <div><input type="checkbox" id="mobile-kids-female" /><label for="mobile-kids-female"> 여아</label></div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-section">
+                <h3>스포츠</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="checkbox" id="mobile-sports-lifestyle" /><label for="mobile-sports-lifestyle"> 라이프스타일</label></div>
+                  <div><input type="checkbox" id="mobile-sports-running" /><label for="mobile-sports-running"> 러닝</label></div>
+                  <div><input type="checkbox" id="mobile-sports-training" /><label for="mobile-sports-training"> 트레이닝 및 짐</label></div>
+                  <div><input type="checkbox" id="mobile-sports-basketball" /><label for="mobile-sports-basketball"> 농구</label></div>
+                  <div style="padding-top: 10px; cursor: pointer">+ 더 보기</div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-section">
+                <h3>키즈 연령</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="checkbox" id="mobile-age-baby" /><label for="mobile-age-baby"> 베이비(0-3세)</label></div>
+                  <div><input type="checkbox" id="mobile-age-little" /><label for="mobile-age-little"> 리틀키즈(3-7세)</label></div>
+                  <div><input type="checkbox" id="mobile-age-junior" /><label for="mobile-age-junior"> 주니어(7-15세)</label></div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-section">
+                <h3>가격대</h3>
+                <div class="mobile-filter-options">
+                  <div><input type="checkbox" id="mobile-price-1" /><label for="mobile-price-1"> 0 - 50,000원</label></div>
+                  <div><input type="checkbox" id="mobile-price-2" /><label for="mobile-price-2"> 50,000 - 100,000원</label></div>
+                  <div><input type="checkbox" id="mobile-price-3" /><label for="mobile-price-3"> 100,000 - 150,000원</label></div>
+                  <div><input type="checkbox" id="mobile-price-4" /><label for="mobile-price-4"> 150,000 - 200,000원</label></div>
+                </div>
+              </div>
+
+              <div class="mobile-filter-buttons">
+                <button class="mobile-filter-button mobile-filter-button--clear">지우기 (1)</button>
+                <button class="mobile-filter-button mobile-filter-button--apply">적용</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="product-list-main-content">
           <div class="product-list-main-content__filter_desktop">
             <ul>
@@ -502,9 +610,9 @@
         </div>
       </div>
     </div>
-    <footer style="margin-inline: auto; max-width:1920px; padding-inline:24px;">
+    <footer style="margin-inline: auto; max-width: 1920px; padding-inline: 24px">
       <div class="f__dropdown">
-        <div class="footer__dropdown" style="min-width: 272px;">
+        <div class="footer__dropdown" style="min-width: 272px">
           <input type="checkbox" id="footer__dropdown1" hidden />
           <label for="footer__dropdown1" class="dropdown__list">
             <span>안내</span
@@ -521,7 +629,7 @@
           </div>
         </div>
 
-        <div class="footer__dropdown" style="min-width: 272px;">
+        <div class="footer__dropdown" style="min-width: 272px">
           <input type="checkbox" id="footer__dropdown2" hidden />
           <label for="footer__dropdown2" class="dropdown__list">
             <span>고객센터</span
@@ -540,7 +648,7 @@
           </div>
         </div>
 
-        <div class="footer__dropdown" style="min-width: 272px;">
+        <div class="footer__dropdown" style="min-width: 272px">
           <input type="checkbox" id="footer__dropdown3" hidden />
           <label for="footer__dropdown3" class="dropdown__list dropdown__list3">
             <span>회사소개</span
