@@ -1,0 +1,64 @@
+.button-filled {
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  &.button-filled-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
+}
+
+.pre-announcement-dialog {
+  position: fixed;
+  margin-inline: auto;
+  padding: 2rem;
+  top: 10rem;
+
+  border: ;
+
+  .pre-announcement-title {
+    margin-block-end: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background: var(--black, #111);
+    padding: 8px 4px;
+    color: var(--white, #fff);
+    text-align: center;
+  }
+
+  .pre-announcement-body {
+    padding: 8px 4px;
+    line-height: 1.5;
+
+    .pre-announcement__em {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    .pre-announcement-section-title {
+      margin-block: .5rem;
+      font-weight: 500;
+    }
+    .pre-announcement-list {
+      list-style-type:  disc;
+      list-style-position: inside;
+    }
+  }
+
+  .shaped-button {
+    background: var(--black, #111);
+    padding: 8px 20px;
+    color: var(--white, #fff);
+    border-radius: 50px;
+  }
+}
