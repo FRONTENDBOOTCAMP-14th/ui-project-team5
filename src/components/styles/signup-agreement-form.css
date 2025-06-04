@@ -1,0 +1,101 @@
+@import './component_wrapper.css';
+
+.sign-in-message {
+  color: var(--black);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  align-self: flex-start;
+  margin-block-end: 1.625rem;
+}
+
+.signup-required {
+  align-self: flex-start;
+  margin-block-end: 1.5rem;
+}
+
+.agreement-checkbox_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 12px;
+  margin-block-end: 36px;
+  padding-block-start: 24px;
+  border-top: 1px solid #ccc;
+}
+
+.agreement-checkbox-all {
+  margin-block-end: 1.5rem;
+
+  &:has(.agreement-checkbox-input:checked) + .agreement-checkbox_wrapper {
+    .fill-color-content {
+      fill: var(--black, #111);
+    }
+
+    .fill-color-check {
+      fill: var(--white, #fff);
+    }
+  }
+}
+
+.agreement-checkbox {
+  --size: 20px;
+
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+  line-height: 1.5rem;
+  align-self: flex-start;
+  font-weight: 700;
+
+  color: var(--black, #111);
+
+  .agreement-message__togo {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+
+  .agreement-checkbox-input {
+    position: absolute;
+    accent-color: var(--red);
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    cursor: pointer;
+
+    &:focus + svg {
+      outline: 2px solid blue;
+      outline-offset: 2px;
+    }
+  }
+
+  .fill-color-border {
+    fill: var(--black, #111);
+  }
+
+  .fill-color-content {
+    fill: var(--white, #fff);
+  }
+
+  .fill-color-check {
+    fill: none;
+  }
+
+  .agreement-checkbox-input:checked + .checkbox-black {
+    .fill-color-content {
+      fill: var(--black, #111);
+    }
+
+    .fill-color-check {
+      fill: var(--white, #fff);
+    }
+  }
+
+  .checkbox-black {
+    flex-shrink: 0;
+  }
+}

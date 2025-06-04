@@ -1,3 +1,5 @@
+@import './component_wrapper.css';
+
 .button-filled {
   --fill-color: var(--black, #111);
   --text-color: var(--white, #fff);
@@ -28,10 +30,10 @@
 
   @media (width < 600px) {
     width: 320px;
-    padding: .75rem;
+    padding: 0.75rem;
     top: 6rem;
     line-height: 1.2;
-    font-size: .875rem;
+    font-size: 0.875rem;
 
     .pre-announcement-title {
       font-weight: 400;
@@ -40,7 +42,6 @@
     .pre-announcement-confirmation {
       line-height: 2;
     }
-
   }
 
   .pre-announcement-title {
@@ -64,11 +65,11 @@
     }
 
     .pre-announcement-section-title {
-      margin-block: .5rem;
+      margin-block: 0.5rem;
       font-weight: 500;
     }
     .pre-announcement-list {
-      list-style-type:  disc;
+      list-style-type: disc;
       list-style-position: inside;
     }
   }
