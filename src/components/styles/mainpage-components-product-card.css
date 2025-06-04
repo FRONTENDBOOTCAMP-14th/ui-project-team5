@@ -1,0 +1,22 @@
+.mainpage-card_middle-title {
+  color: var(--black, #111);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-block-end: 1.5rem;
+}
+
+.mainpage-card-items_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-block: 1rem;
+
+  .mainpage-card-items {
+    flex: 0 0 auto;
+  }
+}
