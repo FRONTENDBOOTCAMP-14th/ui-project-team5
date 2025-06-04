@@ -186,9 +186,9 @@
   @media (width >= 600px) {
     padding: 2.25rem 7.5rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
-    gap: 10rem;
+    gap: 1.25rem;
   }
 }
 
@@ -215,6 +215,7 @@
   @media (width >= 600px) {
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     .customer-service-help-01__text,
     .customer-service-help-02__text,
