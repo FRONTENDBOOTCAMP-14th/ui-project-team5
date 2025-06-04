@@ -1,5 +1,8 @@
-.component-page {
-  margin: 20px;
+.landing-page__section-container {
+  padding: 3rem;
+}
+
+.bg-black {
   background: var(--black, #111);
 }
 
@@ -22,10 +25,35 @@
   }
 }
 
+.togo-outlined-01 {
+  --fill-color: var(--white, #fff);
+  --text-color: var(--black, #111);
+
+  border: 3px solid var(--black, #111);
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  background: var(--fill-color, #fff);
+  color: var(--text-color, #111);
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575)
+  } 
+}
+
 .landingpage-section-head {
   font-size: 2.5rem;
-  color: var(--white, #fff);
   text-transform: uppercase;
+
+  &.text-black {
+    color: var(--black, #111);
+  }
+
+  &.text-white {
+    color: var(--white, #fff);
+  }
 }
 
 .landing-component__dropdown {
@@ -95,9 +123,92 @@
     #landingpage__dropdown-03:checked ~ .dropdown__list-content {
       max-height: 500px;
       padding-bottom: 12px;
-      /* border-bottom: 1px solid var(--grey-100); */
+      border-bottom: 1px solid var(--grey-100);
     }
     #landingpage__dropdown-03:checked ~ .dropdown__list__last {
+      border-bottom: 0;
+    }
+  }
+}
+
+.landing-page__goto-mainpage-container {
+  
+  position: relative;
+  background-image: url(/src/assets/logo/just-do-it.webp);
+  background-repeat: no-repeat;
+  block-size: 35rem;
+  background-size: 50%;
+  background-position-x: 20%;
+  background-position-y: center;
+}
+
+.togo-outlined-homepage {
+  position: absolute;
+  right: 3rem;
+  top: 15rem;
+  
+}
+
+.landing-component__dropdown {
+  margin: 2rem 5rem;
+
+  .landingpage-dropdown__title {
+    color: var(--white, #fff);
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+
+  .landingpage__dropdown {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 312px;
+    font-size: var(--text-1);
+
+    .dropdown__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      border-top: 1px solid var(--grey-100);
+      padding: 20px 0;
+      cursor: pointer;
+    }
+
+    .dropdown__list__last {
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .dropdown__list-content {
+      overflow: hidden;
+      max-height: 0px;
+      color: var(--white, #fff);
+      line-height: 1.75;
+      font-size: 1.25rem;
+      font-weight: 200;
+    }
+
+    #landingpage__dropdown-04:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+    }
+
+    #landingpage__dropdown-05:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+    }
+    
+    #landingpage__dropdown-06:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+    }
+
+    /* 마지막 드롭다운 요소 내용보이기 + 보더 옮기기 */
+    #landingpage__dropdown-07:checked ~ .dropdown__list-content {
+      max-height: 500px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--grey-100);
+    }
+    #landingpage__dropdown-07:checked ~ .dropdown__list__last {
       border-bottom: 0;
     }
   }
