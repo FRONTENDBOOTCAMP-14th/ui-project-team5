@@ -22,8 +22,9 @@
   margin-inline: auto;
   padding: 2rem;
   top: 10rem;
-
-  border: ;
+  width: 540px;
+  word-break: keep-all;
+  z-index: 999;
 
   .pre-announcement-title {
     margin-block-end: 1rem;
