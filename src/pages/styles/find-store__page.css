@@ -1,0 +1,151 @@
+@import '/src/components/styles/header.css';
+@import '/src/components/styles/footer.css';
+
+.fs__main {
+  /* 나이키 매장 찾기 */
+  .page__heading {
+    padding: 36px 0 36px 32px;
+    color: var(--black);
+    font-size: var(--text-4);
+    font-weight: 500;
+    line-height: 36px;
+
+    @media (width >= 1920px) {
+      font-size: var(--text-6);
+      line-height: 48px;
+    }
+  }
+
+  /* 검색 바 */
+  .fs__form-input {
+    position: relative;
+    margin: 0 32px;
+
+    svg {
+      position: absolute;
+      top: 16px;
+      left: 12px;
+    }
+
+    .fs__form-input__input {
+      width: 100%;
+      block-size: 3.5rem;
+      border: 1px solid var(--grey-500, #707072);
+      border-radius: 8px;
+      padding: 1rem 0.75rem 1rem 3rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .fs__form-input__input:focus {
+      outline: 0;
+    }
+  }
+
+  /* 근처 매장 */
+  .search-store {
+    padding: 30px 0 30px 32px;
+    font-size: var(--text-1);
+    color: var(--grey-500);
+  }
+
+  /* 모바일 탭, 리스트 인풋 */
+  .taps {
+    height: 32px;
+    padding-left: 32px;
+    font-size: var(--text-2);
+    color: var(--grey-400);
+
+    @media (width >= 960px) {
+      display: none;
+    }
+  }
+  input[type='radio'] {
+    display: none;
+  }
+
+  .find-map-mobile,
+  .fs__card__list {
+    display: none;
+  }
+
+  .fs__card__list {
+    @media (width >= 960px) {
+      display: block;
+    }
+  }
+
+  #tap-map:checked ~ .taps label[for='tap-map'],
+  #tap-list:checked ~ .taps label[for='tap-list'] {
+    color: var(--black);
+    font-weight: 600;
+  }
+
+  #tap-map:checked ~ .find-map-mobile,
+  #tap-list:checked ~ .fs__card__list {
+    display: block;
+  }
+  #tap-map:checked ~ .find-map-mobile {
+    @media (width >= 960px) {
+      display: none;
+    }
+  }
+
+  /* 카드 리스트 */
+  .fs__card__list {
+    min-width: 360px;
+
+    @media (width >= 960px) {
+      min-width: 640px;
+    }
+  }
+
+  .fs__card {
+    width: contain;
+    height: 10.25rem;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--grey-100);
+
+    p {
+      font-size: var(--text-2);
+      line-height: 1.7;
+    }
+
+    .fs__card-info__name {
+      font-weight: 600;
+    }
+
+    .fs__card-info__place1,
+    .fs__card-info__place2,
+    .fs__card-info__status {
+      color: var(--grey-400);
+    }
+
+    .fs__card-info__status {
+      .open {
+        color: var(--green);
+      }
+      .close {
+        color: var(--red);
+      }
+    }
+  }
+
+  .find-map-mobile {
+    width: 100%;
+  }
+
+  .find-map-web {
+    width: 100%;
+    display: none;
+
+    @media (width >= 960px) {
+      display: block;
+      min-width: 960px;
+    }
+  }
+
+  @media (width >= 960px) {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
