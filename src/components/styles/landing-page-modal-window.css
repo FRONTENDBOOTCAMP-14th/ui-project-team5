@@ -24,6 +24,7 @@
   top: 10rem;
   width: 540px;
   word-break: keep-all;
+  z-index: 999;
 
   .pre-announcement-title {
     margin-block-end: 1rem;
