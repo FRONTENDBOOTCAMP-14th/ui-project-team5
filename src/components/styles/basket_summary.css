@@ -1,7 +1,6 @@
 @import './page_heading.css';
 
 .basket__summary {
-  min-width: 328px;
   text-align: center;
 
   p {
