@@ -27,21 +27,21 @@
 
       <!-- pageInfo -->
       <h2 class="sign-in-message">이제 나이키 멤버가 되어볼까요?</h2>
+      <form action="/src/pages/signup-agreement.html" class="form-01" method="POST">
+        <div class="signup-name-input_wrapper">
+          <div class="form-input form-input__name">
+            <!-- firstName -->
+            <label for="form-input__label-01" class="sr-only">이름</label>
+            <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="이름" name="form-input__name" />
+            <!-- lastName -->
+            <label for="form-input__label-01" class="sr-only">성</label>
+            <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="성" name="form-input__name" />
+          </div>
+        </div>
 
-      <div class="signup-name-input_wrapper">
-        <form action="/" class="form-input form-input__name" method="GET">
-          <!-- firstName -->
-          <label for="form-input__label-01" class="sr-only">이름</label>
-          <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="이름" name="form-input__name" />
-          <!-- lastName -->
-          <label for="form-input__label-01" class="sr-only">성</label>
-          <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="성" name="form-input__name" />
-        </form>
-      </div>
+        <!-- 조건문이 있는 비밀번호 입력 서식 -->
+        <!-- 비밀번호 입력서식에만 조건이 달려서 제작상의 편의를 위해 구체적으로 작성했습니다. -->
 
-      <!-- 조건문이 있는 비밀번호 입력 서식 -->
-      <!-- 비밀번호 입력서식에만 조건이 달려서 제작상의 편의를 위해 구체적으로 작성했습니다. -->
-      <form action="/" class="form-01" method="GET">
         <div class="form-input">
           <div class="form-input-rule">
             <label for="form-input__label-01" class="sr-only">비밀번호</label>
@@ -65,7 +65,7 @@
         <!-- birthday -->
         <div class="form-input">
           <label for="form-input__label-01" class="sr-only">생년월일</label>
-          <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="생년월일" name="form-input__name" />
+          <input class="form-input__input" type="date" id="form-input__label-01" required placeholder="생년월일" name="form-input__name" />
         </div>
         <!-- 약관 동의 안내 체크박스 -->
         <div class="agreement-checkbox">
@@ -81,7 +81,7 @@
           <p class="agreement">나이키의 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인정보 처리방침</a> 및 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">이용약관</a>에 동의합니다.</p>
         </div>
         <!-- 계정 만들기 버튼 -->
-        <button type="submit" class="button-filled button-filled-00">계정 만들기</button>
+        <button type="submit" formaction="/src/pages/mainpage-contents-page.html" class="button-filled button-filled-00">계정 만들기</button>
       </form>
     </div>
   </body>
