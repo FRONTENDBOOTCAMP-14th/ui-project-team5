@@ -1,6 +1,4 @@
-.component-page-body {
-  margin: 50px;
-}
+@import './component_wrapper.css';
 
 .sign-in-message {
   color: var(--black);

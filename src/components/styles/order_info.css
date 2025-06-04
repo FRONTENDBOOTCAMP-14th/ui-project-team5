@@ -1,9 +1,9 @@
+@import './component_wrapper.css';
 @import '/src/components/styles/page_heading.css';
 
 .order-info {
   background: var(--white);
   padding: 2.5rem 0;
-
 
   border-top: 1px solid var(--grey-100);
   border-bottom: 1px solid var(--grey-100);

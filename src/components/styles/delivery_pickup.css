@@ -1,3 +1,5 @@
+@import './component_wrapper.css';
+
 .delivery-pickup {
   min-width: 240px;
 

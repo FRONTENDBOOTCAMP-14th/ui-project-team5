@@ -12,107 +12,120 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="component-page">
-    <h2 class="mainpage-card_middle-title">카드 중제목</h2>
-    <!-- 3중 컬럼 형태 : 배경이미지를 포함하는 카드 레이아웃 -->
-    <div class="mainpage-card-overwrite_wrapper">
-      <div class="mainpage-card-overwrite mainpage-card-overwrite-01">
-        <div class="mainpage-card-overwrite__content">
-          <h3 class="mainpage-card-overwrite__title">카드제목</h3>
-          <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+    <div class="container">
+      <div class="component-title">mainpage-layout</div>
+      <h2 class="mainpage-card_middle-title">카드 중제목</h2>
+      <!-- 3중 컬럼 형태 : 배경이미지를 포함하는 카드 레이아웃 -->
+      <div class="mainpage-card-overwrite_wrapper">
+        <div class="mainpage-card-overwrite mainpage-card-overwrite-01">
+          <div class="mainpage-card-overwrite__content">
+            <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+            <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+          </div>
+        </div>
+        <div class="mainpage-card-overwrite mainpage-card-overwrite-02">
+          <div class="mainpage-card-overwrite__content">
+            <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+            <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+          </div>
+        </div>
+        <div class="mainpage-card-overwrite mainpage-card-overwrite-03">
+          <div class="mainpage-card-overwrite__content">
+            <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+            <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+          </div>
         </div>
       </div>
-      <div class="mainpage-card-overwrite mainpage-card-overwrite-02">
-        <div class="mainpage-card-overwrite__content">
-          <h3 class="mainpage-card-overwrite__title">카드제목</h3>
-          <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
-        </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="mainpage-card_middle-title">카드 중제목</h2>
+      <!-- 가로스크롤이 되는 상품 리스트 레이아웃 -->
+      <ul class="mainpage-card-items_wrapper">
+        <li class="mainpage-card-items">
+          <a href="/"><img src="/src/assets/images/mainpage/mainpage-07-01.png" alt="" /></a>
+        </li>
+        <li class="mainpage-card-items">
+          <a href="/"><img src="/src/assets/images/mainpage/mainpage-07-02.png" alt="" /></a>
+        </li>
+        <li class="mainpage-card-items">
+          <a href="/"><img src="/src/assets/images/mainpage/mainpage-07-03.png" alt="" /></a>
+        </li>
+        <li class="mainpage-card-items">
+          <a href="/"><img src="/src/assets/images/mainpage/mainpage-07-04.png" alt="" /></a>
+        </li>
+        <li class="mainpage-card-items">
+          <a href="/"><img src="/src/assets/images/mainpage/mainpage-07-05.png" alt="" /></a>
+        </li>
+      </ul>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="mainpage-card_middle-title">카드 중제목</h2>
+      <!-- 3중 컬럼 형태 : 이미지와 부제목/제목/설명/버튼을 포함하는 카드 레이아웃 -->
+      <div class="mainpage-card-multicol_wrapper">
+        <figure class="mainpage-card-multicol">
+          <figcaption class="sr-only">카드설명</figcaption>
+          <picture class="mainpage-card-multicol__image">
+            <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
+            <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-01.png" alt="" />
+          </picture>
+
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+
+          <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
+        </figure>
+        <figure class="mainpage-card-multicol">
+          <figcaption class="sr-only">카드설명</figcaption>
+          <picture class="mainpage-card-multicol__image">
+            <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
+            <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-02.png" alt="" />
+          </picture>
+
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+
+          <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
+        </figure>
+        <figure class="mainpage-card-multicol">
+          <figcaption class="sr-only">카드설명</figcaption>
+          <picture class="mainpage-card-multicol__image">
+            <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
+            <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-03.png" alt="" />
+          </picture>
+
+          <p class="mainpage-card-multicol__category">카테고리</p>
+          <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
+          <p class="mainpage-card-multicol__message">부가 설명 작성</p>
+
+          <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
+        </figure>
       </div>
-      <div class="mainpage-card-overwrite mainpage-card-overwrite-03">
-        <div class="mainpage-card-overwrite__content">
-          <h3 class="mainpage-card-overwrite__title">카드제목</h3>
-          <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- 2줄 컬럼 형태 : 배경이미지를 포함하는 카드 레이아웃 -->
+      <div class="mainpage-card-overwrite_wrapper">
+        <div class="mainpage-card-overwrite mainpage-card-overwrite_2col mainpage-card-overwrite-07">
+          <div class="mainpage-card-overwrite__content">
+            <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+            <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <br />
-    <hr />
-    <br />
-
-    <h2 class="mainpage-card_middle-title">카드 중제목</h2>
-    <!-- 가로스크롤이 되는 상품 리스트 레이아웃 -->
-    <ul class="mainpage-card-items_wrapper">
-      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-01.png" alt="" /></a></li>
-      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-02.png" alt="" /></a></li>
-      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-03.png" alt="" /></a></li>
-      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-04.png" alt="" /></a></li>
-      <li class="mainpage-card-items"><a href="/"><img src="/src/assets/images/mainpage/mainpage-07-05.png" alt="" /></a></li>
-    </ul>
-
-    <br />
-    <hr />
-    <br />
-
-    <h2 class="mainpage-card_middle-title">카드 중제목</h2>
-    <!-- 3중 컬럼 형태 : 이미지와 부제목/제목/설명/버튼을 포함하는 카드 레이아웃 -->
-    <div class="mainpage-card-multicol_wrapper">
-      <figure class="mainpage-card-multicol">
-        <figcaption class="sr-only">카드설명</figcaption>
-        <picture class="mainpage-card-multicol__image">
-          <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
-          <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-01.png" alt="" />
-        </picture>
-  
-        <p class="mainpage-card-multicol__category">카테고리</p>
-        <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
-        <p class="mainpage-card-multicol__message">부가 설명 작성</p>
-  
-        <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
-      </figure>
-      <figure class="mainpage-card-multicol">
-        <figcaption class="sr-only">카드설명</figcaption>
-        <picture class="mainpage-card-multicol__image">
-          <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
-          <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-02.png" alt="" />
-        </picture>
-  
-        <p class="mainpage-card-multicol__category">카테고리</p>
-        <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
-        <p class="mainpage-card-multicol__message">부가 설명 작성</p>
-  
-        <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
-      </figure>
-      <figure class="mainpage-card-multicol">
-        <figcaption class="sr-only">카드설명</figcaption>
-        <picture class="mainpage-card-multicol__image">
-          <source class="mainpage-card-multicol__image-file" srcset="" type="image/webp" />
-          <img class="mainpage-card-multicol__image-file" src="/src/assets/images/mainpage/mainpage-08-03.png" alt="" />
-        </picture>
-  
-        <p class="mainpage-card-multicol__category">카테고리</p>
-        <h3 class="mainpage-card-multicol__title">카드 메인 메시지</h3>
-        <p class="mainpage-card-multicol__message">부가 설명 작성</p>
-  
-        <a href="/" class="mainpage-card-multicol__togo togo-filled-00">링크버튼제목</a>
-      </figure>
-    </div>
-
-    <br />
-    <hr />
-    <br />
-    
-    <!-- 2줄 컬럼 형태 : 배경이미지를 포함하는 카드 레이아웃 -->
-    <div class="mainpage-card-overwrite_wrapper">
-      <div class="mainpage-card-overwrite mainpage-card-overwrite_2col mainpage-card-overwrite-07">
-        <div class="mainpage-card-overwrite__content">
-          <h3 class="mainpage-card-overwrite__title">카드제목</h3>
-          <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
-        </div>
-      </div>
-      <div class="mainpage-card-overwrite mainpage-card-overwrite_2col mainpage-card-overwrite-08">
-        <div class="mainpage-card-overwrite__content">
-          <h3 class="mainpage-card-overwrite__title">카드제목</h3>
-          <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+        <div class="mainpage-card-overwrite mainpage-card-overwrite_2col mainpage-card-overwrite-08">
+          <div class="mainpage-card-overwrite__content">
+            <h3 class="mainpage-card-overwrite__title">카드제목</h3>
+            <a href="/" class="mainpage-card-overwrite__togo togo-filled-00">링크버튼제목</a>
+          </div>
         </div>
       </div>
     </div>

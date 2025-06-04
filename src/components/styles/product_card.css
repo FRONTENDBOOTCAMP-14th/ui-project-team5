@@ -1,3 +1,5 @@
+@import './component_wrapper.css';
+
 .product-card {
   --text-grey: var(--grey-400);
   --text-red: var(--red);
