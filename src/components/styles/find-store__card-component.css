@@ -1,0 +1,33 @@
+@import './component_wrapper.css';
+
+.fs__card__list {
+  min-width: 360px;
+}
+
+.fs__card {
+  width: contain;
+  height: 10.25rem;
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--grey-100);
+
+  p {
+    font-size: var(--text-2);
+    line-height: 1.7;
+  }
+
+  .fs__card-info__name {
+    font-weight: 600;
+  }
+
+  .fs__card-info__place1,
+  .fs__card-info__place2,
+  .fs__card-info__status {
+    color: var(--grey-400);
+  }
+
+  .fs__card-info__status {
+    span {
+      color: var(--green);
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.togo-filled {
+  --fill-color: var(--black, #111);
+  --text-color: var(--white, #fff);
+
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+  width: fit-content;
+
+  &.togo-filled-00 {
+    background: var(--fill-color, #111);
+    color: var(--text-color, #fff);
+  }
+
+  &:hover {
+    --fill-color: var(--grey-400);
+  }
+}
+
+.mainpage-card_middle-title {
+  color: var(--black, #111);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-block-end: 1.5rem;
+}
+
+.mainpage-multicol-items {
+  flex: 0 0 auto;
+
+  .mainpage-multicol-items__link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .mainpage-multicol-items__image {
+      aspect-ratio: 4 / 5;
+      width: 300px;
+      object-fit: cover;
+    }
+
+    .mainpage-card-multicol__category {
+      color: var(--black, #111);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.75rem;
+    }
+
+    .mainpage-card-multicol__title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+      text-transform: uppercase;
+    }
+
+    .mainpage-card-multicol__message {
+      color: var(--black, #111);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
+  }
+}

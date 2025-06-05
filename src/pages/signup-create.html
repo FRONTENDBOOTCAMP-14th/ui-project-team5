@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="icon" href="/src/assets/logo/logo.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/pages/styles/signup-create.css" />
+    <link rel="stylesheet" href="/src/components/styles/landing-page-modal-window.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <h1 class="sr-only">Niking - 회원가입 : 개인정보 입력</h1>
+
+    <div class="signin-page_wrapper">
+      <!-- logo -->
+      <figure class="togo-main-logo">
+        <a class="togo-main-logo__link" href="/index.html">
+          <svg width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M67.854 20L24.8132 38.2574C21.2297 39.7777 18.2152 40.5363 15.7859 40.5363C13.0525 40.5363 11.0613 39.5717 9.83849 37.6459C8.25274 35.1611 8.94589 31.1656 11.6662 26.9479C13.2814 24.4826 15.3347 22.22 17.3356 20.0556C16.8648 20.8207 12.7092 27.7358 17.2539 30.9923C18.153 31.6463 19.4314 31.9667 21.0041 31.9667C22.2662 31.9667 23.7146 31.7607 25.3069 31.3455L67.854 20Z" fill="#111111" />
+          </svg>
+        </a>
+        <figcaption class="sr-only">Niking 홈 화면으로 이동</figcaption>
+      </figure>
+
+      <!-- pageInfo -->
+      <h2 class="sign-in-message">이제 나이키 멤버가 되어볼까요?</h2>
+      <form action="/src/pages/signup-agreement.html" class="form-01" method="POST">
+        <div class="signup-name-input_wrapper">
+          <div class="form-input form-input__name">
+            <!-- firstName -->
+            <label for="form-input__label-01" class="sr-only">이름</label>
+            <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="이름" name="form-input__name" />
+            <!-- lastName -->
+            <label for="form-input__label-01" class="sr-only">성</label>
+            <input class="form-input__input" type="text" id="form-input__label-01" required placeholder="성" name="form-input__name" />
+          </div>
+        </div>
+
+        <!-- 조건문이 있는 비밀번호 입력 서식 -->
+        <!-- 비밀번호 입력서식에만 조건이 달려서 제작상의 편의를 위해 구체적으로 작성했습니다. -->
+
+        <div class="form-input">
+          <div class="form-input-rule">
+            <label for="form-input__label-01" class="sr-only">비밀번호</label>
+            <input class="form-input__input" type="password" pattern=".{8,}" id="form-input__label-01" required placeholder="비밀번호" name="form-input__name" />
+
+            <div class="input-rule">
+              <!-- checked -->
+              <svg class="input-rule__checked" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 6.88462L6.61538 11.5L14.1154 4" stroke="#007D48" stroke-width="1.15385" />
+              </svg>
+              <!-- Xchecked -->
+              <svg class="input-rule__Xchecked" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3L13 13" stroke="#707072" />
+                <path d="M13 3L3 13" stroke="#707072" />
+              </svg>
+              <p class="input-rule-00">최소 8자</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- birthday -->
+        <div class="form-input">
+          <label for="form-input__label-01" class="sr-only">생년월일</label>
+          <input class="form-input__input" type="date" id="form-input__label-01" required placeholder="생년월일" name="form-input__name" />
+        </div>
+        <!-- 약관 동의 안내 체크박스 -->
+        <div class="agreement-checkbox">
+          <input class="agreement-checkbox-input" type="checkbox" name="agreement-checkbox" id="agreement-checkbox-00" />
+          <svg class="checkbox-black" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="fill-color-border" fill="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+            <rect class="fill-color-content" stroke="#111111" x="0.5" y="0.5" width="19" height="19" rx="3.5" />
+            <path class="fill-color-check" fill="white" d="M3.99529 9.99602C4.41211 9.63369 5.04373 9.67786 5.40606 10.0947L8.68635 13.8682L7.17693 15.1803L3.89664 11.4068C3.53431 10.99 3.57848 10.3584 3.99529 9.99602Z" />
+            <path class="fill-color-check" fill="white" d="M6.25 14.34L14.1227 5.28345C14.485 4.86663 15.1167 4.82247 15.5335 5.1848C15.9503 5.54713 15.9945 6.17875 15.6321 6.59557L7.75942 15.6521L6.25 14.34Z" />
+          </svg>
+
+          <label for="agreement-checkbox-00" class="sr-only">회원가입을 위한 약관 동의</label>
+          <p class="agreement">나이키의 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">개인정보 처리방침</a> 및 <a href="/index.html" target="_blank" rel="noopenner noreferrer" class="agreement-message__togo">이용약관</a>에 동의합니다.</p>
+        </div>
+        <!-- 계정 만들기 버튼 -->
+        <button type="submit" formaction="/src/pages/mainpage-contents-page.html" class="button-filled button-filled-00">계정 만들기</button>
+      </form>
+    </div>
+    <dialog class="pre-announcement-dialog" open aria-labelledby="pre-announcement-title" aria-describedby="pre-announcement-body">
+      <h2 id="pre-announcement-title" class="pre-announcement-title">[멋쟁이사자처럼 프론트엔드 부트캠프] UI 프로젝트</h2>
+
+      <div id="pre-announcement-body" class="pre-announcement-body">
+        <p class="pre-announcement-greeting">WELCOME.</p>
+        <br />
+        <p class="pre-announcement-intro">
+          본 웹사이트는 ‘멋쟁이사자처럼’ 프론트엔드 교육과정의 일환으로 제작된<br />
+          비상업적 학습 프로젝트입니다.
+        </p>
+        <br />
+        <p class="pre-announcement-section-title">【알려드립니다】</p>
+        <ul class="pre-announcement-list">
+          <li>현재 페이지는 학습 목적의 모의 사이트이며, <span class="pre-announcement__em">실제 나이키의 공식 웹사이트가 아닙니다</span>.</li>
+          <li>표시된 제품, 서비스, 가격 등은 실제 제공되지 않으며, 상업적 의도가 없습니다.</li>
+          <li>일부 콘텐츠는 외부 출처로부터 차용되었으며, 해당 저작권은 원저작자에게 있습니다.</li>
+          <li>정보의 정확성이나 최신성은 보장되지 않습니다.</li>
+        </ul>
+        <br />
+        <p class="pre-announcement-confirmation"><span class="shaped-button">확인</span> 을 클릭하시면 위 내용을 이해하고 동의한 것으로 간주됩니다.</p>
+        <br />
+        <p class="pre-announcement-end">JUST EXPLORE.</p>
+      </div>
+
+      <div class="pre-announcement-footer">
+        <button type="button" class="button-filled button-filled-00" onclick="document.querySelector('.pre-announcement-dialog').close();">확인</button>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="icon" href="/src/assets/logo/logo.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/pages/styles/gethelp-page.css" />
+    <link rel="stylesheet" href="/src/components/styles/landing-page-modal-window.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header1-container">
+        <header class="header1">
+          <nav>
+            <span><a href="/src/pages/find-store__page.html">매장찾기</a> ㅣ</span>
+            <span><a href="/src/pages/gethelp-page.html">고객센터</a> ㅣ</span>
+            <span><a href="/src/pages/signup-create.html">가입하기</a> ㅣ</span>
+            <span><a href="/src/pages/signin-email.html">로그인</a></span>
+          </nav>
+        </header>
+      </div>
+      <header class="header2">
+        <a href="/src/pages/mainpage-contents-page.html" class="logo">
+          <svg width="59" height="21" viewBox="0 0 59 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M58.854 0L15.8132 18.2574C12.2297 19.7777 9.21516 20.5363 6.78586 20.5363C4.05249 20.5363 2.06131 19.5717 0.83849 17.6459C-0.747258 15.1611 -0.0541062 11.1656 2.66619 6.94786C4.28136 4.4826 6.33466 2.22005 8.33564 0.0555836C7.86482 0.820666 3.70918 7.73584 8.25391 10.9923C9.15304 11.6463 10.4314 11.9667 12.0041 11.9667C13.2662 11.9667 14.7146 11.7607 16.3069 11.3455L58.854 0Z" fill="#111111" />
+          </svg>
+        </a>
+        <nav class="nav-app">
+          <div class="search">
+            <a href="/src/pages/signin-email.html" aria-label="검색"
+              ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.962 13.296C9.91599 13.9224 8.71921 14.2521 7.50001 14.25C6.6134 14.2512 5.7353 14.0772 4.91618 13.7379C4.09707 13.3986 3.35308 12.9008 2.72701 12.273C2.09924 11.6469 1.6014 10.9029 1.26212 10.0838C0.922837 9.26471 0.748797 8.38661 0.750006 7.50001C0.750006 5.63601 1.50501 3.94901 2.72701 2.72701C3.35308 2.09924 4.09707 1.6014 4.91618 1.26212C5.7353 0.922837 6.6134 0.748797 7.50001 0.750006C9.36401 0.750006 11.051 1.50501 12.273 2.72701C12.9008 3.35308 13.3986 4.09707 13.7379 4.91618C14.0772 5.7353 14.2512 6.6134 14.25 7.50001C14.2517 8.69741 13.9338 9.87357 13.329 10.907C12.812 11.789 12.895 12.895 13.618 13.618L17.471 17.471"
+                  stroke="#111111"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="my-info">
+            <a href="/src/pages/signin-email.html" aria-label="내 정보"
+              ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.75 18V15C0.75 14.0054 1.14509 13.0516 1.84835 12.3483C2.55161 11.6451 3.50544 11.25 4.5 11.25H13.5C14.4946 11.25 15.4484 11.6451 16.1517 12.3483C16.8549 13.0516 17.25 14.0054 17.25 15V18M9 0.75C8.00544 0.75 7.05161 1.14509 6.34835 1.84835C5.64509 2.55161 5.25 3.50544 5.25 4.5C5.25 5.49456 5.64509 6.44839 6.34835 7.15165C7.05161 7.85491 8.00544 8.25 9 8.25C9.99456 8.25 10.9484 7.85491 11.6517 7.15165C12.3549 6.44839 12.75 5.49456 12.75 4.5C12.75 3.50544 12.3549 2.55161 11.6517 1.84835C10.9484 1.14509 9.99456 0.75 9 0.75Z"
+                  stroke="#111111"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="shopping-cart">
+            <a href="/src/pages/basket.html" aria-label="장바구니"
+              ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.25 5.25V3C5.25 2.40326 5.48705 1.83097 5.90901 1.40901C6.33097 0.987053 6.90326 0.75 7.5 0.75H10.5C11.0967 0.75 11.669 0.987053 12.091 1.40901C12.5129 1.83097 12.75 2.40326 12.75 3C12.75 3.59674 12.5129 4.16903 12.091 4.59099C11.669 5.01295 11.0967 5.25 10.5 5.25H0.75V13.5C0.75 14.4946 1.14509 15.4484 1.84835 16.1517C2.55161 16.8549 3.50544 17.25 4.5 17.25H13.5C14.4946 17.25 15.4484 16.8549 16.1517 16.1517C16.8549 15.4484 17.25 14.4946 17.25 13.5V5.25H14.5"
+                  stroke="#111111"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </a>
+          </div>
+          <input type="checkbox" id="menu-btn" />
+          <label tabindex="0" for="menu-btn" class="menu"
+            ><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 1.25H0M18 8H0M18 14.75H0" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+
+          <div class="menu-list">
+            <label tabindex="0" for="menu-btn" class="menu-close-btn">
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.18">
+                  <circle cx="14.5" cy="14.5" r="14.5" fill="#E5E5E5" />
+                  <path d="M6 7L21.9995 23" stroke="#111111" stroke-width="2" />
+                  <path d="M22 7L6.0005 23" stroke="#111111" stroke-width="2" />
+                </g>
+              </svg>
+            </label>
+
+            <div class="menu-user-btn">
+              <a href="/src/pages/signup-create.html" class="togo-filled-00">가입하기</a>
+              <a href="/src/pages/signin-email.html" class="togo-outlined-00">로그인</a>
+            </div>
+
+            <ul class="menu-category">
+              <li>
+                <a href="/src/pages/product_list_page.html"
+                  ><span>New & Featured</span
+                  ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4854 10L22.9706 18.4853L14.4854 26.9706" stroke="#111111" stroke-width="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/src/pages/product_list_page.html"
+                  ><span>Men</span
+                  ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4854 10L22.9706 18.4853L14.4854 26.9706" stroke="#111111" stroke-width="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/src/pages/product_list_page.html"
+                  ><span>Women</span
+                  ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4854 10L22.9706 18.4853L14.4854 26.9706" stroke="#111111" stroke-width="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/src/pages/product_list_page.html"
+                  ><span>Kids</span
+                  ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4854 10L22.9706 18.4853L14.4854 26.9706" stroke="#111111" stroke-width="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/src/pages/product_list_page.html"
+                  ><span>Sale</span
+                  ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4854 10L22.9706 18.4853L14.4854 26.9706" stroke="#111111" stroke-width="2" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-etc">
+              <a href="/src/pages/gethelp-page.html"
+                ><li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.99 18V16.5M9 9.75C9.00027 9.21339 9.14447 8.68668 9.41756 8.22476C9.69065 7.76284 10.0826 7.38262 10.5527 7.12373C11.0227 6.86485 11.5536 6.73678 12.0899 6.75286C12.6263 6.76895 13.1485 6.9286 13.6022 7.21519C14.0559 7.50177 14.4244 7.9048 14.6693 8.38225C14.9142 8.85971 15.0266 9.39411 14.9947 9.92978C14.9628 10.4654 14.7878 10.9827 14.488 11.4278C14.1882 11.8728 13.7745 12.2293 13.29 12.46C12.51 12.83 12 13.62 12 14.49V15M21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12Z"
+                      stroke="#111111"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                    />
+                  </svg>
+                  <span>고객센터</span>
+                </li>
+              </a>
+              <a href="/src/pages/basket.html"
+                ><li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.25 8.25V6C8.25 5.40326 8.48705 4.83097 8.90901 4.40901C9.33097 3.98705 9.90326 3.75 10.5 3.75H13.5C14.0967 3.75 14.669 3.98705 15.091 4.40901C15.5129 4.83097 15.75 5.40326 15.75 6C15.75 6.59674 15.5129 7.16903 15.091 7.59099C14.669 8.01295 14.0967 8.25 13.5 8.25H3.75V16.5C3.75 17.4946 4.14509 18.4484 4.84835 19.1517C5.55161 19.8549 6.50544 20.25 7.5 20.25H16.5C17.4946 20.25 18.4484 19.8549 19.1517 19.1517C19.8549 18.4484 20.25 17.4946 20.25 16.5V8.25H17.5"
+                      stroke="#111111"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+
+                  <span>장바구니</span>
+                </li>
+              </a>
+              <a href="/"
+                ><li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 13.5V6.5C12 4.76 13.01 3.75 14.25 3.75H18.64L20.25 9.75M20.25 9.75H3.75M20.25 9.75V20.25H3.75V9.75M3.75 9.75L5.36 3.75H10.5" stroke="#111111" stroke-width="1.5" stroke-miterlimit="10" />
+                  </svg>
+
+                  <span>주문</span>
+                </li>
+              </a>
+              <a href="/src/pages/find-store__page.html"
+                ><li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.25 5.25V16.5C20.25 17.74 19.24 18.75 18 18.75H6C4.76 18.75 3.75 17.74 3.75 16.5V5.25M8.25 18.5V11.25H15.75V18.5M12 11.25V18.5M1.5 5.25H22.5" stroke="#111111" stroke-width="1.5" stroke-miterlimit="10" />
+                  </svg>
+
+                  <span>매장 찾기</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="overlay"></div>
+        </nav>
+
+        <nav class="nav-web1">
+          <div><a href="/src/pages/product_list_page.html">New & Featured</a></div>
+          <div><a href="/src/pages/product_list_page.html">Men</a></div>
+          <div><a href="/src/pages/product_list_page.html">Women</a></div>
+          <div><a href="/src/pages/product_list_page.html">Kids</a></div>
+          <div><a href="/src/pages/product_list_page.html">Sale</a></div>
+        </nav>
+        <nav class="nav-web2">
+          <form action="/" class="header__search-input" method="GET">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.962 16.296C12.916 16.9224 11.7192 17.2521 10.5 17.25C9.6134 17.2512 8.7353 17.0772 7.91618 16.7379C7.09707 16.3986 6.35308 15.9008 5.72701 15.273C5.09924 14.6469 4.6014 13.9029 4.26212 13.0838C3.92284 12.2647 3.7488 11.3866 3.75001 10.5C3.75001 8.63601 4.50501 6.94901 5.72701 5.72701C6.35308 5.09924 7.09707 4.6014 7.91618 4.26212C8.7353 3.92284 9.6134 3.7488 10.5 3.75001C12.364 3.75001 14.051 4.50501 15.273 5.72701C15.9008 6.35308 16.3986 7.09707 16.7379 7.91618C17.0772 8.7353 17.2512 9.6134 17.25 10.5C17.2517 11.6974 16.9338 12.8736 16.329 13.907C15.812 14.789 15.895 15.895 16.618 16.618L20.471 20.471"
+                stroke="#111111"
+                stroke-width="1.5"
+              />
+            </svg>
+            <label for="header__search-input" class="sr-only">매장 위치 검색</label>
+            <input class="header__search-input__input" type="text" id="header__search-input" placeholder="검색" name="header__search-input__name" />
+          </form>
+          <a href="/src/pages/wishlist.html" aria-label="위시리스트">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.794 9.75002C24.118 9.75002 25.362 10.266 26.298 11.201C27.2262 12.1309 27.7475 13.3911 27.7475 14.705C27.7475 16.0189 27.2262 17.2791 26.298 18.209L18 26.508L9.70096 18.209C8.77307 17.2791 8.25195 16.0192 8.25195 14.7055C8.25195 13.3919 8.77307 12.1319 9.70096 11.202C10.16 10.7403 10.706 10.3743 11.3075 10.125C11.909 9.87578 12.5539 9.74832 13.205 9.75002C14.529 9.75002 15.773 10.266 16.709 11.201L17.469 11.961L18 12.492L18.53 11.961L19.29 11.201C19.7492 10.7396 20.2953 10.3738 20.8967 10.1248C21.4982 9.87573 22.143 9.74835 22.794 9.75002Z"
+                stroke="#111111"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+          <a href="/src/pages/basket.html" aria-label="장바구니"
+            ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.25 14.25V12C14.25 11.4033 14.4871 10.831 14.909 10.409C15.331 9.98705 15.9033 9.75 16.5 9.75H19.5C20.0967 9.75 20.669 9.98705 21.091 10.409C21.5129 10.831 21.75 11.4033 21.75 12C21.75 12.5967 21.5129 13.169 21.091 13.591C20.669 14.0129 20.0967 14.25 19.5 14.25H9.75V22.5C9.75 23.4946 10.1451 24.4484 10.8483 25.1517C11.5516 25.8549 12.5054 26.25 13.5 26.25H22.5C23.4946 26.25 24.4484 25.8549 25.1517 25.1517C25.8549 24.4484 26.25 23.4946 26.25 22.5V14.25H23.5"
+                stroke="#111111"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </nav>
+      </header>
+    </div>
+
+    <h3 class="page__heading">고객센터</h3>
+
+    <form action="/" class="gh__form-input" method="GET">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.962 16.296C12.916 16.9224 11.7192 17.2521 10.5 17.25C9.6134 17.2512 8.7353 17.0772 7.91618 16.7379C7.09707 16.3986 6.35308 15.9008 5.72701 15.273C5.09924 14.6469 4.6014 13.9029 4.26212 13.0838C3.92284 12.2647 3.7488 11.3866 3.75001 10.5C3.75001 8.63601 4.50501 6.94901 5.72701 5.72701C6.35308 5.09924 7.09707 4.6014 7.91618 4.26212C8.7353 3.92284 9.6134 3.7488 10.5 3.75001C12.364 3.75001 14.051 4.50501 15.273 5.72701C15.9008 6.35308 16.3986 7.09707 16.7379 7.91618C17.0772 8.7353 17.2512 9.6134 17.25 10.5C17.2517 11.6974 16.9338 12.8736 16.329 13.907C15.812 14.789 15.895 15.895 16.618 16.618L20.471 20.471"
+          stroke="#111111"
+          stroke-width="1.5"
+        />
+      </svg>
+      <label for="gh__form-input__label-01" class="sr-only">문의 내용 입력</label>
+      <input class="gh__form-input__input" type="text" id="gh__form-input__label-01" placeholder="무엇을 도와드릴까요?" name="gh__form-input__name" />
+    </form>
+
+    <div class="gethelp-FAQ">
+      <h3>빠른 지원</h3>
+      <p>클릭 한 번으로 자주 묻는 질문에 대한 답변을 확인할 수 있습니다.</p>
+      <div class="customer-service-FAQ-wrapper">
+        <div class="customer-service-FAQ-01">
+          <input type="checkbox" id="customer-service-FAQ-01__dropdown" aria-controls="customer-service-FAQ-01__list" hidden />
+          <label for="customer-service-FAQ-01__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-01__title">배송 및 주문</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-01__dropdown-list" id="customer-service-FAQ-01__list">
+            <li><a href="/">주문을 취소하거나 주문 내용을 변경할 수 있나요?</a></li>
+            <li><a href="/">나이키의 배송옵션은 어떻게 되나요?</a></li>
+            <li><a href="/">주문 및 배송 상황은 어떻게 조회할 수 있나요?</a></li>
+            <li><a href="/">결제 방법은 어떤 것이 있나요?</a></li>
+          </ul>
+        </div>
+        <div class="customer-service-FAQ-02">
+          <input type="checkbox" id="customer-service-FAQ-02__dropdown" aria-controls="customer-service-FAQ-02__list" hidden />
+          <label for="customer-service-FAQ-02__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-02__title">반품 및 환불</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-02__dropdown-list" id="customer-service-FAQ-02__list">
+            <li><a href="/">나이키의 반품정책은 어떻게 되나요?</a></li>
+            <li><a href="/">온라인으로 구매한 나이키 제품의 반품은 어떻게 진행해야하나요?</a></li>
+            <li><a href="/">나이키의 환불 절차는 어떻게 되나요?</a></li>
+          </ul>
+        </div>
+        <div class="customer-service-FAQ-03">
+          <input type="checkbox" id="customer-service-FAQ-03__dropdown" aria-controls="customer-service-FAQ-03__list" hidden />
+          <label for="customer-service-FAQ-03__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-03__title">나이키 멤버십</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-03__dropdown-list" id="customer-service-FAQ-03__list">
+            <li><a href="/">나이키 멤버가 되면 어떤 혜택을 받나요?</a></li>
+            <li><a href="/">쿠폰은 어떻게 사용하나요? (생일 쿠폰, 웰컴 쿠폰 등)</a></li>
+            <li><a href="/">NRC와 NTC 안내</a></li>
+          </ul>
+        </div>
+        <div class="customer-service-FAQ-04">
+          <input type="checkbox" id="customer-service-FAQ-04__dropdown" aria-controls="customer-service-FAQ-04__list" hidden />
+          <label for="customer-service-FAQ-04__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-04__title">SNKRS</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-04__dropdown-list" id="customer-service-FAQ-04__list">
+            <li><a href="/">Draw는 어떻게 응모하나요?</a></li>
+            <li><a href="/">SNKRS와 나이키 온라인에서의 구매방법이 다른가요?</a></li>
+            <li><a href="/">SNKRS 결제 방법은 어떻게 되나요?</a></li>
+          </ul>
+        </div>
+        <div class="customer-service-FAQ-05">
+          <input type="checkbox" id="customer-service-FAQ-05__dropdown" aria-controls="customer-service-FAQ-05__list" hidden />
+          <label for="customer-service-FAQ-05__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-05__title">제품 정보</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-05__dropdown-list" id="customer-service-FAQ-05__list">
+            <li><a href="/">나이키의 A/S 절차는 어떻게 진행되나요?</a></li>
+            <li><a href="/">나이키 제품의 사이즈 정보는 어떻게 알 수 있나요?</a></li>
+            <li><a href="/">나이키 신발을 재활용할 수 있나요?</a></li>
+          </ul>
+        </div>
+        <div class="customer-service-FAQ-06">
+          <input type="checkbox" id="customer-service-FAQ-06__dropdown" aria-controls="customer-service-FAQ-06__list" hidden />
+          <label for="customer-service-FAQ-06__dropdown" class="dropdown__list">
+            <span class="customer-service-FAQ-06__title">공지</span>
+            <svg class="dropdown-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <ul class="customer-service-FAQ-06__dropdown-list" id="customer-service-FAQ-06__list">
+            <li><a href="/">공지사항 및 고객알림</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="h3">문의하기</h3>
+    <div class="gethelp-help">
+      <div class="customer-service-help-01">
+        <svg class="customer-service-help-01__image" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32 35.2998H36C37.1935 35.2998 38.3381 34.8257 39.182 33.9818C40.0259 33.1379 40.5 31.9933 40.5 30.7998V12.7998C40.5 11.6063 40.0259 10.4617 39.182 9.61782C38.3381 8.77391 37.1935 8.2998 36 8.2998H12C10.8065 8.2998 9.66193 8.77391 8.81802 9.61782C7.97411 10.4617 7.5 11.6063 7.5 12.7998V30.7998C7.5 31.9933 7.97411 33.1379 8.81802 33.9818C9.66193 34.8257 10.8065 35.2998 12 35.2998h34C25.1935 35.2998 26.3381 35.7739 27.182 36.6178C28.0259 37.4617 28.5 38.6063 28.5 39.7998V42.7998M30 26.2998H15M33 17.2998H15"
+            stroke="#111111"
+            stroke-width="3"
+          />
+        </svg>
+        <div class="customer-service-help-01__text">
+          <h3>제품 및 주문</h3>
+          <p>나이키와 채팅하기<br />9:00 ~ 20:00<br />월요일 - 일요일(설/추석 연휴 제외)</p>
+        </div>
+      </div>
+      <div class="customer-service-help-02">
+        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 38.2998H27M30 44.2998H18C16.8065 44.2998 15.6619 43.8257 14.818 42.9818C13.9741 42.1379 13.5 40.9933 13.5 39.7998V9.7998C13.5 8.60633 13.9741 7.46174 14.818 6.61782C15.6619 5.77391 16.8065 5.2998 18 5.2998H30C31.1935 5.2998 32.3381 5.77391 33.182 6.61782C34.0259 7.46174 34.5 8.60633 34.5 9.7998V39.7998C34.5 40.9933 34.0259 42.1379 33.182 42.9818C32.3381 43.8257 31.1935 44.2998 30 44.2998Z" stroke="#111111" stroke-width="3" />
+        </svg>
+
+        <div class="customer-service-help-02__text">
+          <h3>제품 및 주문</h3>
+          <p>080-022-0182<br />9:00 ~ 20:00<br />월요일 - 일요일(설/추석 연휴 제외)</p>
+        </div>
+      </div>
+      <div class="customer-service-help-03">
+        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 38.2998H27M30 44.2998H18C16.8065 44.2998 15.6619 43.8257 14.818 42.9818C13.9741 42.1379 13.5 40.9933 13.5 39.7998V9.7998C13.5 8.60633 13.9741 7.46174 14.818 6.61782C15.6619 5.77391 16.8065 5.2998 18 5.2998H30C31.1935 5.2998 32.3381 5.77391 33.182 6.61782C34.0259 7.46174 34.5 8.60633 34.5 9.7998V39.7998C34.5 40.9933 34.0259 42.1379 33.182 42.9818C32.3381 43.8257 31.1935 44.2998 30 44.2998Z" stroke="#111111" stroke-width="3" />
+        </svg>
+
+        <div class="customer-service-help-03__text">
+          <h3>A/S 서비스</h3>
+          <p>080-022-0182<br />9:00 ~ 12:00, 13:00 ~ 18:00<br />월요일 - 일요일(공휴일 제외)</p>
+        </div>
+      </div>
+      <div class="customer-service-help-04">
+        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 44.2938L23.064 45.4658C23.3298 45.6781 23.6599 45.7937 24 45.7937C24.3401 45.7937 24.6702 45.6781 24.936 45.4658L24 44.2938ZM36 18.7998C36 20.6398 35.394 22.9618 34.352 25.5238C33.322 28.0618 31.908 30.7238 30.404 33.2098C29.0394 35.4671 27.5594 37.6527 25.97 39.7578C24.58 41.5858 23.524 42.7538 23.064 43.1218L24.936 45.4658C25.726 44.8378 26.982 43.3818 28.358 41.5718C30.0113 39.3832 31.5507 37.1109 32.97 34.7638C34.53 32.1878 36.022 29.3818 37.13 26.6538C38.23 23.9498 39 21.2078 39 18.7998H36ZM24.936 43.1198C24.476 42.7538 23.42 41.5858 22.03 39.7578C20.4406 37.6527 18.9606 35.4671 17.596 33.2098C16.092 30.7238 14.68 28.0618 13.648 25.5238C12.606 22.9618 12 20.6418 12 18.7998H9C9 21.2078 9.77 23.9498 10.868 26.6538C11.978 29.3818 13.472 32.1878 15.028 34.7638C16.588 37.3398 18.228 39.7118 19.642 41.5718C21.018 43.3818 22.274 44.8378 23.064 45.4658L24.936 43.1198ZM12 18.7998C12 15.6172 13.2643 12.565 15.5147 10.3145C17.7652 8.06409 20.8174 6.7998 24 6.7998V3.7998C20.0218 3.7998 16.2064 5.38016 13.3934 8.1932C10.5804 11.0062 9 14.8216 9 18.7998H12ZM24 6.7998C27.1826 6.7998 30.2348 8.06409 32.4853 10.3145C34.7357 12.565 36 15.6172 36 18.7998H39C39 14.8216 37.4196 11.0062 34.6066 8.1932C31.7936 5.38016 27.9782 3.7998 24 3.7998V6.7998ZM29 18.7998C29 19.4564 28.8707 20.1066 28.6194 20.7132C28.3681 21.3199 27.9998 21.871 27.5355 22.3353C27.0712 22.7996 26.52 23.1679 25.9134 23.4192C25.3068 23.6705 24.6566 23.7998 24 23.7998V26.7998C26.1217 26.7998 28.1566 25.957 29.6569 24.4567C31.1571 22.9564 32 20.9215 32 18.7998H29ZM24 23.7998C22.6739 23.7998 21.4021 23.273 20.4645 22.3353C19.5268 21.3977 19 20.1259 19 18.7998H16C16 20.9215 16.8429 22.9564 18.3431 24.4567C19.8434 25.957 21.8783 26.7998 24 26.7998V23.7998ZM19 18.7998C19 17.4737 19.5268 16.202 20.4645 15.2643C21.4021 14.3266 22.6739 13.7998 24 13.7998V10.7998C21.8783 10.7998 19.8434 11.6427 18.3431 13.143C16.8429 14.6432 16 16.6781 16 18.7998H19ZM24 13.7998C25.3261 13.7998 26.5979 14.3266 27.5355 15.2643C28.4732 16.202 29 17.4737 29 18.7998H32C32 16.6781 31.1571 14.6432 29.6569 13.143C28.1566 11.6427 26.1217 10.7998 24 10.7998V13.7998Z"
+            fill="#111111"
+          />
+        </svg>
+
+        <div class="customer-service-help-04__text">
+          <h3>매장 찾기</h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="f__dropdown">
+        <div class="footer__dropdown">
+          <input type="checkbox" id="footer__dropdown1" hidden />
+          <label for="footer__dropdown1" class="dropdown__list">
+            <span>안내</span
+            ><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <div class="dropdown__list-content1">
+            <ul>
+              <li><a href="/src/pages/signup-agreement.html">멤버가입</a></li>
+              <li><a href="/src/pages/find-store__page.html">매장찾기</a></li>
+              <li><a href="/src/pages/mainpage-contents-page.html">나이키 저널</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__dropdown">
+          <input type="checkbox" id="footer__dropdown2" hidden />
+          <label for="footer__dropdown2" class="dropdown__list">
+            <span>고객센터</span
+            ><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <div class="dropdown__list-content2">
+            <ul>
+              <li><a href="/src/pages/gethelp-page.html">주문배송조회</a></li>
+              <li><a href="/src/pages/gethelp-page.html">반품정책</a></li>
+              <li><a href="/src/pages/gethelp-page.html">결제 방법</a></li>
+              <li><a href="/src/pages/gethelp-page.html">공지사항</a></li>
+              <li><a href="/src/pages/gethelp-page.html">문의하기</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__dropdown">
+          <input type="checkbox" id="footer__dropdown3" hidden />
+          <label for="footer__dropdown3" class="dropdown__list dropdown__list3">
+            <span>회사소개</span
+            ><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9662 8.97595L12.0002 15.943L5.0332 8.97595" stroke="#111111" stroke-width="1.5" />
+            </svg>
+          </label>
+          <div class="dropdown__list-content3">
+            <ul>
+              <li><a href="/">About Nike</a></li>
+              <li><a href="/">소식</a></li>
+              <li><a href="/">채용</a></li>
+              <li><a href="/">투자자</a></li>
+              <li><a href="/">지속가능성</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__terms">
+        <p>ⓒ 2024 Nike, Inc. All Rights Reserved</p>
+        <a href="/"><p>이용약관</p></a>
+        <a href="/"
+          ><p><span>개인정보처리방침</span></p></a
+        >
+        <a href="/"><p>위치정보이용약관</p></a>
+        <a href="/"><p>영상정보처리기기 운영 방침</p></a>
+      </div>
+
+      <div class="footer__company-info">
+        <p>
+          (유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스 | 서울 강남구 테헤란로 152 강남파이낸스센터 30층 | 통신판매업신고번호 2011-서울강남-03461 | 등록번호 220-88-09068 <u><a href="/">사업자 정보 확인</a></u>
+        </p>
+        <p>고객센터 전화 문의 <u>080-022-0182</u> FAX 02-6744-5880 | 이메일 <u>service@nike.co.kr</u> |</p>
+        <p>호스팅서비스사업자 (유)나이키코리아</p>
+      </div>
+    </footer>
+
+    <dialog class="pre-announcement-dialog" open aria-labelledby="pre-announcement-title" aria-describedby="pre-announcement-body">
+      <h2 id="pre-announcement-title" class="pre-announcement-title">[멋쟁이사자처럼 프론트엔드 부트캠프] UI 프로젝트</h2>
+
+      <div id="pre-announcement-body" class="pre-announcement-body">
+        <p class="pre-announcement-greeting">WELCOME.</p>
+        <br />
+        <p class="pre-announcement-intro">
+          본 웹사이트는 ‘멋쟁이사자처럼’ 프론트엔드 교육과정의 일환으로 제작된<br />
+          비상업적 학습 프로젝트입니다.
+        </p>
+        <br />
+        <p class="pre-announcement-section-title">【알려드립니다】</p>
+        <ul class="pre-announcement-list">
+          <li>현재 페이지는 학습 목적의 모의 사이트이며, <span class="pre-announcement__em">실제 나이키의 공식 웹사이트가 아닙니다</span>.</li>
+          <li>표시된 제품, 서비스, 가격 등은 실제 제공되지 않으며, 상업적 의도가 없습니다.</li>
+          <li>일부 콘텐츠는 외부 출처로부터 차용되었으며, 해당 저작권은 원저작자에게 있습니다.</li>
+          <li>정보의 정확성이나 최신성은 보장되지 않습니다.</li>
+        </ul>
+        <br />
+        <p class="pre-announcement-confirmation"><span class="shaped-button">확인</span> 을 클릭하시면 위 내용을 이해하고 동의한 것으로 간주됩니다.</p>
+        <br />
+        <p class="pre-announcement-end">JUST EXPLORE.</p>
+      </div>
+
+      <div class="pre-announcement-footer">
+        <button type="button" class="button-filled button-filled-00" onclick="document.querySelector('.pre-announcement-dialog').close();">확인</button>
+      </div>
+    </dialog>
+  </body>
+</html>

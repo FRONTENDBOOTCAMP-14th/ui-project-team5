@@ -1,0 +1,23 @@
+@import './component_wrapper.css';
+
+.delivery-pickup {
+  min-width: 240px;
+
+  color: var(--black);
+  font-size: var(--text-2);
+  line-height: 28px;
+
+  .delivery-pickup__section {
+    .delivery-pickup__fee {
+      font-weight: 500;
+    }
+
+    &.delivery-pickup__section--pickup {
+      padding-top: 1rem;
+    }
+
+    .delivery-pickup__store-link {
+      border-bottom: 1px solid var(--black);
+    }
+  }
+}

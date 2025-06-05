@@ -1,0 +1,110 @@
+.container {
+  padding: 50px;
+
+  .compoenent-title {
+    font-size: var(--text-4);
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid var(--black);
+    }
+  }
+}
+
+.product-info-accordion {
+  .product-info-accordion__item {
+  }
+
+  .product-info-accordion__item-summary {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .product-info-accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-100);
+    padding-block: 30px;
+  }
+
+  .product-info-accordion__title {
+    font-size: var(--text-3);
+    font-weight: 500;
+  }
+
+  .product-info-accordion__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/src/assets/icon/down.svg') no-repeat center/contain;
+    vertical-align: middle;
+    text-indent: -9999px;
+    transition: background-image 0.2s;
+  }
+
+  .product-info-accordion__item[open] {
+    .product-info-accordion__icon {
+      background-image: url('/src/assets/icon/up.svg');
+    }
+
+    .product-info-accordion__header {
+      border-bottom: none;
+    }
+  }
+
+  .product-info-accordion__content-wrapper {
+    border-bottom: 1px solid var(--grey-100);
+    padding-bottom: 30px;
+  }
+
+  .product-info-accordion__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    ul {
+      line-height: 28px;
+      padding-left: 26px;
+      list-style-type: disc;
+      margin: 0;
+
+      li {
+        padding-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    a {
+      font-weight: 600;
+      border-bottom: 1px solid var(--black);
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: var(--grey-500);
+        border-bottom-color: var(--grey-500);
+      }
+    }
+
+    p {
+      line-height: 28px;
+      margin: 0 0 6px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

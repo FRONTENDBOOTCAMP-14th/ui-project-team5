@@ -1,0 +1,47 @@
+.container {
+  padding: 50px;
+
+  .compoenent-title {
+    font-size: var(--text-4);
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid var(--black);
+    }
+  }
+}
+
+.product-options__description {
+  width: 400px;
+  line-height: 28px;
+}
+
+.product-options__serial-info {
+  width: 400px;
+  padding-left: 26px;
+  margin-top: 28px;
+  margin-bottom: 30px;
+
+  ul {
+    line-height: 28px;
+    padding-left: 26px;
+    list-style: disc;
+    margin: 0;
+
+    li {
+      padding-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import './component_wrapper.css';
+@import './product_card.css';
+
+.product-recommendation {
+  background-color: var(--white);
+
+  .product-recommendation__card-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .product-recommendation__card {
+    min-width: 177px;
+    max-width: 600px;
+    flex: 0 0 calc(75% - 20px);
+  }
+}

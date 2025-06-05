@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="icon" href="/src/assets/logo/logo.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/pages/styles/landing_page.css" />
+    <link rel="stylesheet" href="/src/components/styles/landing-page-modal-window.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="nike-bg">
+      <div>
+        <svg width="848" height="782" viewBox="0 0 848 782" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1044_1522)">
+            <path d="M130.71 197.24L128.89 117.8C128.63 101.96 130.19 88.21 130.45 74.71H129.93C126.56 88.21 123.7 101.97 118.77 117.8L95.1498 197.24H43.7498L31.0298 1.5H83.2098L82.4298 80.42C82.1698 94.96 81.6498 109.24 81.1298 123.77H81.6498C85.5398 109.23 87.8798 94.95 92.8098 80.42L119.03 1.5H164.46L165.5 80.42C165.76 94.7 164.98 108.72 164.72 122.99H165.24C168.87 110.79 171.73 95.73 176.4 80.42L200.54 1.5H252.2L181.85 197.24H130.71Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M267.78 1.5H366.17L358.9 47.71H313.47L309.32 74.97H350.08L342.55 121.18H301.79L297.12 151.03H342.55L335.28 197.24H236.89L267.78 1.5Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M100.6 433.96V408.78H65.04L56.73 433.96H2.20996L80.09 238.22H144.73L155.37 433.96H100.6ZM101.12 367.24L102.42 321.81C102.94 309.61 103.72 297.15 104.5 284.95H103.98C100.35 297.15 97.23 309.61 93.08 321.81L78.8 367.24H101.13H101.12Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M254.8 433.96L238.45 352.45L237.67 352.97C236.63 362.58 235.59 372.18 234.04 381.79L225.73 433.97H172.77L203.66 238.23H254.8C300.75 238.23 331.9 251.73 323.85 303.39C320.48 324.94 308.01 344.15 285.69 352.45L312.17 433.96H254.8ZM245.71 328.82C259.73 328.82 269.33 316.62 271.15 303.9C274.01 286.77 264.66 279.5 250.12 280.28L242.33 328.57L245.71 328.83V328.82Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M360.45 238.22H458.84L451.57 284.43H406.14L401.99 311.69H442.75L435.22 357.9H394.46L389.79 387.75H435.22L427.95 433.96H329.56L360.45 238.22Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M46.6 474.95H96.96L120.84 592.81L121.36 592.29C122.92 569.71 122.4 547.38 126.03 524.79L133.82 474.95H184.7L153.81 670.69H102.93L81.38 557.77L80.86 558.29C79.04 576.72 78.52 594.89 75.67 613.33L66.58 670.7H15.71L46.6 474.96V474.95Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M184.97 670.68L215.86 474.94H268.82L237.93 670.68H184.97Z" stroke="white" stroke-width="3" stroke-miterlimit="10" />
+            <path d="M438.07 474.95L380.96 569.44L412.11 670.68H355.26L336.57 580.86H336.31L322.03 670.68H269.07L299.96 474.94H352.92L339.94 558.27H340.2L382.25 474.94H438.06L438.07 474.95Z" fill="white" />
+            <path d="M433.65 670.68L464.54 474.94H517.5L486.61 670.68H433.65Z" fill="white" />
+            <path d="M548.65 474.95H599.01L622.89 592.81L623.41 592.29C624.97 569.71 624.45 547.38 628.08 524.79L635.87 474.95H686.75L655.86 670.69H604.98L583.43 557.77L582.91 558.29C581.09 576.72 580.57 594.89 577.72 613.33L568.63 670.7H517.75L548.64 474.96L548.65 474.95Z" fill="white" />
+            <path d="M845.89 557.5L844.85 565.81C837.32 614.1 818.37 674.06 757.11 674.06C699.48 674.06 688.84 623.44 696.62 573.85C704.41 525.31 731.15 471.57 788.52 471.57C820.19 471.57 840.7 491.56 847.71 519.86L793.45 538.81C794.23 531.02 791.11 518.82 781.77 518.82C757.37 518.82 752.18 563.73 749.84 578.53C748.54 592.55 742.05 626.82 762.56 626.82C776.58 626.82 783.59 610.21 785.14 598.78H765.67L772.16 557.5H845.89Z" fill="white" />
+            <path d="M23.7598 771.41H18.7598L24.7098 733.71H29.7098L23.7598 771.41Z" fill="white" />
+            <path d="M34.21 746.16L35.51 738.01C36.16 733.71 37.21 729.51 42.56 729.51C43.76 729.51 44.61 729.76 45.61 730.21L44.81 735.11C44.21 734.76 43.71 734.51 42.96 734.51C40.56 734.51 40.36 736.86 40.11 738.56L38.91 746.16H42.81L42.21 749.86H38.31L34.91 771.41H30.21L33.61 749.86H31.26L31.86 746.16H34.21Z" fill="white" />
+            <path d="M58.9599 746.16L59.8599 763.76H59.9599L67.0099 746.16H71.7599L55.8099 781.76H50.8599L56.7099 769.36L53.7099 746.16H58.9599Z" fill="white" />
+            <path d="M71.6102 758.86C72.4602 753.36 74.4102 745.76 81.6102 745.76C88.8102 745.76 88.3602 753.36 87.5102 758.86C86.6602 764.16 84.7102 771.81 77.5102 771.81C70.3102 771.81 70.7602 764.16 71.6102 758.86ZM82.7102 758.86C83.0102 756.86 84.5602 750.06 80.9602 750.06C77.3602 750.06 76.7102 756.86 76.4102 758.86C76.1102 760.66 74.5602 767.51 78.1602 767.51C81.7602 767.51 82.4102 760.66 82.7102 758.86Z" fill="white" />
+            <path d="M97.8101 746.16L95.3101 761.96C94.9601 764.21 94.1101 767.51 97.3101 767.51C100.51 767.51 100.61 764.46 100.96 762.21L103.51 746.16H108.21L105.51 763.21C104.71 768.41 102.61 771.81 96.8601 771.81C90.0101 771.81 89.6601 767.96 90.5601 762.21L93.1101 746.16H97.8101Z" fill="white" />
+            <path d="M130.06 729.91L127.06 749.06H127.16C127.86 748.01 128.66 747.21 129.51 746.66C130.46 746.06 131.51 745.76 132.76 745.76C137.81 745.76 137.21 750.21 136.61 754.06L133.86 771.41H129.16L131.91 753.96C132.21 752.21 132.26 749.96 129.76 749.96C126.66 749.96 126.36 753.51 126.01 755.66L123.51 771.41H118.81L125.36 729.91H130.06Z" fill="white" />
+            <path d="M148.66 768.16H148.56C147.26 770.36 146.06 771.81 143.36 771.81C137.51 771.81 138.86 762.56 139.51 758.46C140.16 754.26 141.66 745.76 147.61 745.76C149.81 745.76 151.06 747.11 151.61 748.96H151.71L152.16 746.16H156.86L152.86 771.41H148.16L148.66 768.16ZM150.31 758.76C150.61 756.76 151.91 749.96 148.76 749.96C145.26 749.96 144.61 756.71 144.26 758.76C143.91 760.86 142.46 767.61 145.96 767.61C149.11 767.61 150.01 760.76 150.31 758.76Z" fill="white" />
+            <path d="M164.66 746.16L165.01 765.26H165.11L165.51 763.76L169.01 753.56L171.71 746.16H176.26L165.61 771.41H162.51L159.66 746.16H164.66Z" fill="white" />
+            <path d="M181 759.71C180.65 761.81 179.65 767.61 182.7 767.61C185.2 767.61 186.1 764.86 186.4 762.91H190.75C190 767.56 187.3 771.81 182 771.81C174.95 771.81 175.45 764.31 176.3 758.96C177.15 753.81 179 745.76 185.95 745.76C192.9 745.76 192.35 753.76 191.5 758.96L191.4 759.71H181ZM187.16 756.36C187.46 754.41 188.16 749.96 185.31 749.96C182.46 749.96 181.86 754.41 181.56 756.36H187.16Z" fill="white" />
+            <path d="M213.85 768.16H213.75C212.45 770.36 211.25 771.81 208.55 771.81C202.7 771.81 204.05 762.56 204.7 758.46C205.35 754.26 206.85 745.76 212.8 745.76C215 745.76 216.25 747.11 216.8 748.96H216.9L217.35 746.16H222.05L218.05 771.41H213.35L213.85 768.16ZM215.5 758.76C215.8 756.76 217.1 749.96 213.95 749.96C210.45 749.96 209.8 756.71 209.45 758.76C209.1 760.86 207.65 767.61 211.15 767.61C214.3 767.61 215.2 760.76 215.5 758.76Z" fill="white" />
+            <path d="M243.9 729.91L240.9 749.06H241C241.7 748.01 242.5 747.21 243.35 746.66C244.3 746.06 245.35 745.76 246.6 745.76C251.65 745.76 251.05 750.21 250.45 754.06L247.7 771.41H243L245.75 753.96C246.05 752.21 246.1 749.96 243.6 749.96C240.5 749.96 240.2 753.51 239.85 755.66L237.35 771.41H232.65L239.2 729.91H243.9Z" fill="white" />
+            <path d="M262.5 768.16H262.4C261.1 770.36 259.9 771.81 257.2 771.81C251.35 771.81 252.7 762.56 253.35 758.46C254 754.26 255.5 745.76 261.45 745.76C263.65 745.76 264.9 747.11 265.45 748.96H265.55L266 746.16H270.7L266.7 771.41H262L262.5 768.16ZM264.15 758.76C264.45 756.76 265.75 749.96 262.6 749.96C259.1 749.96 258.45 756.71 258.1 758.76C257.75 760.86 256.3 767.61 259.8 767.61C262.95 767.61 263.85 760.76 264.15 758.76Z" fill="white" />
+            <path d="M279.3 749.06H279.4C280.1 748.01 280.9 747.21 281.75 746.66C282.7 746.06 283.75 745.76 285 745.76C290 745.76 289.45 750.21 288.85 754.06L286.1 771.41H281.4L284.15 753.96C284.45 752.21 284.5 749.96 282 749.96C278.9 749.96 278.6 753.51 278.25 755.66L275.75 771.41H271.05L275.05 746.16H279.75L279.3 749.06Z" fill="white" />
+            <path d="M300.9 768.16H300.8C299.5 770.36 298.25 771.81 295.6 771.81C289.75 771.81 291.1 762.56 291.75 758.46C292.4 754.26 293.9 745.76 299.85 745.76C302.25 745.76 303.2 747.06 303.85 748.96H303.95L306.95 729.91H311.65L305.1 771.41H300.4L300.9 768.16ZM302.55 758.76C302.85 756.76 304.15 749.96 301 749.96C297.5 749.96 296.85 756.71 296.5 758.76C296.15 760.86 294.7 767.61 298.2 767.61C301.35 767.61 302.25 760.76 302.55 758.76Z" fill="white" />
+            <path d="M315.75 767.36L308.8 780.61L306.35 779.91L311.9 766.11L315.75 767.36Z" fill="white" />
+            <path d="M337.2 746.16L338.1 763.76H338.2L345.25 746.16H350L334.05 781.76H329.1L334.95 769.36L331.95 746.16H337.2Z" fill="white" />
+            <path d="M349.85 758.86C350.7 753.36 352.65 745.76 359.85 745.76C367.05 745.76 366.6 753.36 365.75 758.86C364.9 764.16 362.95 771.81 355.75 771.81C348.55 771.81 349 764.16 349.85 758.86ZM360.95 758.86C361.25 756.86 362.8 750.06 359.2 750.06C355.6 750.06 354.95 756.86 354.65 758.86C354.35 760.66 352.8 767.51 356.4 767.51C360 767.51 360.65 760.66 360.95 758.86Z" fill="white" />
+            <path d="M376.05 746.16L373.55 761.96C373.2 764.21 372.35 767.51 375.55 767.51C378.75 767.51 378.85 764.46 379.2 762.21L381.75 746.16H386.45L383.75 763.21C382.95 768.41 380.85 771.81 375.1 771.81C368.25 771.81 367.9 767.96 368.8 762.21L371.35 746.16H376.05Z" fill="white" />
+            <path d="M407.5 768.16H407.4C406.1 770.36 404.9 771.81 402.2 771.81C396.35 771.81 397.7 762.56 398.35 758.46C399 754.26 400.5 745.76 406.45 745.76C408.65 745.76 409.9 747.11 410.45 748.96H410.55L411 746.16H415.7L411.7 771.41H407L407.5 768.16ZM409.15 758.76C409.45 756.76 410.75 749.96 407.6 749.96C404.1 749.96 403.45 756.71 403.1 758.76C402.75 760.86 401.3 767.61 404.8 767.61C407.95 767.61 408.85 760.76 409.15 758.76Z" fill="white" />
+            <path d="M424.25 749.26H424.35C425.8 747.06 427.65 745.76 430.25 745.76L429.55 750.41L428.75 750.36C425.25 750.36 423.85 752.31 423.3 755.51L420.8 771.41H416.05L420.05 746.16H424.75L424.25 749.26Z" fill="white" />
+            <path d="M435.4 759.71C435.05 761.81 434.05 767.61 437.1 767.61C439.6 767.61 440.5 764.86 440.8 762.91H445.15C444.4 767.56 441.7 771.81 436.4 771.81C429.35 771.81 429.85 764.31 430.7 758.96C431.55 753.81 433.4 745.76 440.35 745.76C447.3 745.76 446.75 753.76 445.9 758.96L445.8 759.71H435.4ZM441.55 756.36C441.85 754.41 442.55 749.96 439.7 749.96C436.85 749.96 436.25 754.41 435.95 756.36H441.55Z" fill="white" />
+            <path d="M468.25 768.16H468.15C466.85 770.36 465.65 771.81 462.95 771.81C457.1 771.81 458.45 762.56 459.1 758.46C459.75 754.26 461.25 745.76 467.2 745.76C469.4 745.76 470.65 747.11 471.2 748.96H471.3L471.75 746.16H476.45L472.45 771.41H467.75L468.25 768.16ZM469.9 758.76C470.2 756.76 471.5 749.96 468.35 749.96C464.85 749.96 464.2 756.71 463.85 758.76C463.5 760.86 462.05 767.61 465.55 767.61C468.7 767.61 469.6 760.76 469.9 758.76Z" fill="white" />
+            <path d="M485.04 749.06H485.14C485.84 748.01 486.64 747.21 487.49 746.66C488.44 746.06 489.49 745.76 490.74 745.76C495.74 745.76 495.19 750.21 494.59 754.06L491.84 771.41H487.14L489.89 753.96C490.19 752.21 490.24 749.96 487.74 749.96C484.64 749.96 484.34 753.51 483.99 755.66L481.49 771.41H476.79L480.79 746.16H485.49L485.04 749.06Z" fill="white" />
+            <path d="M516.89 768.16H516.79C515.49 770.36 514.24 771.81 511.59 771.81C505.74 771.81 507.09 762.56 507.74 758.46C508.39 754.26 509.89 745.76 515.84 745.76C518.24 745.76 519.19 747.06 519.84 748.96H519.94L522.94 729.91H527.64L521.09 771.41H516.39L516.89 768.16ZM518.54 758.76C518.84 756.76 520.14 749.96 516.99 749.96C513.49 749.96 512.84 756.71 512.49 758.76C512.14 760.86 510.69 767.61 514.19 767.61C517.34 767.61 518.24 760.76 518.54 758.76Z" fill="white" />
+            <path d="M531.34 759.71C530.99 761.81 529.99 767.61 533.04 767.61C535.54 767.61 536.44 764.86 536.74 762.91H541.09C540.34 767.56 537.64 771.81 532.34 771.81C525.29 771.81 525.79 764.31 526.64 758.96C527.49 753.81 529.34 745.76 536.29 745.76C543.24 745.76 542.69 753.76 541.84 758.96L541.74 759.71H531.34ZM537.49 756.36C537.79 754.41 538.49 749.96 535.64 749.96C532.79 749.96 532.19 754.41 531.89 756.36H537.49Z" fill="white" />
+            <path d="M550.94 746.16L551.29 765.26H551.39L551.79 763.76L555.29 753.56L557.99 746.16H562.54L551.89 771.41H548.79L545.94 746.16H550.94Z" fill="white" />
+            <path d="M567.29 759.71C566.94 761.81 565.94 767.61 568.99 767.61C571.49 767.61 572.39 764.86 572.69 762.91H577.04C576.29 767.56 573.59 771.81 568.29 771.81C561.24 771.81 561.74 764.31 562.59 758.96C563.44 753.81 565.29 745.76 572.24 745.76C579.19 745.76 578.64 753.76 577.79 758.96L577.69 759.71H567.29ZM573.44 756.36C573.74 754.41 574.44 749.96 571.59 749.96C568.74 749.96 568.14 754.41 567.84 756.36H573.44Z" fill="white" />
+            <path d="M584.09 771.41H579.39L585.94 729.91H590.64L584.09 771.41Z" fill="white" />
+            <path d="M589.69 758.86C590.54 753.36 592.49 745.76 599.69 745.76C606.89 745.76 606.44 753.36 605.59 758.86C604.74 764.16 602.79 771.81 595.59 771.81C588.39 771.81 588.84 764.16 589.69 758.86ZM600.79 758.86C601.09 756.86 602.64 750.06 599.04 750.06C595.44 750.06 594.79 756.86 594.49 758.86C594.19 760.66 592.64 767.51 596.24 767.51C599.84 767.51 600.49 760.66 600.79 758.86Z" fill="white" />
+            <path d="M615.34 749.41H615.44C616.69 747.26 618.04 745.76 620.64 745.76C626.49 745.76 625.14 754.96 624.49 759.06C623.84 763.31 622.34 771.81 616.39 771.81C613.94 771.81 613.04 770.61 612.39 768.56H612.29L610.19 781.76H605.49L611.14 746.16H615.84L615.34 749.41ZM619.74 758.81C620.04 756.76 621.54 749.96 618.04 749.96C614.89 749.96 613.99 756.76 613.69 758.81C613.39 760.81 612.09 767.61 615.24 767.61C618.19 767.61 619.09 763.01 619.74 758.81Z" fill="white" />
+            <path d="M632.09 759.71C631.74 761.81 630.74 767.61 633.79 767.61C636.29 767.61 637.19 764.86 637.49 762.91H641.84C641.09 767.56 638.39 771.81 633.09 771.81C626.04 771.81 626.54 764.31 627.39 758.96C628.24 753.81 630.09 745.76 637.04 745.76C643.99 745.76 643.44 753.76 642.59 758.96L642.49 759.71H632.09ZM638.24 756.36C638.54 754.41 639.24 749.96 636.39 749.96C633.54 749.96 632.94 754.41 632.64 756.36H638.24Z" fill="white" />
+            <path d="M652.44 749.26H652.54C653.99 747.06 655.84 745.76 658.44 745.76L657.74 750.41L656.94 750.36C653.44 750.36 652.04 752.31 651.49 755.51L648.99 771.41H644.24L648.24 746.16H652.94L652.44 749.26Z" fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1044_1522">
+              <rect width="847.7" height="781.76" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <svg width="610" height="806" viewBox="0 0 610 626" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_981_1533)">
+            <path d="M179.565 370.804C169.531 382.337 166.812 326.667 173.615 321.809L179.565 324.812V370.804Z" fill="white" />
+            <path d="M268.748 528.068H213.75L209.352 523.612L213.75 519.166H264.281L268.748 528.068Z" fill="white" />
+            <path d="M316.285 367.821C301.304 369.421 306.635 326.353 311.838 326.353C321.018 336.933 314.391 354.914 316.285 367.821Z" fill="white" />
+            <path
+              d="M610 26.1175C542.229 78.8427 475.282 131.813 399.598 173.468C406.51 184.735 414.256 197.936 419.41 210.018C465.357 317.657 456.413 447.881 464.974 562.145C466.545 583.08 474.026 604.123 470.864 626H461.97C461.42 617.687 462.794 609.099 461.92 600.796C449.246 480.505 455.441 358.153 421.226 240.846C414.766 218.694 403.044 198.034 391.95 177.973C390.369 177.609 367.445 190.673 363.332 193.068C293.921 233.446 225.875 281.352 142.091 296.31C119.609 300.324 98.6478 299.51 75.9593 300.059L58.3758 349.232C42.913 401.299 44.5035 449.618 39.8205 502.814C36.1781 544.174 24.7209 584.267 24.9664 625.99L13.0968 625.961C17.0239 601.002 19.1445 575.66 22.2469 550.554C30.7097 482.056 32.1234 409.779 49.4516 343.294C53.2608 328.679 58.4937 312.308 66.5932 299.608C39.7027 299.412 6.26376 290.5 1.38439 259.328C-8.46271 196.405 35.7167 148.685 66.5736 99.238C69.8723 96.8922 72.4543 101.692 72.6703 105.235C73.3183 115.668 44.641 149.794 37.4348 162.171C20.3914 191.439 -4.37857 241.386 17.7602 272.656C25.9678 284.248 45.1907 289.283 59.1318 290.706C121.788 297.066 195.44 275.944 250.448 247.216C355.281 192.469 468.744 122.97 562.807 51.6164C569.61 46.4538 602.087 14.6341 606.122 14.8009L609.971 26.1175H610Z"
+              fill="white"
+            />
+            <path
+              d="M607.595 8.74502C537.487 34.0378 470.668 67.2709 402.052 95.8811C316.914 131.372 219.267 173.212 127.266 186.56C114.218 188.455 62.8917 195.718 58.1891 181.908C50.4724 159.236 84.628 103.203 100.788 86.0074C114.945 98.8648 94.6518 108.022 90.3321 114.873C85.0011 123.314 65.8665 165.674 66.4261 173.438C67.1919 184.018 89.7626 181.997 97.6462 180.73C119.127 177.276 133.814 134.758 158.741 123.039C214.869 96.6467 279.489 84.7511 337.776 112.174C425.595 73.4837 513.227 33.4882 602.862 0L607.595 8.74502ZM322.245 115.658C297.573 105.48 263.977 103.88 237.508 106.697C224.294 108.101 159.38 132.167 150.986 140.323C148.993 142.256 124.38 173.624 126.058 174.94C184.483 164.811 244.528 148.822 299.978 127.514C306.605 124.962 318.111 121.194 322.245 115.658Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_981_1533">
+              <rect width="610" height="626" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="nike-logo-line2"><div></div></div>
+    <div class="profile-card-title">
+      <span>TEAM MEMBERS</span>
+    </div>
+    <div class="profile-card-contatiner">
+      <div class="profile-card">
+        <div class="profile-card_header">
+          <img src="/src/assets/team-members/niking-cha.jpg" alt="지현님" /><button><a href="https://github.com/chajiiiii" target="_blank">살펴보기</a></button>
+        </div>
+        <div class="profile-card_content">
+          <div class="profile-card_content__head">
+            <h2>차지현</h2>
+            <span>조장 / 스크럼 마스터</span>
+            <span class="profile-card_content__head__todolist">TODO :<a href="/src/pages/basket.html">장바구니페이지</a><a href="/src/pages/wishlist.html">위시리스트페이지</a></span>
+            <p>협동심과 소통하는 능력 기르기🤝 직접 해보며 더 익히기😎 문서화에 조금 더 익숙해지기 📝</p>
+          </div>
+          <div class="profile-card_content__tail"><span>#ISTP</span><span>#멋사14기</span><span>#킹왕짱</span></div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card_header">
+          <img src="/src/assets/team-members/niking-shim.jpg" alt="우섭님" /><button><a href="https://github.com/ooooseob" target="_blank">살펴보기</a></button>
+        </div>
+        <div class="profile-card_content">
+          <div class="profile-card_content__head">
+            <h2>심우섭</h2>
+            <span>팀원 / 개발자</span>
+            <span class="profile-card_content__head__todolist">TODO :<a href="/src/components/header.html">헤더</a><a href="/src/components/footer.html">푸터</a><a href="/src/pages/find-store__page.html">위치찾기페이지</a></span>
+            <p>마크업부터 스타일 구현까지 찾아보지 않고 막힘 없이 원하는 디자인 구현하도록 실력 늘리기.</p>
+          </div>
+          <div class="profile-card_content__tail"><span>#INTP</span><span>#멋사14기</span><span>#킹왕짱</span></div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card_header">
+          <img src="/src/assets/team-members/niking-chan.jpg" alt="우창님" /><button><a href="https://github.com/chan331" target="_blank">살펴보기</a></button>
+        </div>
+        <div class="profile-card_content">
+          <div class="profile-card_content__head">
+            <h2>한우창</h2>
+            <span>팀원 / 개발자</span>
+            <span class="profile-card_content__head__todolist">TODO :<a href="/src/pages/product_detail_page.html">상품상세페이지</a><a href="/src/pages/product_list_page.html">상품리스트페이지</a></span>
+            <p>협업 능력 강화 -> 커뮤니케이션 -> 상호 도움 및 피드백 -> 성장의 선순환 이루기</p>
+          </div>
+          <div class="profile-card_content__tail"><span>#ISTP</span><span>#멋사14기</span><span>#킹왕짱</span></div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card_header">
+          <img style="object-fit: cover" src="/src/assets/team-members/niking-jung.jpg" alt="윤서님" /><button><a href="https://github.com/yoonseo23" target="_blank">살펴보기</a></button>
+        </div>
+        <div class="profile-card_content">
+          <div class="profile-card_content__head">
+            <h2>정윤서</h2>
+            <span>팀원 / 개발자</span>
+            <span class="profile-card_content__head__todolist">TODO :<a href="/src/pages/mainpage-contents-page.html">메인페이지</a><a href="/src/pages/signin-email.html">회원가입페이지</a><a href="/src/pages/signin-password.html">비밀번호입력</a><a href="/src/pages/signup-agreement.html">회원가입동의</a><a href="/src/pages/signup-create.html">신규회원가입</a></span>
+            <p>웹페이지를 구조적으로 해석하고, 설계부터 구현까지 차근차근 주도해나갈 수 있는 역량 기르기!💪💪</p>
+          </div>
+          <div class="profile-card_content__tail"><span>#ENTJ</span><span>#멋사14기</span><span>#킹왕짱</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 새로운 나이키 감성 디자인 시작 -->
+
+    <!-- 컴포넌트 분류 섹션 -->
+    <section class="components-showcase">
+      <div class="section-header">
+        <h2>COMPONENT SYSTEM</h2>
+        <div class="section-subtitle">우리가 구축한 디자인 시스템</div>
+      </div>
+
+      <div class="components-grid">
+        <!-- UI 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>UI Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+
+          <div class="component-items">
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/buttons-components.html">공통 버튼</a>
+              <!-- </div> -->
+              <!-- <span>Button</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-buttons.html">상품 상세 페이지 버튼</a>
+              <!-- </div> -->
+              <!-- <span>Button</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/find-store_searchbar.html">검색 바</a>
+              <!-- </div>
+              <span>Input</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/sign-in-components.html">로그인</a>
+              <!-- </div>
+              <span>Input</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/signup-agreement-form.html">회원 가입 동의</a>
+              <!-- </div>
+              <span>Form</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product-list-page-buttons.html">상품 리스트 필터</a>
+              <!-- </div>
+              <span>UI</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product-list-page-headers.html">상품 리스트 페이지 헤더</a>
+              <!-- </div>
+              <span>Header</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product-list-page-accordion.html">상품 리스트 아코디언</a>
+              <!-- </div>
+              <span>Accordion</span> -->
+            </div>
+          </div>
+        </details>
+
+        <!-- 레이아웃 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>Layout Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+
+          <div class="component-items">
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/header.html">헤더</a>
+              <!-- </div> -->
+              <!-- <span>Header</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/footer.html">푸터</a>
+              <!-- </div> -->
+              <!-- <span>Footer</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/landing-page-modal-window.html">모달</a>
+              <!-- </div> -->
+              <!-- <span>Modal</span> -->
+            </div>
+          </div>
+        </details>
+
+        <!-- 카드 컴포넌트 -->
+        <details class="component-category">
+          <summary class="category-header">
+            <h3>Card Components</h3>
+            <div class="category-line"></div>
+            <div class="dropdown-arrow">
+              <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </div>
+          </summary>
+
+          <div class="component-items">
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product_card.html">상품 카드1</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product-list-page-card.html">상품 카드2</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product-list-page-card-list.html">상품 카드 리스트</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-product-header__wrapper.html">상품 카드 내용</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-image-carousel.html">이미지 캐러셀</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/page_heading.html">섹션 헤딩</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/order_info.html">주문 내역</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/customer-service.html">고객센터</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-product-options__description.html">상품 설명1</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-product-options__sustainability-note.html">상품 설명2</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/basket_summary.html">장바구니 요약</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/basket_item.html">장바구니 상품</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/delivery_pickup.html">배송 안내</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/find-store__card-components.html">매장 찾기</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-product-options__type-selection.html">옵션 선택</a>
+              <!-- </div>
+              <span>Card</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-product-info-accordion.html">세부 사항</a>
+              <!-- </div>
+              <span>Accordion</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/product_recommendation.html">추천 상품1</a>
+              <!-- </div>
+              <span>Accordion</span> -->
+            </div>
+
+            <div class="component-item">
+              <!-- <div class="component-preview"> -->
+              <a class="demo-button primary" href="/src/components/detail-page-related-products.html">추천 상품2</a>
+              <!-- </div>
+              <span>Accordion</span> -->
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 페이지 프리뷰 섹션 -->
+    <section class="pages-preview">
+      <div class="section-header">
+        <h2>PAGE SHOWCASE</h2>
+        <div class="section-subtitle">우리가 만든 페이지들을 둘러보세요</div>
+      </div>
+
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-main.JPG" alt="메인 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>메인 페이지</h3>
+                <p>브랜드의 정체성을 담은 메인 랜딩 페이지</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-product-list.JPG" alt="상품 리스트 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>상품 리스트 페이지</h3>
+                <p>다양한 상품들을 카테고리별로 쉽게 탐색</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-product-detail.JPG" alt="상품 상세 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>상품 상세 페이지</h3>
+                <p>상품의 모든 정보와 구매 옵션을 제공</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-search-store.JPG" alt="매장 찾기 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>매장 찾기 페이지</h3>
+                <p>가까운 매장 위치와 정보를 한눈에</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-wishlist.JPG" alt="위시 리스트 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>위시 리스트 페이지</h3>
+                <p>마음에 든 상품들을 저장하고 관리</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-cart.JPG" alt="장바구니 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>장바구니 페이지</h3>
+                <p>구매할 상품들을 관리</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-login.JPG" alt="로그인 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>로그인 페이지</h3>
+                <p>안전하고 간편한 계정 접속</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-signin.JPG" alt="회원 가입 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>회원 가입 페이지</h3>
+                <p>새로운 멤버십으로 더 많은 혜택을</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="/src/assets/images/landing/preview-customer.JPG" alt="고객 센터 페이지" />
+              </div>
+              <div class="slide-info">
+                <h3>고객센터 페이지</h3>
+                <p>새로운 멤버십으로 더 많은 혜택을</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prev-btn">‹</button>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+            <span class="dot" data-slide="6"></span>
+            <span class="dot" data-slide="7"></span>
+            <span class="dot" data-slide="8"></span>
+          </div>
+          <button class="next-btn">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 팀 회고 섹션 -->
+    <section class="team-retrospective">
+      <div class="section-header">
+        <h2>TEAM RETROSPECTIVE</h2>
+        <div class="section-subtitle">함께한 여정을 돌아보며</div>
+      </div>
+
+      <div class="retrospective-grid">
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">차</div>
+            <div class="retro-name">차지현</div>
+            <div class="retro-role">조장 / 스크럼 마스터</div>
+          </div>
+          <div class="retro-content">
+            <p>짧다면 짧고 길다면 긴 프로젝트 기간에 얼마나 만들어낼 수 있을지 궁금한 마음으로 시작했다. 일단 만들고 시맨틱, 접근성 등 나중에 세세하게 다시 하고자 했지만 역시나 막바지에는 다른 해야 할 게 너무 많아서 코드 리팩토링도 하지 못하고 끝내게 되어 너무 아쉽다. 그렇지만 좋은 경험이었고 우리 팀원분들도 모두 열의를 가지고 주도적으로 임해주셔서 정말 좋았다.</p>
+
+            <div class="retro-feedback">
+              <p>심우섭 : 조장님 덕분에 협업하는데 어떻게 진행되는지 많이 알아갔습니다. 질문 하나하나 잘 봐줘서 좋았습니다! 다 살펴보지 않았었는데 위키같은 부분도 전부 채워져 있더라구요. 고생하셨습니다!</p>
+
+              <p>정윤서 : 21세기 최고의 팀장님 지현님💛 일정과 문서 정리도 깔끔하게 해주시고, 진행 흐름도 안정적으로 잘 이끌어주셔서 든든했습니다! 덕분에 배운 것도 많고, 편하게 집중해서 작업할 수 있었던 것 같습니다 :) 수고 많으셨습니다!</p>
+
+              <p>한우창 : 지현님은 스크럼 진행 시 팀원들의 의견을 잘 조율해 주며 논의를 이끌어주셨습니다. 맡은 일은 책임감을 가지고 꾸준히 해내셔서 팀 운영에 안정감을 더해주셔서 든든함을 느낄 수 있었습니다. 문서 작업이나 소통, 다른 사람을 챙기는 모습들도 팀워크에 긍정적이었습니다. 좋은 동료와 함께할 수 있어 힘이 되었습니다. 감사했습니다. 고생하셨어요!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">심</div>
+            <div class="retro-name">심우섭</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p>처음 협업으로 진행한 2주 프로젝트였는데 값진 시간이였다. 특히 소통 부분이 기억에 남았다. 매일 간단한 스크럼 회의를 통해 상황을 공유하고, 이슈가 생길 때 서로 도움을 받던 부분이 인상깊었다. 한 달 동안 배운 지식을 활용해서 프로젝트를 진행했더니 아직 멀었지만 그래도 한 발자국은 개발과 가까워지지 않았나 싶다. 많이 미숙했지만 잘 이끌어준 팀원들 감사합니다.</p>
+
+            <div class="retro-feedback">
+              <p>차지현 : 우섭님 디자인 잘 하시는 분이신지 저희 디자인, 레이아웃 관련 이야기 할 때 바로바로 눈에 보이게 도와주셔서 너무 좋았어요. 많이 도움이 되었습니다. 그리고 쉬는 시간 알려주셔서 감사해요 ㅎㅎ 앞으로도 잘 지내요</p>
+
+              <p>정윤서 : 금손 우섭님✨ 디자인 시안도 실시간으로 공유해주시고, 예쁘게 디자인해주신 덕분에 ‘나이킹’ 페이지가 저희 팀 분위기까지 잘 담긴 결과물이 된 것 같습니다ㅎㅎ 가끔 제가 헷갈리던 부분도 먼저 물어봐주셔서 도움 많이 됐습니다! 감사합니다 :)</p>
+
+              <p>한우창 : 우섭 님은 맡은 바를 끝까지 해내려는 끈기와 성실함으로 주위 동료들에게 긍정적인 동기부여를 해주셨습니다. 새로운 것을 배우려는 적극적인 자세도 인상 깊었고, 몸에 밴 듯한 배려와 친절함은 팀의 분위기를 부드럽게 만드는 데 큰 역할을 했습니다. 함께하면서 많은 것을 배우고 기분 좋게 협업할 수 있었습니다. 고생하셨어요!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">한</div>
+            <div class="retro-name">한우창</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p>간만에 몰입할 수 있던 시간이었습니다. 제가 소통에 좀 더 적극적이었다면 하는 아쉬움이 있고, 시간에 쫓기듯 진행되어 부족했던 만큼 배울 점도 많았습니다. 팀원들과 함께해서 보람 있었고 다들 배려심이 깊으셨습니다. 그에 비례하게 다들 실력도 좋으셨습니다. 개인적으로 많은 것을 느낄 수 있었습니다. 팀원분들 덕분이라 생각합니다. 너무 고생 많으셨고 앞으로 함께 더 많은 성장을 이루고 싶습니다.</p>
+
+            <div class="retro-feedback">
+              <p>차지현 : 우창님 묵묵히 맡은 일을 열심히 하시는 모습이 너무 좋았습니다. 어려운 부분 있으면 도와주시려고 하고, 이견이 생길 때에는 대화를 통해 풀어나가는 모습을 보여주신거 같아서 인상 깊었습니다. 다음에도 또 함께해요~</p>
+
+              <p>심우섭 : 언제나 최대한 효율적으로 생각하시는 부분을 보고 배웠습니다. 응원해주는 부분이나 잘못된 부분을 지적해주는 점이 뒤돌아볼 수 있게 할 수 있어서 좋았습니다. 감사합니다!</p>
+
+              <p>정윤서 : Team. 킹왕짱의 만능 우창님💡 레이아웃도 전체적으로 꼼꼼하게 봐주시고 직접 수정해주신 덕분에 큰 도움 되었습니다! 이번 프로젝트하며 많이 배웠습니다ㅎㅎ 다음에 또 협업할 기회가 있으면 좋겠습니다:)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="retro-card">
+          <div class="retro-header">
+            <div class="retro-avatar">정</div>
+            <div class="retro-name">정윤서</div>
+            <div class="retro-role">개발자</div>
+          </div>
+          <div class="retro-content">
+            <p>처음엔 널널할 줄 알았지만, 막바지에 갈수록 밤낮없이 협업하는 일이 생각보다 쉽지 않았다ㅠ 그래도 오랜만에 무언가에 몰입해 결과물을 만들어내니, ‘이래서 개발이 재밌다’는 말이 실감날 만큼 뿌듯했다. 이번 프로젝트를 통해 협업에서 유의할 점과 효율적인 방식, 그 이유까지 직접 부딪히며 배울 수 있었고, 실수도 많았지만 그만큼 성장할 수 있었던 값진 시간이었다.</p>
+
+            <div class="retro-feedback">
+              <p>차지현 : 윤서님 누가 시키지 않아도 굉장히 능동적으로 일을 찾아서 하시는 모습이 그 누구나 원하는 동료이자 신입사원이 아닌가 싶습니다. 여러 방면으로 도움 많이 주셔서 감사합니다. 함께 또 협업 할 수 있는 시간이 생기면 좋겠어요. 앞으로도 잘 지내요~</p>
+
+              <p>심우섭 : 윤서님 조장님과는 다른부분으로 프로젝트를 이끌어줬어요! 덕분에 진행하면서 생긴 문제점들이나 궁금한점들을 해결했습니다! 손이 늦어서 제 파트까지 도와주시구ㅜ 고생하셨습니다!!</p>
+
+              <p>한우창 : 윤서 님은 본인의 일이 마치면 팀을 먼저 생각하며, 도움이 필요한 곳을 찾아 적극적으로 지원하는 배려심과 능동적인 자세를 보여주셨습니다. 이러한 모습은 저에게 좋은 귀감이 되었고, 맡은 바 책임감 있는 모습 덕분에 안심하고 협업할 수 있었으며, 그 외 여러 면에서도 도움을 받아 의지할 수 있는 든든한 동료셨습니다. 고생하셨어요!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-entrance">
+      <!-- 왼쪽: 이미지 + 텍스트 오버레이 -->
+      <div class="entrance-left">
+        <img src="/src/assets/images/landing/football.png" alt="" />
+        <div class="entrance-text-overlay">
+          <h1 class="entrance-slogan">JUST DO IT</h1>
+          <p class="entrance-subtitle">우리의 여정을 시작하세요</p>
+        </div>
+      </div>
+
+      <!-- 오른쪽: 동적인 콘텐츠 -->
+      <div class="entrance-right">
+        <div class="entrance-content">
+          <div class="entrance-stats">
+            <svg width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M67.854 20L24.8132 38.2574C21.2297 39.7777 18.2152 40.5363 15.7859 40.5363C13.0525 40.5363 11.0613 39.5717 9.83849 37.6459C8.25274 35.1611 8.94589 31.1656 11.6662 26.9479C13.2814 24.4826 15.3347 22.22 17.3356 20.0556C16.8648 20.8207 12.7092 27.7358 17.2539 30.9923C18.153 31.6463 19.4314 31.9667 21.0041 31.9667C22.2662 31.9667 23.7146 31.7607 25.3069 31.3455L67.854 20Z" fill="#111111" />
+            </svg>
+          </div>
+
+          <div class="entrance-cta">
+            <h2>EXPLORE OUR WORK</h2>
+            <p>팀5의 작업물을 지금 만나보세요.</p>
+            <button class="cta-button">
+              <span><a href="/src/pages/mainpage-contents-page.html">바로가기</a></span>
+              <svg class="arrow-icon" viewBox="0 0 24 24">
+                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="pre-announcement-dialog" open aria-labelledby="pre-announcement-title" aria-describedby="pre-announcement-body">
+      <h2 id="pre-announcement-title" class="pre-announcement-title">[멋쟁이사자처럼 프론트엔드 부트캠프] UI 프로젝트</h2>
+
+      <div id="pre-announcement-body" class="pre-announcement-body">
+        <p class="pre-announcement-greeting">WELCOME.</p>
+        <br />
+        <p class="pre-announcement-intro">
+          본 웹사이트는 ‘멋쟁이사자처럼’ 프론트엔드 교육과정의 일환으로 제작된<br />
+          비상업적 학습 프로젝트입니다.
+        </p>
+        <br />
+        <p class="pre-announcement-section-title">【알려드립니다】</p>
+        <ul class="pre-announcement-list">
+          <li>현재 페이지는 학습 목적의 모의 사이트이며, <span class="pre-announcement__em">실제 나이키의 공식 웹사이트가 아닙니다</span>.</li>
+          <li>표시된 제품, 서비스, 가격 등은 실제 제공되지 않으며, 상업적 의도가 없습니다.</li>
+          <li>일부 콘텐츠는 외부 출처로부터 차용되었으며, 해당 저작권은 원저작자에게 있습니다.</li>
+          <li>정보의 정확성이나 최신성은 보장되지 않습니다.</li>
+        </ul>
+        <br />
+        <p class="pre-announcement-confirmation"><span class="shaped-button">확인</span> 을 클릭하시면 위 내용을 이해하고 동의한 것으로 간주됩니다.</p>
+        <br />
+        <p class="pre-announcement-end">JUST EXPLORE.</p>
+      </div>
+
+      <div class="pre-announcement-footer">
+        <button type="button" class="button-filled button-filled-00" onclick="document.querySelector('.pre-announcement-dialog').close();">확인</button>
+      </div>
+    </dialog>
+  </body>
+</html>
