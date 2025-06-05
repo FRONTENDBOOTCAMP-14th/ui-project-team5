@@ -150,7 +150,7 @@
 
 .profile-card-title {
   padding-inline: 50px;
-  padding-top: 50px;
+  padding-top: 80px;
   font-size: 3.5rem;
   font-weight: 800;
 }
@@ -450,7 +450,7 @@
 
 .retrospective-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -515,6 +515,15 @@
   line-height: 1.7;
   color: #444;
   font-size: 1rem;
+  padding-bottom: 0.625rem;
+}
+
+.retro-feedback {
+  border-top: 1px solid #e0e0e0;
+
+  p {
+    padding: 0.625rem 0;
+  }
 }
 
 /* 반응형 디자인 */
