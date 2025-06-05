@@ -24,6 +24,10 @@
 
   background: var(--fill-color, #111);
   color: var(--text-color, #fff);
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
 }
 
 .togo-filled-gray {
@@ -46,6 +50,10 @@
 
   background: var(--fill-color, #fff);
   color: var(--text-color, #111);
+
+  &:hover {
+    --fill-color: var(--grey-400, #757575);
+  }
 }
 
 .button-filled {
