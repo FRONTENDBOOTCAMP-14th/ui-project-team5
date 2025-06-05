@@ -27,11 +27,11 @@
     line-height: 1.5rem;
   }
 
-  .form-input__input:invalid + p {
+  .form-input__input:user-invalid + p {
     visibility: visible;
   }
 
-  .form-input__input:invalid {
+  .form-input__input:user-invalid {
     border-color: var(--red, #b40000);
   }
 
