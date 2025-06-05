@@ -56,6 +56,10 @@
   background: var(--white);
   font-size: var(--text-2);
   padding: 0;
+
+  &:hover {
+    border: 1px solid var(--black);
+  }
 }
 
 .product-options__action-button {
@@ -75,12 +79,20 @@
 .product-options__action-button--add-to-cart {
   background: var(--black);
   color: var(--white);
+
+  &:hover {
+    filter: contrast(0.7);
+  }
 }
 
 .product-options__action-button--wishlist {
   background: var(--white);
   color: var(--black);
   border: 1px solid var(--grey-200);
+
+  &:hover {
+    border: 1px solid var(--black);
+  }
 }
 
 .product-options__details-link {
